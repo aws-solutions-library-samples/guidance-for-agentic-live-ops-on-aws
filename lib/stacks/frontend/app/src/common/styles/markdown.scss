@@ -1,0 +1,159 @@
+// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// SPDX-License-Identifier: MIT-0
+
+.markdown-content {
+    line-height: 1.6;
+    color: var(--awsui-color-text-body-default, #16191f);
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    // Headers
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.3;
+        margin: 20px 0 12px 0;
+        color: var(--awsui-color-text-heading-default, #0d1117);
+        border-bottom: 1px solid var(--awsui-color-border-divider-default, #d1d9e0);
+        padding-bottom: 6px;
+        &:first-child { margin-top: 0; }
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.3;
+        margin: 18px 0 10px 0;
+        color: var(--awsui-color-text-heading-default, #0d1117);
+        &:first-child { margin-top: 0; }
+    }
+
+    h3 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        line-height: 1.3;
+        margin: 14px 0 8px 0;
+        color: var(--awsui-color-text-heading-default, #0d1117);
+        &:first-child { margin-top: 0; }
+    }
+
+    h4, h5, h6 {
+        font-size: 0.95rem;
+        font-weight: 700;
+        line-height: 1.3;
+        margin: 12px 0 6px 0;
+        color: var(--awsui-color-text-heading-default, #0d1117);
+        &:first-child { margin-top: 0; }
+    }
+
+    // Paragraphs
+    p {
+        margin: 0 0 12px 0;
+        font-size: 0.875rem;
+        line-height: 1.6;
+        &:last-child { margin-bottom: 0; }
+    }
+
+    // Lists
+    ul, ol {
+        margin: 8px 0;
+        padding-left: 24px;
+        &:last-child { margin-bottom: 0; }
+    }
+
+    ol { list-style-type: decimal; }
+
+    li {
+        margin: 3px 0;
+        line-height: 1.6;
+        font-size: 0.875rem;
+    }
+
+    // Inline code
+    code {
+        background-color: var(--awsui-color-background-code-editor, #f6f8fa);
+        color: var(--awsui-color-text-accent, #0972d3);
+        padding: 2px 5px;
+        border-radius: 4px;
+        font-family: "SF Mono", Monaco, Inconsolata, "Roboto Mono", Consolas, "Courier New", monospace;
+        font-size: 0.8125rem;
+        border: 1px solid var(--awsui-color-border-code-editor, #d1d9e0);
+    }
+
+    // Code blocks
+    pre {
+        background-color: var(--awsui-color-background-code-editor, #f6f8fa);
+        border: 1px solid var(--awsui-color-border-code-editor, #d1d9e0);
+        border-radius: 8px;
+        padding: 14px;
+        margin: 10px 0;
+        overflow-x: auto;
+        font-size: 0.8125rem;
+        line-height: 1.5;
+
+        code {
+            background: none;
+            border: none;
+            padding: 0;
+            color: var(--awsui-color-text-body-default, #16191f);
+        }
+    }
+
+    // Blockquotes
+    blockquote {
+        border-left: 4px solid var(--awsui-color-border-accent, #0972d3);
+        margin: 10px 0;
+        padding: 6px 0 6px 14px;
+        background-color: var(--awsui-color-background-layout-panel-content, #fafbfc);
+        font-style: italic;
+        color: var(--awsui-color-text-body-secondary, #5f6b7a);
+    }
+
+    // Links
+    a {
+        color: var(--awsui-color-text-accent, #0972d3);
+        text-decoration: none;
+        &:hover { text-decoration: underline; }
+    }
+
+    // Emphasis
+    strong { font-weight: 700; }
+    em { font-style: italic; }
+
+    // Tables
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10px 0;
+        font-size: 0.8125rem;
+    }
+
+    th {
+        background-color: var(--awsui-color-background-table-header, #f2f3f3);
+        border: 1px solid var(--awsui-color-border-divider-default, #d1d9e0);
+        padding: 10px;
+        text-align: left;
+        font-weight: 700;
+    }
+
+    td {
+        border: 1px solid var(--awsui-color-border-divider-default, #d1d9e0);
+        padding: 10px;
+        vertical-align: top;
+    }
+
+    tr:nth-child(even) {
+        background-color: var(--awsui-color-background-container-content, #ffffff);
+    }
+
+    // Horizontal rules
+    hr {
+        border: none;
+        border-top: 1px solid var(--awsui-color-border-divider-default, #d1d9e0);
+        margin: 20px 0;
+    }
+
+    // Spacing
+    > *:first-child { margin-top: 0; }
+    > *:last-child { margin-bottom: 0; }
+}

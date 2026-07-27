@@ -1,0 +1,9 @@
+{
+    "name": "bedrock-knowledge-base-handler",
+    "version": "1.0.0",
+    "description": "Lambda function to manage Bedrock Knowledge Base with S3 Vectors",
+    "main": "index.js",
+    "dependencies": {
+        "@aws-sdk/client-bedrock-agent": "^3.857.0"
+    }
+}

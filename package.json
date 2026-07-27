@@ -1,0 +1,121 @@
+{
+    "name": "liveops",
+    "version": "1.0.0",
+    "description": "AWS CDK deployment for Guidance for Agentic Live Ops on AWS",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aws-solutions-library-samples/guidance-for-agentic-live-ops-on-aws.git"
+    },
+    "author": "Amazon Web Services",
+    "license": "MIT-0",
+    "private": true,
+    "bin": {
+        "app": "bin/app.js"
+    },
+    "workspaces": [
+        "lib/stacks/frontend/app"
+    ],
+    "scripts": {
+        "preinstall": "npm config set registry=https://registry.npmjs.com/",
+        "postinstall": "command -v uv >/dev/null 2>&1 && uv venv --allow-existing && uv tool install ruff && find lib -name 'requirements.txt' -exec uv pip install -r {} \\; || echo '\\nNote: uv not found. Python dependencies can be installed manually: pip install -r requirements.txt in relevant directories.\\n'",
+        "prepare": "husky",
+        "format": "prettier --write . && ruff format .",
+        "lint": "eslint . && ruff check .",
+        "stage": "git add -A",
+        "commit": "npx cz",
+        "build": "tsc",
+        "watch": "tsc -w",
+        "cdk": "npx aws-cdk@2.1117.0",
+        "kinesis:spike": "python scripts/push-kinesis-events.py --scenario spike --count 500",
+        "kinesis:churn": "python scripts/push-kinesis-events.py --scenario churn --count 300",
+        "kinesis:purchase": "python scripts/push-kinesis-events.py --scenario purchase --count 200",
+        "kinesis:random": "python scripts/push-kinesis-events.py --scenario random --count 500 --interval 5 --iterations 100",
+        "kinesis:baseline": "python scripts/push-kinesis-events.py --scenario baseline --baseline 100 --iterations 50 --interval 3",
+        "kinesis:flood": "python scripts/push-kinesis-events.py --scenario random --count 1000 --interval 3 --iterations 2000",
+        "hydrate-athena": "python scripts/hydrate-athena.py",
+        "eval:kb": "python scripts/kb-eval/evaluate_kb.py",
+        "eval:kb:remediations": "python scripts/kb-eval/evaluate_kb.py --kb-name remediations",
+        "eval:agents": "python scripts/agent-eval/evaluate_agents.py",
+        "eval:data-paths": "python scripts/agent-eval/evaluate_data_paths.py"
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": [
+            "prettier --write",
+            "eslint --fix-dry-run"
+        ],
+        "*.{json,yaml,yml,md,html,css}": [
+            "prettier --write"
+        ],
+        "*.py": [
+            "ruff format",
+            "ruff check"
+        ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "engines": {
+        "node": "22.8.0"
+    },
+    "devDependencies": {
+        "@aws-sdk/client-cloudformation": "^3.901.0",
+        "@aws-sdk/client-cognito-identity-provider": "^3.901.0",
+        "@aws-sdk/client-secrets-manager": "^3.901.0",
+        "@aws-sdk/credential-providers": "^3.901.0",
+        "@inquirer/prompts": "^7.8.6",
+        "@types/archiver": "^6.0.3",
+        "@types/aws-lambda": "^8.10.156",
+        "@types/node": "24.6.1",
+        "@typescript-eslint/eslint-plugin": "^8.37.0",
+        "@typescript-eslint/parser": "^8.37.0",
+        "archiver": "^7.0.1",
+        "aws-cdk": "^2.1117.0",
+        "chalk": "4.1.2",
+        "commander": "^14.0.0",
+        "commitizen": "^4.3.1",
+        "cz-conventional-changelog": "^3.3.0",
+        "eslint": "^9.36.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.4",
+        "globals": "^16.4.0",
+        "husky": "^9.1.6",
+        "lint-staged": "^16.2.3",
+        "prettier": "^3.6.2",
+        "ts-node": "^10.9.2",
+        "tsx": "^4.20.6",
+        "typescript": "~5.9.3",
+        "typescript-eslint": "^8.45.0",
+        "yaml": "^2.8.0"
+    },
+    "dependencies": {
+        "@aws-cdk/aws-bedrock-agentcore-alpha": "^2.222.0-alpha.0",
+        "@aws-cdk/aws-bedrock-alpha": "^2.222.0-alpha.0",
+        "@aws-cdk/aws-lambda-python-alpha": "^2.221.0-alpha.0",
+        "@aws-lambda-powertools/event-handler": "^2.28.1",
+        "@aws-lambda-powertools/logger": "^2.28.1",
+        "@aws-lambda-powertools/tracer": "^2.28.1",
+        "@aws-sdk/client-bedrock-agent": "^3.918.0",
+        "@aws-sdk/client-bedrock-agent-runtime": "^3.911.0",
+        "@aws-sdk/client-bedrock-agentcore": "^3.911.0",
+        "@aws-sdk/client-dynamodb": "^3.914.0",
+        "@aws-sdk/client-s3vectors": "^3.918.0",
+        "@aws-sdk/client-sqs": "^3.914.0",
+        "@aws-sdk/lib-dynamodb": "^3.914.0",
+        "@aws/pdk": "^0.26.14",
+        "@cdklabs/generative-ai-cdk-constructs": "^0.1.309",
+        "aws-cdk-lib": "^2.221.0",
+        "cdk-nag": "^2.37.40",
+        "constructs": "^10.4.2",
+        "deploy-time-build": "^0.4.1"
+    },
+    "overrides": {
+        "minimatch@3": "3.1.5",
+        "minimatch@5": "5.1.9",
+        "minimatch@9": "9.0.8",
+        "minimatch@10": "10.2.5",
+        "lodash": "4.17.23",
+        "js-yaml": "4.1.1"
+    }
+}

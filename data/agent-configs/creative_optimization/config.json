@@ -1,0 +1,9 @@
+{
+    "agent_id": "creative_optimization",
+    "display_name": "Creative Optimization Agent",
+    "description": "Analyzes creative performance and messaging effectiveness with impressions, clicks, and CVR metrics.",
+    "agent_type": "analytics",
+    "model_key": "",
+    "tool_sets": ["athena"],
+    "enabled": true
+}

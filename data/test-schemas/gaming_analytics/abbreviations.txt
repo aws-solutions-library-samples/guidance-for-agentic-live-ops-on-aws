@@ -1,0 +1,33 @@
+Common abbreviations and terms used in the gaming analytics data warehouse:
+
+Player Segments:
+  whale = High-spending player (top revenue tier)
+  dolphin = Moderate-spending player
+  minnow = Low-spending player
+  free / f2p = Free-to-play, non-spending player
+
+Metrics:
+  CPI = Cost Per Install (marketing spend / installs)
+  LTV = Lifetime Value (total expected revenue from a player)
+  ARPU = Average Revenue Per User
+  DAU = Daily Active Users
+  MAU = Monthly Active Users
+  D1/D7/D30 = Day 1/7/30 retention (player returned N days after install)
+  MTTR = Mean Time To Resolution (incident metric)
+
+Game Modes:
+  TB = Territory Battle (cooperative guild PvE)
+  TW = Territory War (competitive guild PvP)
+  GAC = Grand Arena Championship (competitive PvP)
+  GC = Galactic Challenge (rotating character-specific challenge)
+
+Currency:
+  crystals = Premium in-game currency (purchased with real money)
+  credits = Standard in-game currency (earned through gameplay)
+  arena tokens = Currency earned from PvP arena battles
+  guild tokens = Currency earned from guild activities
+
+Other:
+  FK = Foreign Key (database relationship)
+  KB = Knowledge Base
+  sku = Stock Keeping Unit (item identifier)

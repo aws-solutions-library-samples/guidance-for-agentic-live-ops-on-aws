@@ -1,0 +1,1201 @@
+purchase_id,player_id,purchase_date,item_name,item_category,price_usd,currency_type,payment_method,transaction_status,platform,country
+27063279-83b6-46a2-ac5a-6b6a086b0262,player_0124,2025-09-03 10:12:24,Crystal Pack Medium,characters,19.18,USD,credit_card,completed,ios,IN
+aa56c5f2-cd4c-400c-96dc-330a4f608deb,player_0352,2025-07-16 10:12:24,Character Shards,characters,8.27,USD,paypal,failed,ios,FR
+bf68a2be-589b-481b-9114-2e6bb5a38222,player_0402,2025-07-22 10:12:24,Character Shards,characters,16.12,USD,credit_card,failed,android,AU
+2c25b79d-ec23-4947-9a45-b9e6ee681d7d,player_0311,2025-09-28 10:12:24,Energy Refill,currency,11.06,USD,digital_wallet,failed,ios,KR
+3ec92bbf-7ba3-451a-8268-3c19ac9a513c,player_0939,2025-09-02 10:12:24,Starter Pack,energy,254.42,USD,mobile_pay,pending,android,BR
+9966bcab-1f88-4303-b0c1-fde0d62bff5f,player_0837,2025-10-14 10:12:24,Hyperdrive Bundle,characters,17.35,USD,credit_card,pending,ios,JP
+03d54945-eded-4eff-bc40-5a77d3ffd0d3,player_0696,2025-09-28 10:12:24,Gear Bundle,bundles,4.35,USD,mobile_pay,failed,android,DE
+99d694b1-1806-4af7-ab21-f8e48bb0d0c8,player_0115,2025-07-30 10:12:24,Crystal Pack Small,characters,9.97,USD,credit_card,failed,ios,DE
+2cdcb37c-43e6-43b6-af00-a8f1d665e5f0,player_0733,2025-10-24 10:12:24,Crystal Pack Medium,gear,17.27,USD,mobile_pay,completed,android,BR
+b6e40073-8864-4ab0-8045-5caa2dcefeba,player_0533,2025-07-25 10:12:24,Crystal Pack Small,energy,19.22,USD,paypal,pending,android,KR
+3aecfb3f-9715-4daf-9daf-57d1b1ac8293,player_0864,2025-09-26 10:12:24,Energy Refill,characters,22.61,USD,paypal,refunded,android,FR
+05976bd1-7dd4-4ac6-a269-b4a5c91171f2,player_0505,2025-10-07 10:12:24,Crystal Pack Small,gear,15.51,USD,digital_wallet,failed,android,AU
+6f2d76ba-3164-4b6e-82a5-d48309c4485d,player_0522,2025-08-04 10:12:24,Starter Pack,currency,18.62,USD,credit_card,failed,ios,FR
+8fcb69bf-f907-4ded-a898-19d705300bc8,player_0493,2025-10-17 10:12:24,Gear Bundle,characters,8.7,USD,digital_wallet,refunded,ios,UK
+0de3e808-8988-4e4d-8fe9-ec439c9e3f6a,player_0804,2025-10-28 10:12:24,Crystal Pack Large,currency,13.15,USD,digital_wallet,completed,android,DE
+334c8889-188a-4d34-add7-65935de3b506,player_0859,2025-07-18 10:12:24,Gear Bundle,bundles,48.5,USD,credit_card,completed,ios,BR
+53dffa5f-0dbd-4b69-bbe8-124d16b8d059,player_0926,2025-07-20 10:12:24,Crystal Pack Large,energy,4.49,USD,paypal,pending,android,AU
+02080849-4aec-4ecd-a5e6-9aa54863d8fc,player_0910,2025-07-07 10:12:24,Starter Pack,currency,18.31,USD,digital_wallet,failed,ios,DE
+ede29e7c-f4de-4078-8cd2-3b506ad4b817,player_0443,2025-09-14 10:12:24,Starter Pack,bundles,11.05,USD,digital_wallet,failed,android,CA
+92d59202-4e63-479c-9d25-b04cc4ba91e5,player_0962,2025-10-28 10:12:24,Crystal Pack Medium,bundles,20.96,USD,paypal,pending,ios,CA
+d21fab5f-549e-4184-9b44-0a186b21c255,player_0012,2025-10-29 10:12:24,Crystal Pack Medium,currency,39.36,USD,mobile_pay,failed,android,FR
+99290eaa-7a8a-479d-8a4a-7325dbcb94ba,player_0189,2025-07-10 10:12:24,Crystal Pack Medium,bundles,16.68,USD,paypal,pending,ios,KR
+9df3a62d-b216-41b1-8009-f43e0b97a314,player_0709,2025-08-02 10:12:24,Starter Pack,energy,34.27,USD,paypal,refunded,ios,IN
+dfd65dae-410b-4fbf-bf16-53ce200f0c5a,player_0529,2025-09-26 10:12:24,Crystal Pack Small,energy,33.96,USD,mobile_pay,failed,ios,US
+384901d1-3dbc-4c5d-863d-f7543418bac3,player_0343,2025-10-27 10:12:24,Gear Bundle,gear,22.36,USD,paypal,failed,ios,CA
+a61b2da3-9f44-4dd3-88ce-77f372dd863f,player_0409,2025-08-20 10:12:24,Energy Refill,bundles,4.84,USD,credit_card,refunded,ios,BR
+1fe101a9-7681-4e57-b3ae-a4b2a66e4aa3,player_0432,2025-07-15 10:12:24,Premium Pass,gear,18.87,USD,credit_card,failed,ios,DE
+403e7c38-e52f-4225-b68f-26a07dee9a18,player_0713,2025-09-12 10:12:24,Crystal Pack Small,bundles,4.41,USD,mobile_pay,refunded,ios,UK
+8a5723bb-424a-4254-b5c9-49b3c7efb394,player_0994,2025-10-14 10:12:24,Crystal Pack Large,bundles,34.36,USD,credit_card,pending,ios,BR
+269a912d-3eca-4090-9ea0-6ff773264df9,player_0365,2025-09-10 10:12:24,Crystal Pack Large,bundles,1.49,USD,credit_card,completed,ios,KR
+4a62941f-c189-4acd-9f5a-dbcd15bf617b,player_0655,2025-08-22 10:12:24,Crystal Pack Small,currency,9.28,USD,credit_card,pending,android,KR
+de880758-f58e-4e0a-a228-e52ee699ba1a,player_0452,2025-09-07 10:12:24,Crystal Pack Medium,energy,42.73,USD,mobile_pay,completed,ios,JP
+277a395f-d6a0-4915-ad3b-f0e5640f428f,player_0465,2025-07-20 10:12:24,Starter Pack,currency,188.94,USD,credit_card,pending,ios,KR
+34559b01-7d25-4c81-a6ae-7e234be29e9a,player_0357,2025-10-15 10:12:24,Premium Pass,characters,10.49,USD,credit_card,failed,android,BR
+33f60e9a-3e86-43ec-b84c-e0414e8d8e63,player_0070,2025-07-06 10:12:24,Hyperdrive Bundle,bundles,42.98,USD,digital_wallet,refunded,android,CA
+2a5d5e0d-6c05-4be2-b6b7-deb8fa9406dd,player_0256,2025-07-16 10:12:24,Crystal Pack Small,currency,27.31,USD,mobile_pay,refunded,ios,US
+0e8074fd-d16b-47e3-ad3b-3ec0f3455ff3,player_0926,2025-10-15 10:12:24,Hyperdrive Bundle,characters,14.25,USD,credit_card,completed,android,AU
+2b0a5c8e-9a00-4d94-9f35-0971a6031512,player_0936,2025-08-21 10:12:24,Premium Pass,gear,7.37,USD,digital_wallet,completed,ios,CA
+1ae67063-4cdc-4826-a806-401c7b44208b,player_0055,2025-08-31 10:12:24,Energy Refill,energy,9.54,USD,mobile_pay,refunded,android,JP
+f81faf8a-39a4-4751-8d2d-614373258d70,player_0679,2025-08-04 10:12:24,Crystal Pack Medium,energy,16.16,USD,paypal,pending,ios,UK
+ae0abc11-36b4-4583-bc1d-37ce003e4add,player_0451,2025-10-28 10:12:24,Crystal Pack Medium,characters,20.93,USD,mobile_pay,refunded,ios,KR
+2482cf32-2f10-4d9e-97d6-c3a2a7d90d20,player_0102,2025-10-02 10:12:24,Starter Pack,gear,17.25,USD,paypal,failed,ios,JP
+42b4fcb7-9cee-49cc-b376-b82b6070691f,player_0497,2025-10-27 10:12:24,Energy Refill,currency,1.92,USD,digital_wallet,refunded,android,FR
+4f0455f5-178d-4430-880d-73398739ea98,player_0614,2025-07-29 10:12:24,Hyperdrive Bundle,bundles,6.04,USD,digital_wallet,pending,android,FR
+0b32cdd5-5b36-4932-81ed-d6843dcc7f36,player_0308,2025-09-16 10:12:24,Hyperdrive Bundle,characters,11.28,USD,credit_card,refunded,ios,US
+2a8d9bf3-1003-43a3-a4c9-9816a921003c,player_0419,2025-07-31 10:12:24,Hyperdrive Bundle,bundles,10.43,USD,mobile_pay,refunded,android,FR
+c3309366-d9a7-4fb6-b3ef-e1822a705f7f,player_0632,2025-09-05 10:12:24,Energy Refill,energy,201.8,USD,mobile_pay,failed,android,AU
+ac56f07e-fb83-44db-9e89-f3f6bafcbcf7,player_0619,2025-10-05 10:12:24,Energy Refill,bundles,29.17,USD,digital_wallet,completed,android,FR
+abe7da5e-bf32-4705-8517-5fc005bc4046,player_0857,2025-10-10 10:12:24,Crystal Pack Small,currency,20.78,USD,paypal,completed,ios,UK
+3bb08746-a4ba-4eec-b152-d2c9e2838dfe,player_0813,2025-08-04 10:12:24,Gear Bundle,bundles,8.21,USD,credit_card,pending,ios,DE
+8a6241fd-7be5-419e-b567-c7cd558c0683,player_0567,2025-09-14 10:12:24,Crystal Pack Medium,energy,16.39,USD,credit_card,refunded,android,CA
+774fddd0-013b-4f7e-b2ba-3c97f356776a,player_0870,2025-08-19 10:12:24,Character Shards,gear,30.88,USD,paypal,completed,ios,JP
+5f6b552c-4dac-4a25-8519-fcbd9d162bbb,player_0903,2025-10-05 10:12:24,Character Shards,energy,12.91,USD,digital_wallet,pending,ios,DE
+3518e12e-9d02-44f7-b719-f0bc1b13128f,player_0718,2025-10-27 10:12:24,Premium Pass,energy,130.23,USD,paypal,refunded,android,KR
+22f48329-3996-4ff0-ad36-98d88ac78c98,player_0844,2025-09-15 10:12:24,Energy Refill,gear,5.4,USD,paypal,refunded,ios,IN
+136c79f1-2be0-478f-9c0a-35a2ca1911f1,player_0763,2025-08-05 10:12:24,Crystal Pack Large,energy,4.25,USD,mobile_pay,refunded,android,BR
+ae2009d6-ac4c-41b5-8a21-becc8d732c08,player_0275,2025-09-30 10:12:24,Crystal Pack Medium,currency,10.12,USD,paypal,pending,ios,US
+432f2ba0-3ece-4c89-8603-a4d491877cfb,player_0597,2025-09-11 10:12:24,Character Shards,gear,12.22,USD,mobile_pay,completed,android,IN
+a30c28ba-57b8-4770-99c0-7c0d653e56e8,player_0919,2025-09-05 10:12:24,Crystal Pack Large,characters,5.38,USD,paypal,pending,android,KR
+f18f227e-0fd1-4c63-829e-313c2044aecd,player_0881,2025-10-22 10:12:24,Starter Pack,energy,24.82,USD,digital_wallet,failed,ios,DE
+a82ddfd6-612a-4c09-b7a3-e26f66bfa625,player_0136,2025-07-09 10:12:24,Character Shards,energy,18.72,USD,mobile_pay,refunded,ios,IN
+1e8931c9-af72-4abe-8871-40cc25acb3d7,player_0845,2025-09-15 10:12:24,Crystal Pack Small,gear,16.89,USD,mobile_pay,refunded,android,UK
+fe1be0cf-3d62-4312-aa1b-7d5e76413196,player_0764,2025-08-05 10:12:24,Starter Pack,energy,13.54,USD,credit_card,refunded,ios,DE
+be2851d6-152f-4810-a0c8-ae9e22305f71,player_0373,2025-09-24 10:12:24,Crystal Pack Large,gear,100.96,USD,paypal,failed,android,JP
+7fdab26e-b273-485c-be71-035e178dae73,player_0913,2025-08-11 10:12:24,Energy Refill,characters,7.06,USD,credit_card,completed,ios,US
+696090eb-1924-4fd7-ab5e-3d456ea88566,player_0440,2025-08-05 10:12:24,Energy Refill,currency,19.87,USD,paypal,refunded,android,US
+5a81aee5-8397-4262-a4de-f48fc731a194,player_0776,2025-10-12 10:12:24,Gear Bundle,energy,1.94,USD,credit_card,pending,ios,BR
+e0baf5d5-b361-46b3-9436-8a10b1cd18b7,player_0113,2025-09-14 10:12:24,Energy Refill,bundles,31.62,USD,mobile_pay,refunded,ios,CA
+8d651550-2091-4d4a-a5a5-5f8a06bf84a8,player_0343,2025-10-09 10:12:24,Gear Bundle,characters,44.69,USD,paypal,completed,ios,CA
+ca55e440-d1f2-43dd-8323-c6fa24c07a1e,player_0903,2025-09-10 10:12:24,Starter Pack,currency,11.18,USD,mobile_pay,failed,ios,DE
+3bd8ba4e-6f25-4a06-9823-159104231de0,player_0665,2025-10-30 10:12:24,Gear Bundle,characters,149.93,USD,mobile_pay,failed,android,US
+3de54d72-b315-4568-80cc-a65660a09d47,player_0468,2025-07-22 10:12:24,Crystal Pack Medium,currency,9.78,USD,mobile_pay,pending,android,US
+fac04b1c-ebba-48b3-9ed4-60f5e290342b,player_0897,2025-07-15 10:12:24,Starter Pack,gear,10.24,USD,paypal,failed,android,JP
+1b15f59c-0b1f-4e5d-bc05-4d11b337f148,player_0504,2025-09-27 10:12:24,Crystal Pack Large,currency,16.99,USD,credit_card,completed,android,UK
+2f11b356-8b2b-4bfe-b520-1e6248a8f015,player_0274,2025-07-16 10:12:24,Crystal Pack Medium,energy,10.96,USD,digital_wallet,completed,android,DE
+5181a241-4d8b-423f-858d-be7d43eaf116,player_0478,2025-10-05 10:12:24,Character Shards,gear,19.23,USD,digital_wallet,failed,ios,AU
+5d396ece-9998-4d99-9a85-d02c1f0f5cfb,player_0007,2025-10-06 10:12:24,Hyperdrive Bundle,currency,28.79,USD,credit_card,completed,ios,IN
+486077d1-803f-4b88-9c07-cc52f2a7756e,player_0332,2025-09-21 10:12:24,Crystal Pack Small,characters,14.61,USD,mobile_pay,refunded,ios,BR
+0605a558-4797-4dad-989f-ed40a2425c8b,player_0793,2025-09-15 10:12:24,Crystal Pack Medium,bundles,22.8,USD,mobile_pay,pending,android,UK
+1f5c8701-41a2-44b4-9271-58e6ffdbb882,player_0918,2025-09-13 10:12:24,Energy Refill,gear,4.55,USD,mobile_pay,refunded,android,US
+b66fe36d-ddb3-40ec-b13e-f9e4a046a9dc,player_0878,2025-10-12 10:12:24,Crystal Pack Large,currency,1.05,USD,paypal,failed,ios,JP
+5685b488-d19d-4e5a-93e7-92b38c367683,player_0975,2025-08-03 10:12:24,Premium Pass,energy,16.28,USD,paypal,pending,android,IN
+780276c8-890f-45e4-86c3-b65862f2a7d2,player_0053,2025-08-09 10:12:24,Gear Bundle,currency,5.74,USD,digital_wallet,completed,android,UK
+a1ce2712-32bf-460d-ad84-2eb9f958b8a8,player_0348,2025-07-28 10:12:24,Gear Bundle,characters,25.02,USD,mobile_pay,refunded,android,UK
+a78eedb9-bec3-4699-95a5-2ab60b6e7259,player_0426,2025-09-13 10:12:24,Energy Refill,gear,18.35,USD,digital_wallet,completed,android,AU
+6de75b52-4290-433f-b8eb-d0797d932296,player_0945,2025-08-01 10:12:24,Premium Pass,currency,215.5,USD,paypal,completed,ios,KR
+1e174c17-2587-4218-93b9-802d595610ad,player_0682,2025-10-26 10:12:24,Energy Refill,currency,9.38,USD,digital_wallet,pending,ios,IN
+ad29fd79-49fc-4209-ad51-69b829b56cbc,player_0982,2025-09-19 10:12:24,Gear Bundle,currency,3.53,USD,paypal,completed,ios,DE
+b905e81e-3867-4aae-9bb9-3c703b2edff1,player_0402,2025-07-08 10:12:24,Gear Bundle,currency,4.23,USD,digital_wallet,failed,android,AU
+c914cfbb-5282-47a7-8e5a-6a86bf29a787,player_0764,2025-09-11 10:12:24,Hyperdrive Bundle,currency,2.27,USD,mobile_pay,refunded,ios,DE
+f3f6a82e-f4d7-4489-ae02-72cfa4af09ca,player_0023,2025-09-30 10:12:24,Crystal Pack Medium,energy,34.9,USD,mobile_pay,failed,ios,BR
+368bd450-3eb9-43bd-9ea4-ca00390711a5,player_0487,2025-10-17 10:12:24,Character Shards,bundles,4.64,USD,digital_wallet,failed,ios,IN
+1830c3c0-e3ca-4d6d-9bda-3b8fb51f7064,player_0441,2025-07-31 10:12:24,Crystal Pack Large,energy,41.16,USD,mobile_pay,completed,android,KR
+ed01e9a1-a293-432a-8825-1d4937f31088,player_0517,2025-09-20 10:12:24,Energy Refill,energy,45.72,USD,credit_card,refunded,android,US
+4add952a-d666-41b7-b324-9d461574c2bc,player_0799,2025-08-11 10:12:24,Energy Refill,bundles,12.64,USD,paypal,completed,ios,UK
+c4f794ff-fe29-4df5-b793-5022f0f80ad1,player_0949,2025-08-03 10:12:24,Gear Bundle,energy,7.25,USD,paypal,pending,ios,IN
+7d2c42e3-bccc-455c-aefb-5194c669db50,player_0504,2025-10-22 10:12:24,Crystal Pack Medium,currency,16.47,USD,mobile_pay,pending,android,UK
+b0a5af4a-7efe-40a3-850b-6f64459cf6ee,player_0231,2025-08-20 10:12:24,Gear Bundle,energy,12.07,USD,credit_card,failed,ios,AU
+8f77a8f3-4c48-409c-b7a8-49a0c0d86508,player_0219,2025-10-18 10:12:24,Crystal Pack Medium,characters,6.39,USD,mobile_pay,refunded,ios,AU
+21bbaa6d-fa35-4c1d-b2ba-e08c674cc79a,player_0261,2025-07-09 10:12:24,Character Shards,energy,30.98,USD,credit_card,failed,ios,IN
+0a2184ec-e969-4ccb-aec5-3cd223e0fd81,player_0455,2025-07-15 10:12:24,Energy Refill,characters,4.19,USD,credit_card,completed,android,US
+61b4641e-869e-4008-b3b2-64eedf41f3f9,player_0537,2025-07-18 10:12:24,Crystal Pack Small,currency,4.08,USD,digital_wallet,failed,ios,AU
+489f982b-d8f3-4234-b1b4-17cc0eea5c93,player_0391,2025-07-11 10:12:24,Crystal Pack Small,energy,1.81,USD,mobile_pay,failed,ios,KR
+92c66497-5fc2-42cc-9a00-488bb91fcec3,player_0533,2025-09-07 10:12:24,Hyperdrive Bundle,energy,32.82,USD,digital_wallet,refunded,android,KR
+b4f79033-ecc8-4523-a70e-4538d7cad952,player_0883,2025-09-16 10:12:24,Hyperdrive Bundle,currency,12.86,USD,paypal,refunded,android,AU
+03d6378e-adc5-41a2-bbd6-283a0f407114,player_0349,2025-10-09 10:12:24,Crystal Pack Medium,characters,18.85,USD,digital_wallet,refunded,android,CA
+73538397-bb42-422b-845c-e37d7c322b6b,player_0059,2025-07-11 10:12:24,Crystal Pack Medium,bundles,13.69,USD,mobile_pay,failed,android,JP
+16749d53-53a9-4775-a801-fb11e0ad09b7,player_0710,2025-08-05 10:12:24,Crystal Pack Medium,gear,13.14,USD,paypal,pending,ios,FR
+f8341417-0933-43d3-aae5-48be6726be29,player_0492,2025-08-01 10:12:24,Crystal Pack Small,currency,10.12,USD,credit_card,pending,android,DE
+d57b4370-3257-4fce-972d-0fec957ceebe,player_0236,2025-10-25 10:12:24,Crystal Pack Large,characters,10.83,USD,credit_card,failed,android,KR
+ff5808e1-2ffb-4317-bebb-4ba9f595f306,player_0086,2025-09-11 10:12:24,Hyperdrive Bundle,characters,42.3,USD,paypal,failed,ios,DE
+b61cb656-249d-43fd-bb86-26e3f3e5fe6e,player_0689,2025-10-09 10:12:24,Crystal Pack Small,characters,29.44,USD,paypal,failed,android,IN
+4cc58e95-c2cc-4f5e-92c3-12e0fb84ff00,player_0253,2025-09-12 10:12:24,Premium Pass,bundles,4.3,USD,credit_card,pending,ios,KR
+af7a8fde-0392-4d56-acc7-a25de8e49167,player_0893,2025-07-25 10:12:24,Crystal Pack Large,gear,4.0,USD,paypal,failed,ios,US
+dc9b1275-effb-4add-80fe-c8700d657561,player_0141,2025-10-12 10:12:24,Premium Pass,bundles,5.59,USD,credit_card,refunded,android,US
+6ae0528a-c8b9-464e-8bbf-17e6a8e4a7b3,player_0033,2025-09-02 10:12:24,Gear Bundle,characters,8.31,USD,paypal,refunded,android,IN
+e7f8588c-93b6-4489-a94e-1d14b884b90f,player_0993,2025-08-12 10:12:24,Premium Pass,bundles,14.41,USD,digital_wallet,failed,ios,CA
+4b94049a-bbff-4e21-affb-a3bd157011ab,player_0318,2025-10-26 10:12:24,Starter Pack,bundles,19.46,USD,paypal,completed,android,DE
+39396d93-3cfd-4c3b-8826-f7441fa5c6b6,player_0393,2025-10-27 10:12:24,Energy Refill,characters,9.52,USD,mobile_pay,completed,ios,CA
+472a8f33-03f4-41d1-8bcc-2b6c7beec7f7,player_0404,2025-10-30 10:12:24,Character Shards,currency,15.85,USD,mobile_pay,completed,android,AU
+5857a650-b60f-4ab7-931e-f3c5e7b41cf3,player_0626,2025-10-30 10:12:24,Starter Pack,characters,35.96,USD,mobile_pay,refunded,android,AU
+fce8a538-e256-4675-aadc-fbc386c50ba0,player_0454,2025-07-22 10:12:24,Energy Refill,gear,19.52,USD,paypal,refunded,android,UK
+488134da-89bd-43c2-9140-3249bcfb922f,player_0329,2025-09-18 10:12:24,Crystal Pack Medium,bundles,18.02,USD,paypal,pending,android,FR
+51f5f15b-dfab-4cdc-b999-adfe3ea7d167,player_0327,2025-08-31 10:12:24,Premium Pass,characters,49.91,USD,mobile_pay,pending,android,UK
+c06c1289-f651-4f25-98d4-dbe818cd2045,player_0430,2025-10-04 10:12:24,Crystal Pack Medium,energy,11.55,USD,paypal,pending,android,AU
+24786139-cf1b-47cc-b815-4e33316775bd,player_0275,2025-07-08 10:12:24,Character Shards,characters,8.24,USD,digital_wallet,refunded,ios,US
+0f9483a1-be11-495c-98bd-4dce3730870e,player_0883,2025-08-27 10:12:24,Crystal Pack Small,gear,1.4,USD,paypal,pending,android,AU
+db494ce6-6697-4aef-8706-cb868ab2bfa7,player_0865,2025-09-17 10:12:24,Starter Pack,characters,45.67,USD,credit_card,failed,android,CA
+31e01bfc-e99e-4bda-bfdc-a68289486eca,player_0018,2025-08-19 10:12:24,Crystal Pack Medium,bundles,108.82,USD,paypal,completed,ios,KR
+58dc5735-30ac-4e7a-87c7-213fb260d091,player_0335,2025-08-10 10:12:24,Character Shards,gear,4.62,USD,digital_wallet,completed,android,KR
+9449f489-4ce6-4f3d-ab41-601ef042e2b0,player_0267,2025-09-18 10:12:24,Starter Pack,currency,5.31,USD,digital_wallet,refunded,android,DE
+a537da3e-0b3b-4c98-a308-15149a792522,player_0870,2025-09-15 10:12:24,Hyperdrive Bundle,energy,5.28,USD,mobile_pay,failed,ios,JP
+a7015c18-553c-49b9-8d16-d2e8d4754725,player_0767,2025-08-09 10:12:24,Premium Pass,characters,11.98,USD,mobile_pay,refunded,ios,BR
+1abab970-1bd0-460c-a023-b251340eb193,player_0560,2025-09-14 10:12:24,Premium Pass,characters,10.58,USD,credit_card,pending,ios,JP
+0d3203ce-3d5c-4444-bf13-3aca5e0c7fb3,player_0423,2025-08-24 10:12:24,Energy Refill,energy,18.75,USD,mobile_pay,completed,android,JP
+d9756c2f-d154-44da-9a46-c3feb80074a5,player_0397,2025-08-15 10:12:24,Gear Bundle,energy,40.15,USD,mobile_pay,failed,ios,KR
+2fb3a792-5935-4dd1-8678-6239c7ee3eda,player_0682,2025-09-27 10:12:24,Crystal Pack Large,gear,15.21,USD,mobile_pay,failed,ios,IN
+1e99a4d7-1424-4a0d-b21e-7e62c96308fd,player_0438,2025-10-20 10:12:24,Character Shards,currency,4.72,USD,mobile_pay,completed,ios,AU
+9766da1f-9f6a-480f-bf9c-7e20d13c72a4,player_0873,2025-09-18 10:12:24,Premium Pass,characters,6.58,USD,mobile_pay,completed,ios,AU
+477bd487-cfb8-4c53-b2e8-3a377cf792d5,player_0699,2025-07-07 10:12:24,Crystal Pack Medium,currency,15.2,USD,digital_wallet,refunded,ios,IN
+2bfc0dcb-7e56-4334-9ace-23688bb36cce,player_0875,2025-09-23 10:12:24,Character Shards,bundles,20.42,USD,paypal,refunded,android,AU
+f28facb1-d940-43fa-aeea-20f2e90ee8fe,player_0736,2025-07-28 10:12:24,Crystal Pack Small,gear,7.75,USD,credit_card,failed,ios,JP
+5ec6b186-ed92-4b60-83a9-0e67e76b9bca,player_0118,2025-10-24 10:12:24,Starter Pack,characters,10.33,USD,paypal,pending,ios,AU
+b3fde18e-98b4-42c2-b79a-6cdfe5cf5180,player_0333,2025-09-29 10:12:24,Starter Pack,energy,83.58,USD,digital_wallet,completed,android,FR
+5b2f6cdb-6f68-49fa-863d-f3fbed5f97bc,player_0689,2025-08-03 10:12:24,Crystal Pack Large,characters,13.94,USD,credit_card,pending,android,IN
+e04e14e9-5c49-4026-a73a-411cbe34a217,player_0337,2025-08-27 10:12:24,Crystal Pack Medium,energy,2.51,USD,paypal,failed,ios,CA
+d4680754-9071-491f-817c-f985c8df1a6b,player_0354,2025-07-04 10:12:24,Starter Pack,gear,17.35,USD,paypal,completed,ios,BR
+bf863261-56f0-48f7-882b-e798f75bc450,player_0085,2025-10-23 10:12:24,Starter Pack,gear,18.16,USD,digital_wallet,pending,ios,DE
+7ea045b0-6b41-485d-8378-1cf372dd53d9,player_0896,2025-07-28 10:12:24,Character Shards,currency,17.27,USD,credit_card,failed,android,CA
+23553917-db0e-4834-9f6c-10523a4e1790,player_0131,2025-08-16 10:12:24,Character Shards,characters,16.98,USD,credit_card,completed,ios,CA
+eeec13ef-4772-4303-9a75-cf086604fba9,player_0339,2025-08-25 10:12:24,Crystal Pack Large,characters,27.67,USD,credit_card,refunded,ios,DE
+003e9b0b-cd57-420c-adcc-6df074ea56e0,player_0319,2025-07-31 10:12:24,Gear Bundle,currency,15.57,USD,credit_card,pending,ios,KR
+5eea531c-b46d-469c-97b1-d1c78c5ba8ce,player_0490,2025-07-20 10:12:24,Crystal Pack Medium,energy,18.63,USD,credit_card,pending,ios,JP
+6d7eb0d5-a928-42fb-9d3d-a7e48340519c,player_0703,2025-08-03 10:12:24,Hyperdrive Bundle,gear,23.79,USD,credit_card,completed,android,DE
+c2c83bf1-8e2e-44d8-9639-7953ad6d98d8,player_0933,2025-07-07 10:12:24,Crystal Pack Medium,energy,1.84,USD,paypal,failed,android,KR
+f7ba9a26-dec9-4ea5-9792-561e5442031f,player_0212,2025-10-23 10:12:24,Crystal Pack Small,energy,14.42,USD,credit_card,refunded,android,KR
+06b21c30-648e-42f2-983b-93913d131eb3,player_0851,2025-10-27 10:12:24,Gear Bundle,bundles,11.06,USD,credit_card,refunded,android,IN
+7d455a95-4788-447b-9006-521b1110f689,player_0531,2025-08-12 10:12:24,Hyperdrive Bundle,bundles,11.45,USD,paypal,pending,ios,UK
+da3e19ad-e470-483c-ba15-ec9672113b95,player_0808,2025-07-27 10:12:24,Starter Pack,currency,7.89,USD,paypal,pending,ios,BR
+8c8f08d2-4e7c-4ab4-aaa4-1958c7aaa6bf,player_0934,2025-10-30 10:12:24,Gear Bundle,bundles,6.31,USD,mobile_pay,pending,android,FR
+300ff7d0-ca5e-4500-839a-04a03a6ffdd5,player_0414,2025-08-01 10:12:24,Gear Bundle,characters,4.89,USD,credit_card,completed,android,DE
+a63aa709-6576-401d-9779-36140d01aeec,player_0522,2025-09-10 10:12:24,Crystal Pack Small,currency,21.26,USD,mobile_pay,refunded,ios,FR
+7ffa7c37-16b5-4d14-930e-5127c017ab61,player_0464,2025-11-01 10:12:24,Gear Bundle,currency,7.95,USD,paypal,completed,ios,JP
+11d25762-0d28-4dd4-a061-7ac9bbe66821,player_0936,2025-10-02 10:12:24,Energy Refill,bundles,7.38,USD,mobile_pay,pending,ios,CA
+6887c205-4546-46ea-9db8-e8f9a35b1fac,player_0430,2025-10-26 10:12:24,Crystal Pack Large,characters,14.69,USD,paypal,failed,android,AU
+7e13c1bb-c106-40da-9456-20fa25529823,player_0075,2025-09-08 10:12:24,Starter Pack,characters,15.34,USD,credit_card,refunded,android,IN
+6de35d13-3e2c-428e-9eaf-4f38412b67c1,player_0570,2025-09-14 10:12:24,Crystal Pack Medium,energy,16.1,USD,digital_wallet,refunded,android,FR
+bd266632-6b45-448b-aa70-b91aa6d4d260,player_0333,2025-08-31 10:12:24,Starter Pack,gear,155.88,USD,credit_card,pending,android,FR
+3f52d1cf-5ef8-4ed4-ad3d-042cfe98b4db,player_0832,2025-08-29 10:12:24,Crystal Pack Medium,characters,10.12,USD,paypal,completed,android,DE
+349c208a-3bc5-4665-819b-05b23bf4570b,player_0710,2025-08-25 10:12:24,Character Shards,energy,19.45,USD,digital_wallet,pending,ios,FR
+f8e94250-b1ce-4a95-b098-819a59042b81,player_0097,2025-10-27 10:12:24,Starter Pack,characters,6.27,USD,credit_card,failed,ios,US
+f0f7317f-3a23-4a91-b866-c1020da653d7,player_0723,2025-09-16 10:12:24,Gear Bundle,gear,10.26,USD,mobile_pay,refunded,ios,KR
+4297ec2d-246d-409e-9201-ef42592cdc62,player_0320,2025-07-06 10:12:24,Crystal Pack Medium,bundles,10.68,USD,paypal,failed,android,JP
+5f272dcb-f5a3-4e03-b025-3c732c7bd50e,player_0687,2025-10-18 10:12:24,Crystal Pack Small,bundles,29.23,USD,digital_wallet,failed,ios,JP
+790b7409-baa2-4f80-bce0-c029ecbb5a97,player_0966,2025-07-31 10:12:24,Character Shards,currency,35.48,USD,mobile_pay,refunded,ios,US
+896129c3-eb30-4357-994a-4a993999d189,player_0920,2025-07-21 10:12:24,Energy Refill,energy,19.35,USD,paypal,completed,android,DE
+1963335d-81c0-4ca2-83fc-b4c7c4f9fb0a,player_0356,2025-07-26 10:12:24,Energy Refill,characters,19.7,USD,digital_wallet,pending,android,KR
+3e596c52-10b9-449a-bc18-d311d55e4d93,player_0504,2025-10-28 10:12:24,Gear Bundle,gear,7.87,USD,paypal,pending,android,UK
+eade74df-ac05-409a-bc36-11e3e92eb5c5,player_0712,2025-08-19 10:12:24,Crystal Pack Medium,energy,4.46,USD,mobile_pay,failed,android,BR
+e28f2280-240d-4ac8-ba3d-0601348aad95,player_0322,2025-10-29 10:12:24,Character Shards,energy,18.92,USD,mobile_pay,refunded,android,AU
+c3fd93f5-d88e-4f58-8509-396b37c94dd8,player_0767,2025-07-10 10:12:24,Crystal Pack Large,currency,9.66,USD,digital_wallet,completed,ios,BR
+0666f249-0939-4556-ac64-bf25669b397d,player_0475,2025-07-26 10:12:24,Starter Pack,energy,7.74,USD,mobile_pay,pending,ios,AU
+34fc901e-b7e4-47e1-a156-dcdef2013f0c,player_0716,2025-10-25 10:12:24,Energy Refill,gear,35.91,USD,mobile_pay,failed,ios,DE
+bf5e724c-e14e-47c4-94a6-520975ffa3b7,player_0534,2025-07-28 10:12:24,Energy Refill,gear,5.15,USD,mobile_pay,completed,ios,IN
+b85be1e7-28be-4370-9afc-6775656ba55c,player_0055,2025-09-05 10:12:24,Hyperdrive Bundle,energy,15.42,USD,digital_wallet,refunded,android,JP
+695d2d6e-cdef-4525-a6c6-ca541a9cd87b,player_0478,2025-09-03 10:12:24,Hyperdrive Bundle,energy,14.27,USD,paypal,pending,ios,AU
+c60aa7b3-a0d8-482c-96be-bfe65132dc85,player_0847,2025-07-22 10:12:24,Crystal Pack Small,currency,3.0,USD,digital_wallet,pending,ios,US
+14dae368-7d5d-42c3-badf-c0a12c26b9f5,player_0925,2025-08-07 10:12:24,Gear Bundle,currency,13.65,USD,mobile_pay,refunded,android,IN
+70f3f721-17d4-4c43-8664-a82ce33e1204,player_0714,2025-07-27 10:12:24,Crystal Pack Medium,characters,19.43,USD,mobile_pay,refunded,android,UK
+1bc46a29-cea5-48a3-b88a-99a005acbcd8,player_0580,2025-10-19 10:12:24,Energy Refill,bundles,14.07,USD,credit_card,failed,ios,UK
+c81ee685-1a84-4e62-bf4e-ca1e6fc4f930,player_0516,2025-10-20 10:12:24,Crystal Pack Small,gear,18.91,USD,digital_wallet,refunded,android,IN
+293ded17-6037-4ea6-8297-4ec11c9d889e,player_0256,2025-09-01 10:12:24,Premium Pass,gear,8.68,USD,mobile_pay,pending,ios,US
+29b64194-5217-4608-8918-c64fc6420adb,player_0601,2025-09-07 10:12:24,Gear Bundle,gear,3.39,USD,digital_wallet,completed,android,AU
+b21c1f45-c820-4c33-84db-d289bd9c6dc0,player_0578,2025-08-04 10:12:24,Hyperdrive Bundle,bundles,5.91,USD,digital_wallet,completed,android,FR
+d2d86702-9612-4edb-93bf-3808ab638e2b,player_0176,2025-10-18 10:12:24,Crystal Pack Medium,energy,16.3,USD,digital_wallet,refunded,ios,KR
+4ff71334-a2c9-47dc-a228-68b4939d20a7,player_0746,2025-07-25 10:12:24,Character Shards,characters,5.62,USD,mobile_pay,refunded,ios,DE
+11c53d24-1661-479c-9fb9-90db1e025f19,player_0398,2025-07-25 10:12:24,Gear Bundle,gear,61.75,USD,paypal,completed,ios,US
+1a9c6aca-ac0e-4c6d-bbbf-d3daa941eddb,player_0839,2025-09-03 10:12:24,Gear Bundle,bundles,5.63,USD,digital_wallet,refunded,android,FR
+a6e81f00-3deb-43e8-b096-3d97e9229169,player_0918,2025-08-09 10:12:24,Crystal Pack Small,characters,17.95,USD,credit_card,failed,android,US
+3f12bf64-c6be-4b67-b22b-0b9cec27ee50,player_0809,2025-07-22 10:12:24,Hyperdrive Bundle,currency,19.25,USD,digital_wallet,refunded,ios,US
+3815dde3-7f83-4c98-8478-bebbf987608e,player_0269,2025-08-14 10:12:24,Hyperdrive Bundle,energy,31.77,USD,paypal,failed,ios,KR
+9b16d20b-0f51-4a1f-849b-1c4185b57848,player_0923,2025-09-11 10:12:24,Crystal Pack Large,gear,260.37,USD,digital_wallet,completed,android,CA
+30d5c51e-c8cb-46b3-acd0-7b00240ffc74,player_0760,2025-09-26 10:12:24,Crystal Pack Medium,currency,43.48,USD,paypal,completed,ios,JP
+dcf80157-565d-4761-af21-28c33cae50db,player_0070,2025-10-21 10:12:24,Gear Bundle,characters,28.02,USD,paypal,pending,android,CA
+d0861372-a5ea-4461-bea8-ae85be80b056,player_0067,2025-10-22 10:12:24,Energy Refill,bundles,16.47,USD,mobile_pay,completed,android,US
+40e1762a-8395-4f52-9fcd-8a0ea514d302,player_0912,2025-08-28 10:12:24,Crystal Pack Large,bundles,40.42,USD,mobile_pay,completed,android,FR
+196bed07-6d9e-4a59-8fe2-510854f5121f,player_0691,2025-07-10 10:12:24,Crystal Pack Small,currency,41.76,USD,paypal,failed,android,IN
+60cd674e-60ef-473d-a4b5-d3fcb2890418,player_0208,2025-10-02 10:12:24,Starter Pack,gear,18.17,USD,paypal,pending,ios,DE
+57e001f7-b763-4821-ab97-9210592f89d2,player_0442,2025-09-17 10:12:24,Starter Pack,gear,17.88,USD,credit_card,failed,ios,CA
+e10c08cf-3af2-4922-952c-5f00fab14d6e,player_0524,2025-10-06 10:12:24,Energy Refill,currency,8.21,USD,paypal,pending,ios,JP
+a96b2ea5-769d-4430-9e04-a6c35d9f7f99,player_0069,2025-10-17 10:12:24,Energy Refill,gear,68.26,USD,credit_card,completed,android,FR
+0f9b3887-7e51-493d-a2bb-001c3989ef38,player_0340,2025-10-18 10:12:24,Crystal Pack Small,characters,31.63,USD,credit_card,refunded,android,FR
+ac69da5d-a881-46bd-9b4e-d8b0c1e0f8b8,player_0056,2025-10-31 10:12:24,Character Shards,bundles,10.28,USD,paypal,completed,ios,KR
+2de1f64e-b449-4777-be0c-26fca4cf1252,player_0161,2025-07-24 10:12:24,Crystal Pack Large,characters,1.62,USD,credit_card,failed,android,IN
+0b33595e-e57f-4765-9e8d-d16ff70041a2,player_0602,2025-09-29 10:12:24,Premium Pass,bundles,4.11,USD,paypal,failed,android,DE
+52121825-18fb-4998-845e-ce92ae3b610f,player_0235,2025-07-20 10:12:24,Gear Bundle,characters,100.04,USD,mobile_pay,refunded,ios,JP
+9915a4e9-15bf-4bf7-beb3-c77dc95ed7f3,player_0275,2025-10-17 10:12:24,Premium Pass,currency,3.34,USD,mobile_pay,failed,ios,US
+700454ca-4ccb-44ae-8f53-c1ea9a7ace26,player_0280,2025-09-28 10:12:24,Premium Pass,currency,14.95,USD,mobile_pay,failed,android,JP
+f0d4dfa0-48e9-464e-aacf-644c3ed1f817,player_0738,2025-09-22 10:12:24,Energy Refill,energy,4.98,USD,paypal,refunded,android,AU
+ebe0df2e-50f8-4610-b6aa-22f627509f3d,player_0489,2025-08-26 10:12:24,Energy Refill,currency,10.73,USD,credit_card,failed,ios,KR
+4fa22724-aa2e-469e-b66a-ab91c8c1735a,player_0447,2025-07-16 10:12:24,Gear Bundle,currency,203.01,USD,paypal,pending,ios,UK
+31f91397-3367-4165-b280-cc43cd4035d9,player_0089,2025-10-15 10:12:24,Hyperdrive Bundle,gear,4.69,USD,paypal,failed,android,AU
+716944a0-140a-4c08-a49b-2a8d0a4f3c3f,player_0181,2025-08-28 10:12:24,Character Shards,gear,2.05,USD,paypal,completed,android,DE
+494a7b49-98ac-4755-9509-586f0ad3596b,player_0573,2025-09-19 10:12:24,Starter Pack,gear,6.26,USD,credit_card,refunded,ios,BR
+946956b3-bf27-4098-ba81-997757f47d29,player_0785,2025-08-02 10:12:24,Crystal Pack Medium,energy,216.41,USD,digital_wallet,pending,ios,AU
+4fe106de-4e47-45e8-936f-6a37adfb605d,player_0560,2025-09-16 10:12:24,Gear Bundle,characters,5.92,USD,mobile_pay,pending,ios,JP
+a1326b0b-d4e2-4f8b-ba23-e45b8270120d,player_0619,2025-09-27 10:12:24,Starter Pack,bundles,36.67,USD,digital_wallet,refunded,android,FR
+e8c4680d-d436-4251-ab54-1f0ced6f7277,player_0179,2025-09-30 10:12:24,Gear Bundle,energy,6.41,USD,digital_wallet,failed,android,CA
+83a356bd-5b27-4eb4-adef-ab025022f266,player_0266,2025-07-23 10:12:24,Crystal Pack Small,gear,12.15,USD,digital_wallet,failed,ios,AU
+a3c2410e-9515-4052-8ab5-3f296906366f,player_0159,2025-07-21 10:12:24,Premium Pass,currency,2.0,USD,digital_wallet,pending,android,KR
+5d0474cf-9cec-4a2e-8832-44ba8cc81f6b,player_0200,2025-09-13 10:12:24,Premium Pass,characters,18.39,USD,digital_wallet,failed,android,BR
+e002c679-3485-4798-b212-47650dd8170a,player_0646,2025-07-21 10:12:24,Character Shards,bundles,7.93,USD,digital_wallet,pending,ios,FR
+e1a37ebc-1936-4090-b223-30559d0efe8b,player_0735,2025-07-24 10:12:24,Hyperdrive Bundle,gear,17.83,USD,mobile_pay,refunded,ios,FR
+3892df92-ce6a-42d9-9f9f-01b4752164ba,player_0655,2025-10-30 10:12:24,Crystal Pack Large,currency,12.07,USD,credit_card,failed,android,KR
+cc0f928a-c1e6-48d8-85c1-f0cdd9da44fb,player_0356,2025-10-29 10:12:24,Energy Refill,gear,9.88,USD,mobile_pay,pending,android,KR
+f4de0ad7-24aa-44c3-b641-e2317525f50d,player_0182,2025-08-16 10:12:24,Crystal Pack Medium,bundles,24.58,USD,credit_card,pending,ios,KR
+5b919352-4fb7-4842-abe2-b3e544b35f32,player_0961,2025-10-14 10:12:24,Gear Bundle,bundles,42.91,USD,credit_card,refunded,ios,JP
+d959bca5-d79f-4c18-b867-d9b91bfadd38,player_0874,2025-08-21 10:12:24,Crystal Pack Large,gear,3.71,USD,credit_card,refunded,android,AU
+06576f04-9e80-4e3a-9b1d-9bd21eeb9b1b,player_0833,2025-09-25 10:12:24,Premium Pass,currency,14.06,USD,paypal,pending,ios,US
+f5f05993-d274-47bd-b0b7-49b34f9c87aa,player_0215,2025-09-15 10:12:24,Character Shards,energy,7.64,USD,mobile_pay,pending,ios,DE
+d8ca3d81-511a-444a-9ee3-51d1eb4a5cfb,player_0864,2025-08-07 10:12:24,Hyperdrive Bundle,energy,33.56,USD,mobile_pay,failed,android,FR
+8a8484a7-f1bb-48e6-9321-014c71381d91,player_0577,2025-07-04 10:12:24,Hyperdrive Bundle,energy,3.93,USD,mobile_pay,pending,ios,KR
+e581e68a-b588-4dd2-b139-cd4e3a9ceff4,player_0563,2025-08-06 10:12:24,Premium Pass,currency,18.57,USD,digital_wallet,failed,android,AU
+04da2a43-6125-4e46-b248-195d23470c7a,player_0122,2025-08-21 10:12:24,Gear Bundle,gear,8.86,USD,mobile_pay,failed,ios,US
+1ee97bec-0da8-47a3-b854-2815dcf05353,player_0580,2025-08-02 10:12:24,Starter Pack,energy,12.84,USD,credit_card,pending,ios,UK
+be685635-09ed-4df8-82ad-d3a88bb74f88,player_0503,2025-09-05 10:12:24,Crystal Pack Medium,bundles,37.63,USD,mobile_pay,pending,android,FR
+79c8e493-6390-498a-a6d8-38c87589063e,player_0097,2025-09-06 10:12:24,Hyperdrive Bundle,characters,14.85,USD,paypal,pending,ios,US
+e45220a8-3110-46c3-a701-376057b8f9ea,player_0456,2025-07-05 10:12:24,Crystal Pack Small,characters,13.97,USD,paypal,pending,android,AU
+39352f07-9f7e-4f45-8009-a02941a677b7,player_0959,2025-09-12 10:12:24,Crystal Pack Large,bundles,17.39,USD,digital_wallet,completed,android,UK
+a4e14d7e-f5c3-4818-acc1-2657fdc995aa,player_0023,2025-09-03 10:12:24,Gear Bundle,currency,23.39,USD,mobile_pay,completed,ios,BR
+cf6005aa-76fc-4de1-9262-f868e0476337,player_0627,2025-09-27 10:12:24,Premium Pass,gear,37.78,USD,mobile_pay,completed,ios,DE
+29bd2d24-f7f3-4d3d-870b-7e71245d801b,player_0116,2025-10-22 10:12:24,Premium Pass,characters,12.35,USD,credit_card,completed,ios,FR
+55a5ebf1-2bf6-4fa8-8165-19514bcc2646,player_0582,2025-10-30 10:12:24,Crystal Pack Large,characters,7.65,USD,paypal,completed,android,KR
+384f001d-30c5-4fe3-a4fd-a489eb695a8a,player_0035,2025-09-01 10:12:24,Gear Bundle,gear,15.72,USD,mobile_pay,pending,ios,CA
+6432136b-fe98-445b-8ded-8668280c92d9,player_0420,2025-07-23 10:12:24,Hyperdrive Bundle,characters,18.98,USD,digital_wallet,refunded,ios,DE
+223e31c2-e3b4-401a-a587-78cefdd8de09,player_0283,2025-08-31 10:12:24,Gear Bundle,characters,10.14,USD,paypal,pending,android,JP
+a26f9df4-a101-4a3e-8d17-7ea02ce6d083,player_0381,2025-09-22 10:12:24,Character Shards,characters,36.46,USD,digital_wallet,pending,ios,IN
+93326471-088c-477e-88a1-23d01c8ac627,player_0810,2025-07-31 10:12:24,Starter Pack,energy,15.96,USD,paypal,refunded,android,JP
+56d9f2e5-f419-4a21-81c9-a5419512e0f3,player_0178,2025-07-26 10:12:24,Crystal Pack Large,currency,15.17,USD,mobile_pay,completed,android,UK
+a6e439dc-56e3-4840-b383-258cddc9a358,player_0366,2025-10-27 10:12:24,Premium Pass,currency,5.54,USD,digital_wallet,refunded,android,CA
+d08dcba7-9dcb-42d4-ac1b-64d654799976,player_0715,2025-07-28 10:12:24,Gear Bundle,characters,4.13,USD,mobile_pay,refunded,android,JP
+97413a0d-5449-4ae4-9c0e-2d7fa0a1fda6,player_0272,2025-07-12 10:12:24,Premium Pass,gear,30.62,USD,paypal,refunded,android,CA
+c79976ff-1f86-49da-a743-83d885592e4c,player_0249,2025-10-24 10:12:24,Energy Refill,bundles,140.3,USD,paypal,completed,ios,UK
+d29fab32-d290-4c91-9408-fdf7820ae5b4,player_0191,2025-10-29 10:12:24,Crystal Pack Small,energy,7.76,USD,paypal,completed,android,IN
+37b51db4-2d9b-4ceb-89da-3d56d6f4b487,player_0693,2025-08-22 10:12:24,Crystal Pack Small,energy,9.6,USD,mobile_pay,completed,ios,IN
+8d255d52-a618-41f4-9a8d-cf1cc7431c97,player_0057,2025-09-02 10:12:24,Character Shards,bundles,33.02,USD,digital_wallet,pending,ios,DE
+a8031f88-c74b-4645-8bec-84dd9c38a4bf,player_0486,2025-10-19 10:12:24,Starter Pack,characters,49.21,USD,mobile_pay,completed,ios,AU
+6a5f4d1e-f210-4399-ad59-7eecb4a49142,player_0104,2025-07-30 10:12:24,Energy Refill,currency,6.91,USD,paypal,refunded,ios,KR
+c64d0347-772a-4278-b6ca-e67c0afdab8c,player_0258,2025-08-08 10:12:24,Energy Refill,energy,18.34,USD,credit_card,pending,ios,IN
+55e080ab-2e43-4421-a7fa-c7d4a99d767d,player_0563,2025-09-10 10:12:24,Crystal Pack Small,currency,11.33,USD,credit_card,refunded,android,AU
+025ed5cf-d19a-4e70-95c5-293457f32f55,player_0242,2025-10-13 10:12:24,Hyperdrive Bundle,bundles,12.78,USD,credit_card,pending,ios,FR
+cf651c7d-d350-4e43-9019-e388d6e0b1a0,player_0343,2025-07-04 10:12:24,Hyperdrive Bundle,energy,38.89,USD,mobile_pay,failed,ios,CA
+9df40515-5698-4275-86e0-03b0a15d4fe1,player_0627,2025-10-09 10:12:24,Energy Refill,energy,16.04,USD,digital_wallet,completed,ios,DE
+be587834-3991-4bd5-8702-43b6203ccab7,player_0849,2025-10-16 10:12:24,Crystal Pack Medium,gear,15.56,USD,digital_wallet,failed,android,DE
+45c47f88-030a-42da-945a-4ed30735254d,player_0780,2025-10-18 10:12:24,Starter Pack,energy,25.71,USD,credit_card,pending,ios,IN
+d9127b8b-a94d-4a14-b225-67206c0b965d,player_0678,2025-10-11 10:12:24,Hyperdrive Bundle,energy,4.73,USD,credit_card,refunded,android,JP
+edb71f6e-c21e-4e7e-bf44-105c79e4f5a4,player_0577,2025-07-14 10:12:24,Gear Bundle,currency,1.05,USD,digital_wallet,failed,ios,KR
+979c3a7f-dbe3-480d-b260-332f48f57bad,player_0028,2025-10-31 10:12:24,Gear Bundle,currency,4.21,USD,paypal,completed,android,CA
+99472ebd-81ba-4669-af7a-03b9db7dcf56,player_0148,2025-10-26 10:12:24,Hyperdrive Bundle,bundles,9.42,USD,digital_wallet,failed,ios,US
+4a58b177-8e7e-40a0-8727-5e56c604f44d,player_0441,2025-08-27 10:12:24,Starter Pack,gear,36.53,USD,mobile_pay,failed,android,KR
+2faecdd7-9ab5-46fa-b85e-a7f071d29088,player_0324,2025-11-01 10:12:24,Crystal Pack Medium,gear,196.93,USD,mobile_pay,completed,ios,BR
+f774f15c-1454-4421-9b4b-bd0cb330561c,player_0519,2025-09-25 10:12:24,Starter Pack,characters,12.75,USD,paypal,refunded,ios,JP
+eeabad5d-c52b-4885-870a-6a77a460a7c6,player_0358,2025-09-10 10:12:24,Premium Pass,characters,12.81,USD,digital_wallet,pending,android,JP
+6b1a8acf-fae6-4ce7-85cf-4fa6c3a3dffe,player_0252,2025-08-29 10:12:24,Energy Refill,currency,24.32,USD,credit_card,failed,ios,US
+b817490c-8c44-492c-bc4f-cad18e79679e,player_0130,2025-07-26 10:12:24,Crystal Pack Small,gear,222.45,USD,paypal,failed,ios,AU
+8b54ff32-6e14-4183-b7a2-28f88407be4e,player_0145,2025-07-27 10:12:24,Crystal Pack Small,gear,13.58,USD,digital_wallet,pending,ios,KR
+7c5233ca-80e8-42ad-8845-cfd2fbbe9bfa,player_0537,2025-10-19 10:12:24,Premium Pass,gear,10.25,USD,paypal,failed,ios,AU
+a8752af4-1a91-458b-9cbd-e31a4a69d791,player_0850,2025-08-16 10:12:24,Gear Bundle,currency,44.14,USD,digital_wallet,refunded,ios,IN
+0b52af34-a7b0-4012-9fc3-176802d0f715,player_0756,2025-09-05 10:12:24,Crystal Pack Small,bundles,16.54,USD,digital_wallet,failed,ios,KR
+d28d12d0-2aa8-4c4f-b0c9-5e3485745b2f,player_0388,2025-08-25 10:12:24,Gear Bundle,energy,6.97,USD,credit_card,completed,ios,IN
+74d44a7a-0aa6-4a1b-adbb-2b5705d2b7c1,player_0204,2025-10-26 10:12:24,Premium Pass,bundles,8.5,USD,paypal,refunded,android,JP
+f760dbd6-05f9-498c-aeb1-fa0bd70e8356,player_0948,2025-09-25 10:12:24,Hyperdrive Bundle,bundles,19.04,USD,paypal,refunded,ios,KR
+6cbe727f-90d7-4993-ad87-57b72e99c60a,player_0909,2025-08-25 10:12:24,Energy Refill,characters,12.61,USD,digital_wallet,refunded,android,US
+3e32944f-4e65-4c57-8430-3e7f8c176558,player_0260,2025-10-26 10:12:24,Crystal Pack Large,gear,8.26,USD,paypal,completed,android,KR
+d99b12c3-f870-4576-85dd-25fd0a40be4b,player_0488,2025-09-07 10:12:24,Energy Refill,energy,15.07,USD,paypal,failed,android,FR
+95163d8f-bae7-4ce1-a406-8b0972472368,player_0566,2025-10-01 10:12:24,Starter Pack,energy,19.74,USD,credit_card,failed,ios,BR
+d2d03f3a-b8f4-42e4-a4c9-3f9eeafe08b4,player_0119,2025-09-06 10:12:24,Crystal Pack Small,bundles,5.12,USD,paypal,refunded,android,JP
+8eafc57f-563b-46c3-a86b-72b43e93c8b3,player_0504,2025-09-18 10:12:24,Hyperdrive Bundle,bundles,2.29,USD,mobile_pay,refunded,android,UK
+572726bd-2b3f-4c40-be56-ebefd1ad8b5c,player_0034,2025-07-24 10:12:24,Premium Pass,energy,194.98,USD,paypal,completed,ios,CA
+42c79bf3-da70-4e28-a1e9-cb913fb0804a,player_0342,2025-07-18 10:12:24,Character Shards,characters,19.44,USD,digital_wallet,pending,ios,JP
+bdcfc1f1-eb49-4d99-ba1a-69d3efa5e8c8,player_0159,2025-09-19 10:12:24,Crystal Pack Medium,characters,15.75,USD,mobile_pay,refunded,android,KR
+dd7653fb-4f74-4385-b6d9-cf1e4109a2ec,player_0242,2025-07-10 10:12:24,Crystal Pack Large,currency,26.77,USD,paypal,pending,ios,FR
+c7112398-c97d-49ad-a630-97107e29463a,player_0830,2025-11-01 10:12:24,Energy Refill,bundles,56.72,USD,mobile_pay,completed,android,FR
+21490e66-8b38-40b8-a3af-81620a0034a6,player_0512,2025-09-15 10:12:24,Gear Bundle,characters,5.44,USD,mobile_pay,refunded,android,JP
+7bb077b8-8117-4927-99ea-690b20b4ca2f,player_0408,2025-09-14 10:12:24,Hyperdrive Bundle,currency,1.36,USD,mobile_pay,refunded,ios,FR
+fad534f5-3a3d-4f3c-9bef-dbd847ae3750,player_0673,2025-07-21 10:12:24,Premium Pass,energy,29.2,USD,credit_card,pending,android,IN
+94224bcc-c870-426d-8190-5281302efa27,player_0507,2025-10-29 10:12:24,Gear Bundle,currency,4.83,USD,paypal,refunded,android,US
+dd374889-7ff2-4393-8865-2a6f7cdb5541,player_0190,2025-09-19 10:12:24,Crystal Pack Large,energy,13.43,USD,mobile_pay,refunded,android,KR
+3bfef2ec-6ba6-48db-8917-85be7fc2029b,player_0485,2025-07-31 10:12:24,Gear Bundle,energy,18.79,USD,digital_wallet,refunded,android,IN
+6af7ced4-92d3-475b-8f02-2d6a67bedb55,player_0419,2025-07-20 10:12:24,Starter Pack,currency,19.34,USD,digital_wallet,completed,android,FR
+886a37b9-a123-4246-9bba-49c98f9f28b7,player_0976,2025-10-29 10:12:24,Premium Pass,currency,10.47,USD,mobile_pay,pending,android,UK
+98806957-758e-4af4-9af1-5dcec2d8ef88,player_0188,2025-10-01 10:12:24,Crystal Pack Small,currency,44.23,USD,mobile_pay,completed,android,DE
+cf79512f-02eb-403b-96a5-6cf68a0fc01d,player_0193,2025-07-31 10:12:24,Starter Pack,gear,17.48,USD,mobile_pay,pending,android,CA
+b125c23e-ff3b-43c0-a9f9-4beefd417409,player_0957,2025-09-13 10:12:24,Crystal Pack Medium,bundles,11.63,USD,paypal,refunded,ios,KR
+b66a08a4-dcdd-4dc8-a7bf-152023181af2,player_0181,2025-09-07 10:12:24,Crystal Pack Medium,gear,4.53,USD,digital_wallet,refunded,android,DE
+9a34c7e4-003d-4802-9883-72e3688c77d9,player_0057,2025-07-22 10:12:24,Crystal Pack Small,gear,18.55,USD,mobile_pay,failed,ios,DE
+1c790b38-8f4f-4631-b029-50eaf57e9149,player_0384,2025-07-18 10:12:24,Premium Pass,currency,10.53,USD,paypal,failed,android,IN
+8727994e-9b6f-416e-86de-967cd683453c,player_0331,2025-07-27 10:12:24,Starter Pack,gear,11.24,USD,credit_card,failed,ios,DE
+22e7d0c1-25fb-4fe4-a346-d683e39b6982,player_0543,2025-10-11 10:12:24,Energy Refill,characters,27.01,USD,credit_card,failed,ios,US
+50920157-995b-4103-8d83-3db2435e10d4,player_0401,2025-10-19 10:12:24,Hyperdrive Bundle,energy,14.79,USD,digital_wallet,pending,android,US
+c4b95dcf-28aa-4f19-8c60-9f665ed6f541,player_0509,2025-09-09 10:12:24,Gear Bundle,energy,4.93,USD,paypal,completed,android,DE
+2b5babbe-6135-4c59-a0ac-9fa0ed00ab28,player_0422,2025-08-12 10:12:24,Character Shards,characters,4.05,USD,paypal,completed,ios,UK
+c8002415-351d-4e29-ad70-72d2866f5f78,player_0098,2025-09-22 10:12:24,Crystal Pack Small,currency,11.7,USD,digital_wallet,completed,ios,BR
+9936c340-b37d-4cc0-880c-438aa4527099,player_0629,2025-10-05 10:12:24,Crystal Pack Large,currency,17.36,USD,mobile_pay,failed,ios,JP
+5489c249-958a-4044-8c76-12927d2dd1a3,player_0320,2025-08-28 10:12:24,Energy Refill,bundles,5.91,USD,digital_wallet,refunded,android,JP
+8353c340-c99e-4e6e-b84f-d01c5b5d319e,player_0453,2025-10-23 10:12:24,Gear Bundle,currency,7.9,USD,digital_wallet,refunded,android,FR
+3ed8980a-9be1-4cd1-8345-f4663857bb9a,player_0683,2025-09-13 10:12:24,Energy Refill,bundles,1.12,USD,paypal,completed,android,US
+fb27b8c6-1b37-4edf-bb63-cfaed3df06b9,player_0262,2025-07-10 10:12:24,Gear Bundle,gear,2.87,USD,digital_wallet,refunded,android,FR
+bf23ecaf-6a6e-4339-82e9-0dd9ac11abd8,player_0974,2025-08-31 10:12:24,Starter Pack,bundles,46.43,USD,mobile_pay,refunded,android,JP
+e70150f6-04ce-4c8a-bdbf-8040a7a339fa,player_0237,2025-08-01 10:12:24,Premium Pass,gear,9.22,USD,digital_wallet,refunded,android,UK
+e0a06f1b-9d0f-4d99-9e45-dd272ba31d88,player_0722,2025-10-27 10:12:24,Crystal Pack Large,currency,30.3,USD,mobile_pay,pending,android,US
+257cc6ac-1545-42ab-bdc0-5f64c661b56b,player_0927,2025-08-18 10:12:24,Energy Refill,gear,24.61,USD,paypal,completed,ios,AU
+62aea785-9800-4f73-bc17-5bceb9c8dd8e,player_0600,2025-08-31 10:12:24,Gear Bundle,energy,7.91,USD,digital_wallet,pending,ios,AU
+91a349ee-0164-4888-8410-3c7afd6f3bb4,player_0841,2025-08-18 10:12:24,Starter Pack,characters,30.12,USD,digital_wallet,failed,android,BR
+0ab86183-71a5-4234-95dd-8b80ea9474d1,player_0032,2025-09-24 10:12:24,Crystal Pack Large,characters,15.07,USD,credit_card,refunded,android,IN
+45427168-e502-4a21-8dda-c34b60a9edcd,player_0180,2025-10-23 10:12:24,Hyperdrive Bundle,gear,14.05,USD,credit_card,refunded,ios,US
+f0e89b5a-3100-4220-8e46-3ca9b55be77e,player_0023,2025-07-11 10:12:24,Hyperdrive Bundle,bundles,32.33,USD,paypal,refunded,ios,BR
+161a6c22-fd48-404c-84ac-7b29b308c895,player_0191,2025-07-24 10:12:24,Crystal Pack Small,currency,14.02,USD,digital_wallet,refunded,android,IN
+9b654ae7-c091-4495-902b-6c1437009a48,player_0512,2025-10-15 10:12:24,Premium Pass,characters,6.79,USD,credit_card,pending,android,JP
+9f2c4665-991e-49fe-b315-dae74325f6fb,player_0077,2025-10-12 10:12:24,Crystal Pack Medium,gear,16.2,USD,paypal,completed,android,IN
+c892159c-b3e7-4eaf-b877-65eed065f91e,player_0978,2025-10-08 10:12:24,Character Shards,energy,2.68,USD,paypal,pending,android,CA
+b30d9e07-bbd3-438b-ba2b-6d9161558a8d,player_0956,2025-07-19 10:12:24,Crystal Pack Medium,currency,1.37,USD,credit_card,failed,ios,CA
+bbf649ea-1096-4b06-9a0a-689cf17b4fc3,player_0897,2025-08-08 10:12:24,Energy Refill,gear,1.4,USD,mobile_pay,failed,android,JP
+3723cdfe-91b1-4247-8166-2e5a7309c828,player_0109,2025-08-27 10:12:24,Energy Refill,characters,10.46,USD,mobile_pay,failed,android,DE
+e3cfefdb-938b-413f-bceb-0a39d6e5d9d7,player_0184,2025-10-13 10:12:24,Crystal Pack Medium,gear,30.63,USD,credit_card,failed,ios,BR
+7230483e-2a09-4a38-ac7f-676a6f484513,player_0411,2025-10-08 10:12:24,Starter Pack,gear,153.02,USD,mobile_pay,refunded,ios,BR
+2d1f3a84-49f3-4c95-9583-c2b1c8321537,player_0222,2025-08-03 10:12:24,Character Shards,gear,47.92,USD,credit_card,refunded,android,AU
+528d0323-0df3-4d54-944b-f75b278adf7a,player_0332,2025-08-20 10:12:24,Character Shards,energy,17.71,USD,digital_wallet,completed,ios,BR
+7d8b7439-c58b-488e-a197-8c535a29ce1f,player_0132,2025-08-09 10:12:24,Energy Refill,bundles,110.38,USD,digital_wallet,refunded,ios,BR
+fbd98fa7-0d77-4f25-9882-89257318a94d,player_0016,2025-07-12 10:12:24,Character Shards,energy,5.69,USD,mobile_pay,refunded,android,BR
+5f939fe5-e461-4fa0-a639-7f2e6d8368ae,player_0281,2025-08-08 10:12:24,Starter Pack,energy,5.75,USD,paypal,failed,android,US
+49d6ab33-35ad-41bd-bfb3-1a0ae267e3c2,player_0344,2025-07-04 10:12:24,Crystal Pack Small,currency,13.96,USD,credit_card,refunded,android,UK
+382152c0-8c4f-4fee-9cf2-e2d2ba74db9f,player_0166,2025-10-16 10:12:24,Premium Pass,energy,16.87,USD,mobile_pay,refunded,android,IN
+40b9266f-8e48-498b-8080-fe925e567b8f,player_0728,2025-09-09 10:12:24,Crystal Pack Large,energy,14.37,USD,paypal,refunded,android,JP
+714f8dae-3172-436c-ac7a-85552a181b32,player_0795,2025-07-22 10:12:24,Hyperdrive Bundle,gear,17.82,USD,paypal,refunded,ios,CA
+1a48a76d-38e5-49f5-a586-aa96bf4434ec,player_0569,2025-08-26 10:12:24,Crystal Pack Medium,bundles,43.7,USD,digital_wallet,pending,android,AU
+6a0f78c6-5895-4fa3-bb38-873371189966,player_0268,2025-09-07 10:12:24,Crystal Pack Small,currency,10.14,USD,credit_card,pending,android,DE
+45e576b0-cfa0-435b-b423-807429019d28,player_0525,2025-08-10 10:12:24,Starter Pack,currency,19.77,USD,credit_card,failed,ios,DE
+e89ec6a0-bd91-436f-9842-d8cfcada8540,player_0823,2025-07-15 10:12:24,Crystal Pack Large,currency,14.68,USD,paypal,refunded,ios,BR
+e69054f3-44a3-482b-b0cc-15db409c1c1e,player_0810,2025-10-12 10:12:24,Crystal Pack Large,currency,2.91,USD,mobile_pay,completed,android,JP
+b23f1ef1-d85f-45a5-99b2-73af43a31605,player_0766,2025-08-20 10:12:24,Gear Bundle,gear,1.78,USD,digital_wallet,pending,android,IN
+714d5c54-9a12-4005-821a-2ea9264a2285,player_0625,2025-07-19 10:12:24,Gear Bundle,bundles,6.78,USD,paypal,pending,ios,UK
+6a7a82bd-2c62-4b8b-94a3-be230ce78ca9,player_0094,2025-10-28 10:12:24,Energy Refill,bundles,73.46,USD,digital_wallet,pending,android,JP
+ab16d904-0e49-49f4-a80c-15c591b7c950,player_0933,2025-08-13 10:12:24,Character Shards,gear,16.05,USD,credit_card,pending,android,KR
+dc7f816b-592e-48f7-86c0-9d6b1413ace1,player_0784,2025-09-26 10:12:24,Crystal Pack Large,bundles,4.58,USD,paypal,failed,ios,KR
+66460065-07b7-452b-98d8-78719a441070,player_0350,2025-10-02 10:12:24,Crystal Pack Medium,gear,218.4,USD,credit_card,pending,android,DE
+e27e0a30-9fa7-4fd5-98ed-05e8cbe70d8b,player_0161,2025-10-26 10:12:24,Energy Refill,gear,13.22,USD,mobile_pay,completed,android,IN
+d6e9b925-9980-4e39-ad59-01ddf85f69b2,player_0186,2025-08-07 10:12:24,Crystal Pack Large,currency,17.31,USD,paypal,failed,ios,FR
+42a9d0a2-c8c7-4617-a605-45e8ead75f37,player_0323,2025-08-26 10:12:24,Energy Refill,currency,18.39,USD,digital_wallet,failed,ios,KR
+6e4711b0-36e7-4941-9117-2236ad40f32e,player_0231,2025-09-15 10:12:24,Character Shards,characters,1.27,USD,paypal,completed,ios,AU
+865166f8-8962-4b3c-a2ed-2d317dce3cae,player_0045,2025-07-15 10:12:24,Starter Pack,currency,31.29,USD,paypal,failed,android,CA
+a6a45f3b-60ad-4ab9-bfcd-006651e5593e,player_0489,2025-09-28 10:12:24,Character Shards,currency,5.18,USD,credit_card,completed,ios,KR
+d0b27308-c7a3-4a14-968e-521ff9482d2e,player_0056,2025-09-03 10:12:24,Hyperdrive Bundle,characters,10.19,USD,paypal,failed,ios,KR
+4a6116c1-8294-4e24-a775-79e2c47470de,player_0075,2025-08-04 10:12:24,Crystal Pack Large,bundles,14.1,USD,digital_wallet,pending,android,IN
+eb57238d-9418-4641-b9f2-5ee23dad5d7a,player_0899,2025-08-31 10:12:24,Energy Refill,gear,159.04,USD,digital_wallet,refunded,ios,BR
+9135df25-fa1a-490b-8d88-be9208eb758b,player_0918,2025-10-24 10:12:24,Starter Pack,gear,9.31,USD,digital_wallet,pending,android,US
+99d72a93-30b3-4dfc-99af-8f95d3647ca7,player_0896,2025-09-19 10:12:24,Hyperdrive Bundle,currency,7.08,USD,mobile_pay,refunded,android,CA
+0798c25d-9ba0-44f7-a88b-1b79e826d86f,player_0614,2025-07-04 10:12:24,Premium Pass,bundles,2.84,USD,digital_wallet,completed,android,FR
+fe557701-aa68-4ec5-9e9d-2293e413bea6,player_0356,2025-09-19 10:12:24,Character Shards,energy,17.93,USD,paypal,pending,android,KR
+3a90a1ab-9734-4e06-8cf5-540c6985d818,player_0385,2025-08-16 10:12:24,Starter Pack,currency,6.05,USD,paypal,completed,ios,AU
+75e57e41-1884-4f85-908e-10d1f3dc4bd6,player_0442,2025-09-18 10:12:24,Crystal Pack Medium,characters,2.11,USD,mobile_pay,pending,ios,CA
+9835eb77-4185-48c3-94fd-d0a169ac2c52,player_0420,2025-08-12 10:12:24,Crystal Pack Small,bundles,5.73,USD,paypal,refunded,ios,DE
+74efd4e4-7845-4d25-b880-ef0f02e5b12c,player_0706,2025-08-14 10:12:24,Hyperdrive Bundle,energy,17.24,USD,mobile_pay,pending,android,CA
+583ac1f6-9dc8-4ba7-a81b-5b7e04613373,player_0135,2025-07-10 10:12:24,Starter Pack,bundles,17.96,USD,paypal,pending,ios,BR
+beecf7ed-f9aa-4b88-b3dd-1ef3c976cdef,player_0538,2025-08-03 10:12:24,Crystal Pack Medium,characters,17.81,USD,credit_card,pending,android,IN
+3fd40bae-b962-43e7-bd10-d3ac9d3a8061,player_0239,2025-09-05 10:12:24,Crystal Pack Medium,characters,18.46,USD,digital_wallet,failed,ios,DE
+08b314fa-0e12-4d10-a0c9-46aa6beffed5,player_0810,2025-08-17 10:12:24,Energy Refill,gear,5.6,USD,digital_wallet,completed,android,JP
+d57f8454-2053-4eb0-8d4e-3209ba8a06c7,player_0574,2025-09-26 10:12:24,Crystal Pack Medium,currency,16.24,USD,digital_wallet,pending,ios,BR
+32cebf68-6e97-4b3f-ae6e-a2f4e032c887,player_0629,2025-10-10 10:12:24,Premium Pass,gear,1.63,USD,credit_card,completed,ios,JP
+9b2d1b83-d108-44b1-9a96-14047beba621,player_0122,2025-11-01 10:12:24,Gear Bundle,characters,14.62,USD,digital_wallet,failed,ios,US
+14e47cb0-f98c-4f8d-815e-028a7bbc2cc5,player_0282,2025-07-12 10:12:24,Gear Bundle,gear,5.09,USD,mobile_pay,pending,ios,AU
+9a1bdff6-6ca9-4c31-88fd-4e70e710c41a,player_0107,2025-07-19 10:12:24,Premium Pass,energy,4.04,USD,credit_card,failed,ios,US
+8d90c063-964a-4933-aff8-bc26ab6ea0fc,player_0137,2025-10-14 10:12:24,Crystal Pack Small,currency,12.03,USD,digital_wallet,pending,android,AU
+02b51fa2-b4e1-4c68-b275-ad753a4da08f,player_0349,2025-10-11 10:12:24,Starter Pack,bundles,18.48,USD,paypal,failed,android,CA
+fdca2b1a-e695-4eca-8afb-27d0f3080b71,player_0735,2025-10-12 10:12:24,Crystal Pack Small,energy,9.77,USD,digital_wallet,failed,ios,FR
+4f704f1f-e0f8-454c-a5cf-ebee88a8e4fa,player_0570,2025-08-08 10:12:24,Crystal Pack Small,energy,10.16,USD,paypal,pending,android,FR
+e3508abf-d68a-435b-86c9-3338c33c4774,player_0092,2025-08-24 10:12:24,Character Shards,currency,15.26,USD,credit_card,completed,ios,AU
+7078e463-2d4c-4522-ad9e-d92e15cc2c5c,player_0610,2025-08-18 10:12:24,Crystal Pack Small,bundles,6.95,USD,paypal,pending,android,IN
+732db1d2-25f8-475b-a4d5-3dfae171adec,player_0591,2025-09-19 10:12:24,Premium Pass,bundles,178.62,USD,digital_wallet,failed,ios,IN
+50c1b782-46d2-4f92-9157-3fc652feac3f,player_0035,2025-09-26 10:12:24,Hyperdrive Bundle,bundles,8.64,USD,credit_card,refunded,ios,CA
+4067abe9-c5e0-477f-a21d-4f9729e92c12,player_0609,2025-10-11 10:12:24,Gear Bundle,bundles,11.5,USD,credit_card,pending,ios,IN
+33c3a216-69b2-4ee6-a2b7-c21b1dc4f21b,player_0369,2025-09-25 10:12:24,Premium Pass,characters,6.2,USD,paypal,pending,ios,CA
+82e5ec60-a419-4c62-ae92-0a09f56fb53e,player_0589,2025-08-02 10:12:24,Premium Pass,gear,6.45,USD,digital_wallet,failed,ios,AU
+af3e3775-9ace-418d-a799-37dee1b58e81,player_0950,2025-07-04 10:12:24,Crystal Pack Medium,gear,42.0,USD,mobile_pay,refunded,android,UK
+65c97557-3ada-477c-bea7-4616b8c9ed8a,player_0856,2025-07-30 10:12:24,Crystal Pack Medium,bundles,14.03,USD,mobile_pay,refunded,ios,BR
+4f4428ac-2560-48ac-986d-8d3e2906f32f,player_0379,2025-10-06 10:12:24,Crystal Pack Medium,energy,6.95,USD,mobile_pay,completed,android,AU
+4eb3bde5-9735-41ee-9bb5-0ef8079a2021,player_0114,2025-07-24 10:12:24,Starter Pack,bundles,37.81,USD,digital_wallet,failed,ios,DE
+63b5dcdf-8837-430b-a583-e356d4aa9e38,player_0085,2025-08-03 10:12:24,Energy Refill,energy,16.52,USD,digital_wallet,failed,ios,DE
+af43ad03-178f-4ac1-8d28-6b3297c33f47,player_0341,2025-07-23 10:12:24,Crystal Pack Small,characters,23.53,USD,paypal,refunded,ios,JP
+e4d2b078-0735-4715-a22e-5e8a8b8ed754,player_0122,2025-07-29 10:12:24,Crystal Pack Large,energy,6.97,USD,digital_wallet,failed,ios,US
+db3a1955-bf8e-48ce-97a7-3f9a92843f71,player_0049,2025-08-27 10:12:24,Crystal Pack Large,currency,114.07,USD,credit_card,pending,android,US
+9f1e0ab0-e2d6-423f-bb49-2e2ba8f8d3d1,player_0346,2025-10-09 10:12:24,Crystal Pack Large,gear,292.69,USD,credit_card,failed,android,IN
+46aa8679-6fcf-4b5b-a112-174d3e946d92,player_0037,2025-09-19 10:12:24,Energy Refill,characters,7.7,USD,digital_wallet,pending,ios,FR
+74cca013-b568-43d1-b222-7bda1a6bd80f,player_0189,2025-10-03 10:12:24,Premium Pass,currency,10.2,USD,mobile_pay,completed,ios,KR
+508556e4-34f9-48b5-b4a9-e3bce54752e1,player_0541,2025-09-26 10:12:24,Premium Pass,gear,85.98,USD,paypal,completed,ios,FR
+074e11b2-e616-496c-b79a-9d041443dc72,player_0298,2025-10-09 10:12:24,Starter Pack,currency,32.85,USD,credit_card,pending,ios,IN
+3d3f46aa-25e9-4bd7-bb6b-ba992cd58839,player_0040,2025-07-23 10:12:24,Crystal Pack Large,energy,10.24,USD,paypal,completed,android,AU
+a51a0d7b-8c7a-4a78-93b3-48356bd0b647,player_0524,2025-10-30 10:12:24,Character Shards,gear,12.77,USD,paypal,failed,ios,JP
+ae39b85f-a488-4f75-8a0e-c3e77b1b449c,player_0622,2025-07-10 10:12:24,Character Shards,energy,49.05,USD,paypal,pending,android,AU
+3c18e030-92ba-4f52-8b15-985337b0c9d1,player_0568,2025-08-16 10:12:24,Crystal Pack Small,currency,13.12,USD,mobile_pay,refunded,ios,KR
+7ef336dc-7c60-4b1e-8b1e-1adbd3981115,player_0228,2025-07-10 10:12:24,Gear Bundle,currency,10.99,USD,digital_wallet,refunded,android,JP
+c443596f-1b68-401d-a726-0a2d2308a13c,player_0310,2025-08-07 10:12:24,Energy Refill,characters,34.09,USD,credit_card,refunded,android,AU
+e3ff5d77-6cc4-44d4-bfde-dd7c4d0756df,player_0215,2025-08-25 10:12:24,Gear Bundle,bundles,47.02,USD,digital_wallet,refunded,ios,DE
+ea4db21e-2729-4a4e-8577-bb4e1a4ac1a3,player_0534,2025-08-06 10:12:24,Crystal Pack Small,bundles,12.85,USD,paypal,failed,ios,IN
+832ec4d6-5f5d-4f73-b8ac-125ceb10db74,player_0775,2025-09-24 10:12:24,Premium Pass,bundles,22.97,USD,mobile_pay,pending,android,US
+cb642a61-569c-4d0e-afd8-4929de293eeb,player_0745,2025-09-07 10:12:24,Crystal Pack Small,energy,18.66,USD,mobile_pay,pending,ios,US
+4f10122d-7ae1-43c0-afe7-f63ad783ec94,player_0518,2025-08-27 10:12:24,Crystal Pack Large,gear,8.76,USD,credit_card,failed,android,BR
+78c6ee3c-6930-4c31-88a5-f60ebcc3bf73,player_0623,2025-09-20 10:12:24,Energy Refill,bundles,31.07,USD,paypal,refunded,ios,BR
+4c6b4e34-be24-4e46-8959-0d9847f07d26,player_0612,2025-07-23 10:12:24,Premium Pass,energy,4.49,USD,paypal,pending,ios,DE
+f29be0dd-361a-4312-aa97-ae4499eec2b3,player_0552,2025-07-21 10:12:24,Crystal Pack Large,gear,18.35,USD,digital_wallet,pending,ios,US
+5ac46ab2-daea-441f-b270-9468b7bb982e,player_0587,2025-08-31 10:12:24,Gear Bundle,bundles,16.03,USD,paypal,refunded,ios,US
+a6f6ca78-2ecd-44b3-89f1-84c60b388aae,player_0559,2025-10-25 10:12:24,Gear Bundle,bundles,14.82,USD,paypal,pending,ios,FR
+49485245-0781-4edd-b833-e48e82b684e8,player_0490,2025-07-25 10:12:24,Character Shards,gear,13.76,USD,mobile_pay,refunded,ios,JP
+795ea601-007d-4b59-ab66-ec5a6338d0cf,player_0822,2025-09-09 10:12:24,Crystal Pack Small,gear,8.55,USD,credit_card,failed,ios,BR
+492a72aa-30df-4b3c-ab81-87b6e66d364b,player_0118,2025-08-17 10:12:24,Premium Pass,currency,14.85,USD,credit_card,refunded,ios,AU
+a158c497-22b8-4215-a109-a9c5928fa4d1,player_0390,2025-07-13 10:12:24,Crystal Pack Large,energy,10.75,USD,digital_wallet,refunded,android,FR
+3effc2fa-edc0-4ba4-88f4-4bd42f5d1429,player_0710,2025-07-04 10:12:24,Crystal Pack Large,gear,19.62,USD,mobile_pay,failed,ios,FR
+75a0319a-d759-4d87-aacb-7b410a23df6f,player_0087,2025-07-11 10:12:24,Character Shards,energy,5.86,USD,mobile_pay,completed,android,AU
+22e0398d-54cd-4d13-84c1-8691906f3913,player_0734,2025-08-27 10:12:24,Energy Refill,bundles,19.18,USD,credit_card,pending,android,FR
+5138a730-27d0-41c9-9b4d-14922c775d5f,player_0047,2025-08-08 10:12:24,Crystal Pack Small,energy,18.49,USD,paypal,pending,android,IN
+4b019df0-dd5f-4182-bbf2-912549e29b99,player_0662,2025-07-13 10:12:24,Character Shards,energy,9.57,USD,credit_card,completed,android,UK
+46031a29-adc7-46a1-a082-b899fa8fa26d,player_0059,2025-09-12 10:12:24,Character Shards,gear,12.0,USD,digital_wallet,refunded,android,JP
+81120e70-cc8a-41a9-afcb-bef48e4a5a08,player_0186,2025-08-19 10:12:24,Crystal Pack Large,characters,8.07,USD,digital_wallet,refunded,ios,FR
+69bb5afc-c56c-4acb-a78d-492bd5e7f0b9,player_0580,2025-08-16 10:12:24,Character Shards,energy,19.42,USD,credit_card,completed,ios,UK
+25f733f9-d310-4be5-8bfc-9f60cc009b6a,player_0589,2025-07-25 10:12:24,Crystal Pack Large,characters,13.79,USD,credit_card,completed,ios,AU
+2e8541a0-4b00-4b23-b532-655560cfa2aa,player_0729,2025-09-13 10:12:24,Hyperdrive Bundle,gear,14.68,USD,paypal,completed,ios,IN
+504a07bd-520e-4434-8aa8-01e7b1fc7b49,player_0014,2025-11-01 10:12:24,Character Shards,energy,12.91,USD,credit_card,failed,ios,KR
+a4142571-893d-4550-afde-9e837b77e123,player_0059,2025-10-13 10:12:24,Character Shards,characters,5.1,USD,digital_wallet,pending,android,JP
+2c024fa0-959e-4c32-92ef-fff779387794,player_0281,2025-08-07 10:12:24,Crystal Pack Small,energy,2.26,USD,paypal,completed,android,US
+15327277-c435-46f1-9338-7a4ae6b807f8,player_0766,2025-10-11 10:12:24,Crystal Pack Large,characters,10.21,USD,credit_card,refunded,android,IN
+0661d9a1-6f30-4ff2-828a-be785dfd0057,player_0412,2025-09-01 10:12:24,Crystal Pack Medium,characters,96.82,USD,mobile_pay,completed,ios,UK
+f41c4a0f-0d66-41ff-b255-16abbd98c656,player_0514,2025-07-10 10:12:24,Character Shards,currency,43.17,USD,digital_wallet,refunded,ios,DE
+7f66fc83-2d0b-4bc9-8141-d43395a4cdd1,player_0825,2025-08-12 10:12:24,Crystal Pack Small,currency,7.08,USD,credit_card,completed,android,UK
+22934afe-91f6-490f-b7ba-4e49936538bb,player_0410,2025-08-10 10:12:24,Crystal Pack Medium,bundles,12.05,USD,digital_wallet,failed,android,IN
+6bc18d37-1807-4bf6-8ef7-dee2f3863d60,player_0096,2025-07-17 10:12:24,Character Shards,characters,48.18,USD,mobile_pay,failed,ios,JP
+8e35afce-0909-4304-927c-3771c9cc7403,player_0666,2025-08-26 10:12:24,Character Shards,energy,109.61,USD,digital_wallet,completed,ios,UK
+b5d69e52-561c-47d5-8e88-cefe269332f2,player_0952,2025-09-15 10:12:24,Energy Refill,gear,46.09,USD,digital_wallet,failed,ios,DE
+12b51002-c037-4188-b8e5-69599a3d60ce,player_0939,2025-09-07 10:12:24,Crystal Pack Medium,bundles,204.7,USD,credit_card,refunded,android,BR
+09af7ddc-56f4-4474-997b-fc626ee3728d,player_0777,2025-10-31 10:12:24,Crystal Pack Large,energy,3.53,USD,paypal,completed,android,BR
+a3af437b-fa25-4beb-9ae0-7b22497a587a,player_0928,2025-07-16 10:12:24,Crystal Pack Small,energy,5.83,USD,paypal,completed,android,JP
+284eb553-536e-4887-8e10-8a41f643dadc,player_0247,2025-07-14 10:12:24,Character Shards,gear,17.52,USD,credit_card,pending,ios,FR
+b7b0c53f-0668-455b-af73-6b4c3344ca1b,player_0149,2025-07-17 10:12:24,Crystal Pack Medium,bundles,14.22,USD,credit_card,completed,ios,DE
+05e3d630-8a48-4425-abc2-2434f7c92354,player_0232,2025-09-15 10:12:24,Character Shards,characters,17.36,USD,mobile_pay,completed,android,IN
+9ea9c389-4d59-4c53-b1b8-b72bbbd1d280,player_0432,2025-08-24 10:12:24,Energy Refill,characters,5.43,USD,digital_wallet,refunded,ios,DE
+1920b72b-e509-47ee-9566-8c67bdea47f0,player_0473,2025-10-12 10:12:24,Crystal Pack Small,characters,7.85,USD,credit_card,pending,android,US
+9d51cdb3-be0d-4fc2-bb4a-93a2cdabd5a0,player_0039,2025-10-18 10:12:24,Starter Pack,energy,9.44,USD,mobile_pay,failed,ios,KR
+8dcf5117-6adb-41c1-9c63-17e907a694c2,player_0653,2025-10-11 10:12:24,Character Shards,characters,28.81,USD,digital_wallet,refunded,android,US
+50d0702f-b616-4895-a589-2170ce1a52df,player_0426,2025-08-07 10:12:24,Crystal Pack Medium,bundles,1.5,USD,digital_wallet,completed,android,AU
+5be9f2f9-8733-4ecb-8fc2-0ad320d05742,player_0298,2025-10-18 10:12:24,Starter Pack,energy,41.14,USD,digital_wallet,pending,ios,IN
+f3ba0f95-18dd-48f0-888f-8f722f16b206,player_0982,2025-08-17 10:12:24,Energy Refill,currency,1.12,USD,mobile_pay,pending,ios,DE
+6dbd0af9-7580-44e7-89b2-4de173092d16,player_0153,2025-08-29 10:12:24,Gear Bundle,characters,8.54,USD,digital_wallet,refunded,android,UK
+8ac9e107-6334-4692-8932-696a8898d420,player_0988,2025-10-03 10:12:24,Crystal Pack Large,characters,15.81,USD,credit_card,failed,ios,CA
+681383a8-f650-45d6-95a8-a2e623ab8ecd,player_0895,2025-10-22 10:12:24,Energy Refill,characters,26.75,USD,credit_card,failed,android,UK
+3a4fa2a1-57e7-41ff-b987-6536095e9544,player_0278,2025-08-07 10:12:24,Character Shards,currency,52.98,USD,mobile_pay,completed,android,AU
+7c14cfbf-7c71-4cac-9276-ba2893db5b5f,player_0998,2025-10-25 10:12:24,Crystal Pack Small,bundles,34.91,USD,mobile_pay,failed,ios,JP
+6dd07763-dee3-4ad0-9e1c-e7abc625a401,player_0313,2025-11-01 10:12:24,Hyperdrive Bundle,gear,11.02,USD,paypal,failed,ios,JP
+48ed9fc9-ac36-48ea-82b5-bb3801f4ae4f,player_0750,2025-09-10 10:12:24,Starter Pack,currency,18.65,USD,paypal,refunded,android,BR
+500274e3-b7c4-4026-b457-51c329b6cdb7,player_0428,2025-08-29 10:12:24,Starter Pack,energy,112.63,USD,digital_wallet,completed,android,DE
+9f8f2c88-b4e7-46b4-8733-042a123ae841,player_0780,2025-07-31 10:12:24,Character Shards,currency,5.31,USD,digital_wallet,refunded,ios,IN
+47179e7c-e8ae-42be-b3b2-b1afdf14c0ee,player_0622,2025-09-28 10:12:24,Crystal Pack Small,gear,34.69,USD,paypal,failed,android,AU
+7f697549-d966-4b50-a660-ceda0b5d8fc9,player_0966,2025-09-21 10:12:24,Crystal Pack Small,currency,37.3,USD,digital_wallet,pending,ios,US
+3f656dff-638a-45ef-ae44-bc5550f8a53e,player_0534,2025-09-06 10:12:24,Starter Pack,characters,4.16,USD,paypal,pending,ios,IN
+e8f0ecfa-aadd-4ace-a21d-db554abf8ad0,player_0903,2025-08-21 10:12:24,Hyperdrive Bundle,characters,1.48,USD,paypal,completed,ios,DE
+80d6dcd2-6f62-4d22-addd-56ed8d9dbc77,player_0125,2025-09-16 10:12:24,Crystal Pack Large,currency,3.04,USD,paypal,failed,ios,KR
+d0e78604-9e86-4423-9a40-c52b42a506c5,player_0548,2025-10-29 10:12:24,Character Shards,bundles,9.11,USD,credit_card,completed,ios,UK
+7ed1a205-ab70-49be-a249-ef32f8c83d51,player_0640,2025-07-11 10:12:24,Crystal Pack Small,gear,32.81,USD,credit_card,pending,ios,DE
+d0861841-c355-4574-9a73-538db09a5da2,player_0398,2025-09-24 10:12:24,Energy Refill,currency,60.36,USD,credit_card,refunded,ios,US
+a4086252-5a7e-4074-aa84-f690942db5c3,player_0611,2025-08-12 10:12:24,Gear Bundle,bundles,14.55,USD,credit_card,completed,ios,CA
+2dce1ea8-12e0-4e92-a79c-cad335605970,player_0828,2025-09-04 10:12:24,Premium Pass,gear,1.92,USD,mobile_pay,refunded,ios,KR
+cf3406c0-11bc-49e4-8604-2acd5837214f,player_0900,2025-08-21 10:12:24,Hyperdrive Bundle,energy,158.91,USD,digital_wallet,pending,ios,DE
+9cdf9b43-995d-43b1-ae3a-bd9e3f7c4efd,player_0314,2025-08-13 10:12:24,Crystal Pack Large,gear,34.58,USD,credit_card,refunded,ios,JP
+89ffa1e9-c351-4068-a294-2e42e8a23bbc,player_0132,2025-07-30 10:12:24,Crystal Pack Small,gear,215.06,USD,mobile_pay,completed,ios,BR
+b2b6346c-5d18-48ac-a0bb-9fd7aedf508b,player_0876,2025-07-04 10:12:24,Hyperdrive Bundle,currency,111.61,USD,credit_card,completed,android,IN
+303edc09-355b-49b0-8b44-f934b387ab39,player_0801,2025-10-20 10:12:24,Gear Bundle,gear,19.94,USD,digital_wallet,refunded,ios,IN
+c6cc88ae-7de7-47c8-b95e-8dd9af42e6f7,player_0134,2025-07-23 10:12:24,Starter Pack,bundles,36.28,USD,digital_wallet,completed,android,AU
+19b619e3-dc81-4c26-bcd1-ae613123f200,player_0490,2025-08-19 10:12:24,Crystal Pack Large,gear,17.35,USD,digital_wallet,completed,ios,JP
+679715d5-32b1-4534-ba64-a1cc37fe4a2c,player_0461,2025-10-20 10:12:24,Crystal Pack Large,currency,10.19,USD,digital_wallet,refunded,ios,DE
+be01c1e3-f363-480c-b162-ce903d8e3b56,player_0977,2025-09-23 10:12:24,Starter Pack,bundles,132.78,USD,credit_card,pending,ios,FR
+8dd65069-e69f-43c9-8355-ebcb588acd3e,player_0576,2025-07-11 10:12:24,Character Shards,energy,11.87,USD,credit_card,failed,android,CA
+a004672f-8572-424b-b1f5-0481dd69fdba,player_0213,2025-08-03 10:12:24,Character Shards,gear,19.72,USD,digital_wallet,pending,android,JP
+23c1c5df-12f3-4a98-833e-611580d61e6c,player_0774,2025-09-06 10:12:24,Crystal Pack Large,gear,165.11,USD,paypal,pending,ios,AU
+4c419b63-bde6-431a-84d4-b0e5fbbf091a,player_0357,2025-10-25 10:12:24,Energy Refill,energy,12.72,USD,paypal,failed,android,BR
+b1d291be-f271-413b-9e57-00fca449ce2e,player_0823,2025-08-26 10:12:24,Starter Pack,characters,11.71,USD,mobile_pay,refunded,ios,BR
+a849bcb9-ef15-4597-9ab3-7cd154ccbd52,player_0382,2025-10-10 10:12:24,Crystal Pack Large,energy,294.62,USD,paypal,pending,ios,BR
+ee4b5207-e716-42b5-a749-d59f7768ac12,player_0036,2025-08-13 10:12:24,Starter Pack,currency,37.61,USD,paypal,failed,android,JP
+e556df77-1e0c-4e48-b6d6-eb07171c9977,player_0664,2025-10-29 10:12:24,Character Shards,energy,17.99,USD,digital_wallet,refunded,ios,UK
+d06cb700-6889-4cdf-b89c-a91720ce623c,player_0873,2025-10-07 10:12:24,Hyperdrive Bundle,gear,14.56,USD,digital_wallet,failed,ios,AU
+b6e4a06b-b757-4f89-a885-e0900ddc902d,player_0361,2025-08-25 10:12:24,Crystal Pack Large,bundles,121.5,USD,paypal,pending,ios,BR
+5bb8fe73-1903-4199-9d19-2b63945d21eb,player_0787,2025-09-22 10:12:24,Premium Pass,gear,14.73,USD,paypal,pending,ios,KR
+d1448a55-8b7c-47f8-ba5b-376dfcc88138,player_0284,2025-08-16 10:12:24,Hyperdrive Bundle,bundles,8.48,USD,digital_wallet,refunded,ios,KR
+3a5f37d4-7795-4599-8977-9213535fc802,player_0979,2025-10-11 10:12:24,Crystal Pack Large,bundles,15.99,USD,paypal,failed,ios,FR
+1c4c06d7-004d-484b-92c0-576008a4d775,player_0590,2025-07-14 10:12:24,Character Shards,gear,5.28,USD,credit_card,refunded,ios,KR
+c9d1d913-6e06-4328-9bd8-ed39c2383337,player_0400,2025-08-13 10:12:24,Crystal Pack Medium,bundles,12.11,USD,digital_wallet,pending,ios,US
+152ff86c-c197-45bb-8d0b-548d803d5422,player_0929,2025-10-01 10:12:24,Crystal Pack Small,currency,117.54,USD,mobile_pay,pending,android,DE
+b99b25a1-0a4b-456b-a332-753995a7fe17,player_0374,2025-10-21 10:12:24,Character Shards,gear,8.11,USD,mobile_pay,pending,ios,IN
+daa4825b-8483-4e4c-a9d3-e460048b2797,player_0021,2025-07-13 10:12:24,Premium Pass,characters,8.89,USD,digital_wallet,pending,ios,US
+3042aebc-2086-470f-9a1f-2e41b8b795cd,player_0148,2025-07-11 10:12:24,Energy Refill,bundles,5.12,USD,credit_card,failed,ios,US
+d5e915ae-86f1-49e4-8625-81828c406750,player_0910,2025-09-27 10:12:24,Energy Refill,currency,6.05,USD,mobile_pay,pending,ios,DE
+a039dde3-4433-4d78-accc-0ecd440d5dc0,player_0382,2025-09-28 10:12:24,Crystal Pack Large,currency,267.82,USD,credit_card,completed,ios,BR
+500d2127-1ac6-4e9b-99ef-b53aba92c4a9,player_0709,2025-09-03 10:12:24,Gear Bundle,gear,20.28,USD,mobile_pay,refunded,ios,IN
+c12e47d9-cdf3-47e7-ada5-0b8256a9ff16,player_0428,2025-08-11 10:12:24,Crystal Pack Medium,energy,122.2,USD,mobile_pay,pending,android,DE
+0f025d9d-9842-498d-b409-e1f1b72b26f9,player_0769,2025-07-15 10:12:24,Gear Bundle,bundles,33.15,USD,paypal,completed,android,JP
+68a307f8-bcf9-402d-8526-5828dc61032c,player_0956,2025-07-09 10:12:24,Crystal Pack Large,energy,7.97,USD,credit_card,completed,ios,CA
+c9dcb0ca-6584-44c6-a237-84e73be2de21,player_0442,2025-07-08 10:12:24,Starter Pack,energy,8.74,USD,paypal,failed,ios,CA
+f5717f5b-6c97-49d0-814e-a33fd77ecd5e,player_0074,2025-08-09 10:12:24,Crystal Pack Large,energy,22.43,USD,digital_wallet,pending,ios,IN
+ce34d324-172c-4a1a-952e-b0d7efbdc2b3,player_0183,2025-09-30 10:12:24,Character Shards,gear,24.84,USD,paypal,refunded,ios,US
+dcc8ed13-720c-4149-96f9-91ebf440467c,player_0941,2025-09-15 10:12:24,Crystal Pack Medium,gear,15.53,USD,paypal,completed,ios,AU
+a3885563-371e-4843-a274-64fe7df3fbc6,player_0446,2025-10-25 10:12:24,Crystal Pack Medium,gear,9.82,USD,mobile_pay,completed,android,IN
+9e95ae5a-1426-4cb4-9b4a-ae9e4028d36e,player_0716,2025-07-22 10:12:24,Gear Bundle,bundles,28.81,USD,paypal,pending,ios,DE
+ca29baf8-aebd-4e31-996a-1668f7c9ed0b,player_0706,2025-10-26 10:12:24,Starter Pack,energy,7.45,USD,paypal,failed,android,CA
+4109ebe2-9778-48dd-a851-8203fd68f3b4,player_0941,2025-09-21 10:12:24,Crystal Pack Medium,currency,15.06,USD,credit_card,pending,ios,AU
+8aec6435-38cb-45ca-b1ed-d55b88d649a3,player_0556,2025-09-30 10:12:24,Gear Bundle,characters,23.2,USD,digital_wallet,refunded,android,BR
+7a609d55-1b44-48b7-86a6-3d4d81b5396a,player_0141,2025-07-04 10:12:24,Character Shards,currency,4.18,USD,credit_card,failed,android,US
+8d063824-b64c-445d-8556-84064dfaecad,player_0138,2025-08-13 10:12:24,Premium Pass,bundles,8.89,USD,digital_wallet,completed,ios,BR
+cbb62026-fa1c-47b4-bb04-f182ead120e6,player_0507,2025-08-01 10:12:24,Premium Pass,characters,1.49,USD,digital_wallet,failed,android,US
+cc508c87-eee7-443d-945a-c1ef859a421b,player_0621,2025-08-16 10:12:24,Crystal Pack Large,currency,2.94,USD,digital_wallet,completed,ios,JP
+892db5d4-499c-495c-b8c5-fa7926e94f2f,player_0566,2025-09-13 10:12:24,Premium Pass,currency,7.42,USD,mobile_pay,refunded,ios,BR
+2351bfcf-a798-4cea-81d4-5645bd8b8cd0,player_0006,2025-10-22 10:12:24,Crystal Pack Small,currency,7.64,USD,credit_card,pending,ios,US
+3b5a4017-f2f0-46c3-b0cd-53be905c16b5,player_0815,2025-09-22 10:12:24,Character Shards,currency,5.1,USD,digital_wallet,completed,android,DE
+4d6ef8f6-92e9-45c6-b610-ee386dbd9e20,player_0721,2025-11-01 10:12:24,Crystal Pack Small,characters,18.28,USD,digital_wallet,pending,ios,UK
+b9f45933-14cf-417b-af76-41efb56fa6cd,player_0408,2025-08-22 10:12:24,Hyperdrive Bundle,bundles,18.64,USD,paypal,pending,ios,FR
+c9ed617f-3f8b-49cf-8cf1-50a3ef82bbfc,player_0658,2025-10-18 10:12:24,Crystal Pack Small,energy,18.58,USD,digital_wallet,completed,ios,BR
+b5360926-cbc3-4afb-9170-58a3239eef52,player_0166,2025-09-29 10:12:24,Hyperdrive Bundle,gear,38.64,USD,paypal,failed,android,IN
+46340288-e800-4c35-94cc-2e80b140b321,player_0508,2025-10-28 10:12:24,Premium Pass,bundles,17.16,USD,digital_wallet,failed,ios,US
+8b9460c0-c4d1-4dde-a2c3-0698bca863ad,player_0278,2025-10-12 10:12:24,Crystal Pack Small,currency,58.11,USD,mobile_pay,completed,android,AU
+360876d4-605e-4fdb-8bf7-6a61725e7d7e,player_0491,2025-09-27 10:12:24,Crystal Pack Large,gear,16.92,USD,digital_wallet,completed,android,DE
+691153d3-7f2a-4120-b9f3-72188206da08,player_0299,2025-08-11 10:12:24,Starter Pack,characters,10.03,USD,paypal,refunded,ios,DE
+eda2ac95-441c-42a8-b423-79108052363e,player_0339,2025-10-24 10:12:24,Energy Refill,energy,37.33,USD,mobile_pay,pending,ios,DE
+bd845d07-93d6-4263-a94d-117cac7fdd52,player_0917,2025-08-27 10:12:24,Energy Refill,energy,36.71,USD,mobile_pay,refunded,android,BR
+c0a235ec-3fba-4ef2-8624-1db3cd683500,player_0601,2025-09-21 10:12:24,Premium Pass,characters,13.53,USD,digital_wallet,pending,android,AU
+179e07cf-ce6b-4317-9cec-95e19cbf2e69,player_0527,2025-08-18 10:12:24,Energy Refill,gear,15.33,USD,digital_wallet,refunded,android,UK
+ee08e04d-8e17-480a-b52c-97a7921c7e9b,player_0494,2025-08-20 10:12:24,Hyperdrive Bundle,characters,9.91,USD,digital_wallet,refunded,android,FR
+9b99a90c-40c7-47c5-9ad1-e186416c93cb,player_0763,2025-09-07 10:12:24,Gear Bundle,currency,1.29,USD,credit_card,failed,android,BR
+bf7df004-e34e-451b-a3a0-65444c3f0e5a,player_0712,2025-08-18 10:12:24,Gear Bundle,energy,5.14,USD,credit_card,failed,android,BR
+2c71ab10-0fa7-43fd-a999-9fec06cb21d8,player_0792,2025-11-01 10:12:24,Character Shards,energy,39.73,USD,credit_card,pending,ios,CA
+a79a9e6b-eff7-4ced-a5de-3dcdaf6dfc9e,player_0892,2025-09-19 10:12:24,Premium Pass,currency,19.49,USD,paypal,failed,android,IN
+39ecc4d9-0373-448c-bc3a-94f4f35f0f35,player_0710,2025-07-26 10:12:24,Premium Pass,energy,11.47,USD,digital_wallet,refunded,ios,FR
+71f44dae-379b-4cb0-a9d2-a80784745d8f,player_0573,2025-08-02 10:12:24,Premium Pass,characters,5.68,USD,mobile_pay,failed,ios,BR
+6b9b4cf1-01f2-4b9a-878e-6ac21a888d1a,player_0948,2025-08-07 10:12:24,Premium Pass,currency,9.89,USD,digital_wallet,failed,ios,KR
+ca302ab0-0d8a-4d00-8603-143ae9f9eb7d,player_0341,2025-07-16 10:12:24,Crystal Pack Large,currency,8.68,USD,credit_card,completed,ios,JP
+11527b5f-dcd4-49cc-b171-394b9c9b3529,player_0662,2025-08-29 10:12:24,Premium Pass,characters,18.09,USD,paypal,refunded,android,UK
+1000fdd5-7f6d-4a47-97cd-5328fa52977e,player_0578,2025-09-23 10:12:24,Gear Bundle,currency,16.93,USD,credit_card,pending,android,FR
+c57721ce-26ee-4a11-82b0-fba4d6c7f58c,player_0105,2025-07-15 10:12:24,Gear Bundle,currency,17.48,USD,mobile_pay,pending,ios,UK
+20eb2334-70c1-4a79-9768-89c380b5e92f,player_0992,2025-09-21 10:12:24,Character Shards,gear,8.69,USD,paypal,failed,android,KR
+07de3f4c-35c1-41db-8b09-777dfe229717,player_0580,2025-08-11 10:12:24,Starter Pack,energy,5.63,USD,mobile_pay,completed,ios,UK
+12ae19b8-d4f2-48a4-bbdd-d2aa89554252,player_0703,2025-07-19 10:12:24,Premium Pass,gear,25.13,USD,mobile_pay,refunded,android,DE
+1b2822c4-4883-4b24-bffb-d5978f1d4c10,player_0755,2025-07-10 10:12:24,Gear Bundle,energy,5.24,USD,mobile_pay,pending,ios,KR
+b9cc6833-2362-4542-a0d4-0e0a6e027cbe,player_0611,2025-09-20 10:12:24,Crystal Pack Large,gear,2.44,USD,mobile_pay,refunded,ios,CA
+a99d4254-7b95-4962-98af-e4ee63bba622,player_0613,2025-09-04 10:12:24,Crystal Pack Small,currency,40.69,USD,digital_wallet,failed,android,DE
+de7782ba-50bd-4837-96f8-2c430fbd5a19,player_0905,2025-07-26 10:12:24,Crystal Pack Large,bundles,4.22,USD,paypal,failed,ios,CA
+e667b587-f2f6-489f-9e97-88cc46fc8a33,player_0468,2025-08-21 10:12:24,Premium Pass,gear,35.85,USD,paypal,pending,android,US
+eb06e253-ed81-4576-8762-652cbd67593a,player_0102,2025-07-24 10:12:24,Starter Pack,gear,12.86,USD,credit_card,pending,ios,JP
+2b6b86a3-47c6-40a1-828b-8beee15a7f56,player_0108,2025-10-25 10:12:24,Hyperdrive Bundle,gear,41.9,USD,mobile_pay,completed,ios,AU
+1024fcbe-7419-4995-b185-b7070326e1e0,player_0254,2025-09-06 10:12:24,Hyperdrive Bundle,gear,5.04,USD,credit_card,failed,ios,DE
+9ec4c674-cf8f-4c3a-9795-96239445d645,player_0803,2025-08-20 10:12:24,Crystal Pack Large,gear,14.57,USD,paypal,refunded,ios,IN
+6956d8fb-9907-4863-bc9d-c7582cd74d12,player_0534,2025-08-21 10:12:24,Starter Pack,gear,15.05,USD,paypal,failed,ios,IN
+9f3e96f6-bffc-4ff8-bb81-9519dca70561,player_0620,2025-10-24 10:12:24,Character Shards,energy,14.43,USD,digital_wallet,refunded,android,FR
+44e61632-b014-4463-9087-bd9a5e612315,player_0076,2025-08-03 10:12:24,Crystal Pack Large,energy,16.14,USD,mobile_pay,refunded,ios,US
+00ff1f51-4adf-4478-a9d8-a5ed9e32ac03,player_0856,2025-10-23 10:12:24,Premium Pass,characters,19.05,USD,credit_card,failed,ios,BR
+ec6f2b97-e464-44b0-9172-850a992735fd,player_0774,2025-10-25 10:12:24,Crystal Pack Large,currency,177.78,USD,digital_wallet,pending,ios,AU
+81629d49-5e00-4326-afb2-ad7ad4a431ec,player_0833,2025-10-06 10:12:24,Premium Pass,currency,16.86,USD,credit_card,refunded,ios,US
+6e8e9386-63fd-4712-947a-e66a8bbf6242,player_0142,2025-08-26 10:12:24,Starter Pack,characters,10.42,USD,paypal,refunded,android,FR
+6f7dd53d-20ac-47b6-9793-6c63eb4fbde6,player_0451,2025-07-09 10:12:24,Character Shards,characters,20.72,USD,credit_card,failed,ios,KR
+88c8a0ea-6a59-4712-9694-2917e3230acf,player_0389,2025-10-19 10:12:24,Crystal Pack Medium,bundles,37.04,USD,credit_card,refunded,android,KR
+e0b47af1-d377-4df6-9a73-a067e9f9730a,player_0956,2025-10-26 10:12:24,Character Shards,characters,19.86,USD,credit_card,failed,ios,CA
+ee12cbd6-2e51-45e0-8172-71787babf606,player_0710,2025-09-25 10:12:24,Hyperdrive Bundle,gear,6.34,USD,paypal,refunded,ios,FR
+5156435a-3789-46c2-b822-3e8f0d6b0b5e,player_0014,2025-08-10 10:12:24,Premium Pass,currency,16.28,USD,paypal,completed,ios,KR
+bb3101b5-946d-4b68-9ea4-b5592c0792d3,player_0058,2025-08-13 10:12:24,Character Shards,currency,201.22,USD,paypal,refunded,ios,US
+bf70d42c-8b00-4632-9d3f-3f70cb034601,player_0028,2025-07-08 10:12:24,Crystal Pack Small,characters,11.51,USD,credit_card,completed,android,CA
+027dc98e-d559-48c8-b06f-05fc54b3be3f,player_0356,2025-08-19 10:12:24,Premium Pass,bundles,5.56,USD,digital_wallet,refunded,android,KR
+7f4af1f6-ce7b-4b10-9ad6-bc3dc401ca65,player_0328,2025-07-04 10:12:24,Starter Pack,bundles,164.42,USD,paypal,refunded,android,CA
+695f63f2-869a-4a83-bf1e-f46fa164812a,player_0519,2025-09-19 10:12:24,Starter Pack,bundles,15.54,USD,mobile_pay,failed,ios,JP
+c41b30be-c0ea-4d8d-bb36-7b0388c2410e,player_0338,2025-09-18 10:12:24,Crystal Pack Small,characters,18.45,USD,mobile_pay,completed,ios,JP
+8478c7e0-4b02-4bb8-92c1-1d7920c29e96,player_0260,2025-08-15 10:12:24,Gear Bundle,characters,19.89,USD,mobile_pay,completed,android,KR
+abccaf6e-3314-4697-ba4b-c4f0b12e082c,player_0100,2025-10-19 10:12:24,Crystal Pack Large,bundles,18.13,USD,paypal,failed,android,IN
+ffd2b018-a2d1-4e81-b210-e62ad1adce88,player_0636,2025-09-15 10:12:24,Crystal Pack Small,energy,4.9,USD,paypal,pending,ios,IN
+0a758538-b751-4727-96c0-2a227a7735df,player_0680,2025-08-05 10:12:24,Crystal Pack Medium,characters,16.23,USD,mobile_pay,completed,android,FR
+95301fb2-63b7-4bfa-a2f8-91440a4327e7,player_0641,2025-09-23 10:12:24,Hyperdrive Bundle,gear,19.5,USD,mobile_pay,completed,android,IN
+e591c2fc-c483-4484-8ab3-827095730374,player_0966,2025-09-03 10:12:24,Premium Pass,gear,6.03,USD,credit_card,refunded,ios,US
+f7ae3cd5-e97c-42c8-ac53-9978eed517e0,player_0281,2025-10-15 10:12:24,Premium Pass,currency,16.2,USD,digital_wallet,refunded,android,US
+9de253f0-3897-420c-a9f9-c6d9f1c3d0de,player_0308,2025-09-26 10:12:24,Energy Refill,currency,14.63,USD,mobile_pay,failed,ios,US
+933e06e0-8182-421a-a874-7551cc26162e,player_0932,2025-07-20 10:12:24,Premium Pass,characters,10.63,USD,credit_card,refunded,android,UK
+c13e51c0-6682-4ead-a461-478aabe86379,player_0047,2025-09-26 10:12:24,Character Shards,gear,30.31,USD,paypal,refunded,android,IN
+11efaaab-afbb-43e5-9d38-900a0022a258,player_0688,2025-08-04 10:12:24,Starter Pack,characters,44.54,USD,credit_card,pending,android,DE
+dff36b6d-56c4-4827-af8f-beec2a157cba,player_0152,2025-08-19 10:12:24,Premium Pass,energy,120.47,USD,mobile_pay,refunded,ios,AU
+d118d4c5-0f68-476a-87b8-ca97fc75584d,player_0335,2025-07-07 10:12:24,Crystal Pack Large,currency,4.2,USD,paypal,pending,android,KR
+9ab0a1be-73bd-4f62-a127-8088285ad660,player_0335,2025-07-30 10:12:24,Energy Refill,energy,16.15,USD,paypal,refunded,android,KR
+d6256455-0bac-41e0-b007-f1eefe413a40,player_0227,2025-09-03 10:12:24,Crystal Pack Large,gear,15.6,USD,paypal,failed,android,UK
+624f7eb0-cff1-4f81-a712-f4743a7c3635,player_0154,2025-08-26 10:12:24,Hyperdrive Bundle,energy,19.74,USD,credit_card,failed,ios,KR
+97fccbc6-5543-495f-991e-b0a22d9f3f45,player_0732,2025-07-18 10:12:24,Crystal Pack Medium,bundles,32.15,USD,mobile_pay,completed,ios,AU
+1973984e-7c82-483a-b530-abec1e0444d6,player_0483,2025-07-29 10:12:24,Gear Bundle,gear,14.43,USD,digital_wallet,failed,ios,CA
+8d5d0910-8e4f-48d1-a69b-2c85ea40fd33,player_0403,2025-09-24 10:12:24,Energy Refill,characters,9.21,USD,paypal,completed,android,CA
+5c3abb9f-2d98-4a4a-92f5-04b121d27c1f,player_0814,2025-10-29 10:12:24,Energy Refill,characters,16.6,USD,mobile_pay,pending,ios,BR
+a60761dc-4bc5-449f-89c2-9479074336a7,player_0307,2025-07-12 10:12:24,Hyperdrive Bundle,bundles,17.7,USD,digital_wallet,failed,ios,UK
+a0680d84-f98c-47ee-becd-a6a467c36c9c,player_0807,2025-09-20 10:12:24,Crystal Pack Small,currency,5.85,USD,digital_wallet,refunded,android,US
+74db09eb-7066-4fde-9c24-e234220ce0ae,player_0764,2025-08-17 10:12:24,Crystal Pack Small,currency,14.06,USD,mobile_pay,refunded,ios,DE
+2e2ee032-271e-4504-a7f1-1798172c2082,player_0724,2025-09-05 10:12:24,Character Shards,bundles,18.84,USD,digital_wallet,pending,ios,KR
+d641a626-e780-47f3-b07e-aa6f78482268,player_0028,2025-07-27 10:12:24,Energy Refill,currency,13.19,USD,paypal,completed,android,CA
+d00af5cc-18b5-441f-8ce9-dea389d54bed,player_0657,2025-10-25 10:12:24,Gear Bundle,currency,249.36,USD,digital_wallet,refunded,ios,KR
+8606ac4e-c791-4f2b-a0b1-bbfbcdb7f27c,player_0080,2025-07-09 10:12:24,Starter Pack,characters,37.0,USD,mobile_pay,refunded,ios,DE
+54ac0bb9-3eaa-4b2b-8a39-8d9a442f81f2,player_0450,2025-10-27 10:12:24,Crystal Pack Medium,bundles,13.78,USD,credit_card,pending,android,US
+9fa45763-c9aa-4825-aba4-baa83d0197ff,player_0193,2025-08-09 10:12:24,Starter Pack,energy,6.66,USD,paypal,completed,android,CA
+2890c0ff-fa4b-49fe-8b94-0bf3be917f0b,player_0677,2025-09-13 10:12:24,Energy Refill,bundles,17.82,USD,mobile_pay,pending,ios,JP
+9c24ca26-0fb8-4704-a6de-d68c8327a01a,player_0025,2025-08-31 10:12:24,Crystal Pack Large,energy,20.54,USD,paypal,pending,android,DE
+8fa4e4e5-9fe7-4441-9af0-0c062d8d03c2,player_0755,2025-07-27 10:12:24,Premium Pass,bundles,11.67,USD,mobile_pay,completed,ios,KR
+6a0e9d66-c095-4abb-92c2-00e0127f6dfb,player_0109,2025-09-17 10:12:24,Premium Pass,bundles,13.92,USD,credit_card,failed,android,DE
+ad9368ec-7aff-4ba1-98ee-8310b0f59bf5,player_0270,2025-09-17 10:12:24,Crystal Pack Medium,gear,15.11,USD,mobile_pay,refunded,ios,DE
+0cc7ccac-847d-4b45-a8a9-4c87355548cf,player_0353,2025-08-07 10:12:24,Premium Pass,bundles,8.91,USD,mobile_pay,completed,android,FR
+b9563f24-bf71-40cc-8fb8-677ca16e6f94,player_0882,2025-08-21 10:12:24,Character Shards,bundles,15.78,USD,mobile_pay,refunded,ios,UK
+4d58f14e-b4ef-402f-a85b-76bff247d616,player_0252,2025-08-12 10:12:24,Energy Refill,gear,5.64,USD,credit_card,refunded,ios,US
+d8de364f-6a8c-4e93-b947-721afd6f5df1,player_0583,2025-10-18 10:12:24,Crystal Pack Medium,characters,17.41,USD,paypal,failed,ios,KR
+360e1fb5-8769-40e6-ba97-c293707383b0,player_0439,2025-09-09 10:12:24,Crystal Pack Large,characters,49.29,USD,mobile_pay,failed,android,CA
+b7dabaed-6e37-48c1-b6b1-5b5f449d91a6,player_0146,2025-07-05 10:12:24,Crystal Pack Large,gear,68.66,USD,digital_wallet,refunded,ios,DE
+81fff2cb-2855-41a2-af3e-3cece1d5704a,player_0809,2025-10-24 10:12:24,Crystal Pack Medium,characters,12.27,USD,digital_wallet,refunded,ios,US
+3a3c99ef-9e9f-4262-98cf-c7a6b782f73b,player_0536,2025-07-16 10:12:24,Gear Bundle,energy,15.04,USD,digital_wallet,refunded,android,CA
+5c88910d-ec04-4993-8583-72eddf369c6f,player_0254,2025-08-23 10:12:24,Starter Pack,energy,18.69,USD,digital_wallet,pending,ios,DE
+c2a1a373-c857-41ac-86dc-cb759cdcd9ae,player_0414,2025-10-22 10:12:24,Character Shards,currency,11.86,USD,mobile_pay,pending,android,DE
+9a4b7b97-b89f-46f5-9ea1-966049a51f21,player_0424,2025-08-30 10:12:24,Gear Bundle,characters,12.91,USD,digital_wallet,pending,android,BR
+c8a47f66-a47f-431e-b3f6-430a71aaa62a,player_0355,2025-10-09 10:12:24,Crystal Pack Medium,bundles,39.29,USD,mobile_pay,pending,android,DE
+9bb0bbbc-ce10-4303-b727-7be0ee5cdea1,player_0956,2025-10-02 10:12:24,Crystal Pack Medium,characters,1.07,USD,digital_wallet,failed,ios,CA
+e4b80b15-5c7c-40c6-906b-88172d97db29,player_0596,2025-09-11 10:12:24,Crystal Pack Small,currency,12.14,USD,digital_wallet,refunded,ios,JP
+909da5bf-2b38-4a38-9182-70afe9dd9ddc,player_0766,2025-10-06 10:12:24,Crystal Pack Medium,energy,19.49,USD,digital_wallet,pending,android,IN
+b1344911-cde8-4c2e-a3a4-fa7f1c1cdb14,player_0527,2025-09-03 10:12:24,Crystal Pack Small,energy,49.83,USD,mobile_pay,failed,android,UK
+f0fdc478-448c-4259-85ac-f6e90794a2a0,player_0667,2025-10-04 10:12:24,Crystal Pack Small,bundles,41.55,USD,paypal,pending,ios,KR
+6b52cf85-1a73-425e-924a-9ef74b2c5a30,player_0866,2025-10-08 10:12:24,Character Shards,gear,5.54,USD,digital_wallet,refunded,ios,KR
+8b9146bc-6f04-4905-9773-6b59ce80adf6,player_0818,2025-10-06 10:12:24,Energy Refill,bundles,13.18,USD,digital_wallet,failed,android,US
+2447eb10-cd15-4738-add4-dd379b0245fc,player_0172,2025-09-12 10:12:24,Gear Bundle,characters,32.92,USD,mobile_pay,completed,android,BR
+2c6c6fea-4201-4794-8825-e28e14151c93,player_0625,2025-11-01 10:12:24,Crystal Pack Small,currency,16.18,USD,paypal,pending,ios,UK
+6d3ab029-c2cb-4db5-8d6a-b35e80294319,player_0546,2025-09-02 10:12:24,Character Shards,characters,4.85,USD,mobile_pay,pending,ios,FR
+29bdf92b-c6fa-4901-af58-b1025d2a8a5d,player_0261,2025-08-03 10:12:24,Premium Pass,characters,25.0,USD,mobile_pay,pending,ios,IN
+9af91655-0b47-43dc-813e-56cece010128,player_0281,2025-08-06 10:12:24,Energy Refill,bundles,14.77,USD,credit_card,completed,android,US
+f66745c3-85be-4450-841e-de1669a6aa89,player_0895,2025-08-22 10:12:24,Crystal Pack Large,currency,28.17,USD,paypal,completed,android,UK
+4e82e106-cc0b-4c6a-9543-38c590377459,player_0607,2025-08-06 10:12:24,Energy Refill,energy,17.02,USD,digital_wallet,pending,ios,KR
+f05fdbcc-62d2-4957-b8dc-94eae7ad12df,player_0935,2025-08-09 10:12:24,Energy Refill,characters,2.27,USD,credit_card,completed,android,AU
+c8c1848f-3a3f-42b6-b832-3a69cff2cbf8,player_0627,2025-10-20 10:12:24,Crystal Pack Large,energy,34.51,USD,credit_card,refunded,ios,DE
+dda0b687-b6b2-47b5-a494-232d27b8968a,player_0291,2025-08-31 10:12:24,Crystal Pack Small,characters,16.11,USD,digital_wallet,refunded,android,KR
+66ff6f16-04a4-4c34-8f3b-e6199974f0d0,player_0897,2025-09-13 10:12:24,Premium Pass,energy,8.47,USD,mobile_pay,refunded,android,JP
+d41dfd5d-f6d4-427e-a871-20a1e26aefd1,player_0540,2025-10-10 10:12:24,Character Shards,characters,27.82,USD,digital_wallet,failed,ios,US
+e78950eb-eeb5-4728-8021-dbcce327149b,player_0978,2025-08-19 10:12:24,Energy Refill,currency,10.79,USD,paypal,pending,android,CA
+4cd79943-c8a0-4b41-9a16-c117d6b60678,player_0071,2025-08-06 10:12:24,Crystal Pack Small,characters,10.33,USD,mobile_pay,completed,android,FR
+cd575d76-97d5-42e8-b31b-388c72690a56,player_0614,2025-07-18 10:12:24,Energy Refill,characters,5.27,USD,mobile_pay,pending,android,FR
+b5001b1a-ae31-42a2-9082-6c45c4422b64,player_0022,2025-08-08 10:12:24,Character Shards,characters,38.4,USD,mobile_pay,failed,android,DE
+d2a456b8-276c-4476-95f4-f7668dcc4614,player_0844,2025-10-16 10:12:24,Starter Pack,gear,17.06,USD,digital_wallet,refunded,ios,IN
+03e188bc-a976-4638-9177-4d16f989254e,player_0463,2025-07-18 10:12:24,Energy Refill,currency,9.42,USD,paypal,completed,ios,IN
+dc06cddb-b475-427b-9934-28dc2e489b6a,player_0458,2025-09-15 10:12:24,Starter Pack,energy,23.13,USD,credit_card,refunded,android,CA
+c5114779-f8c5-4d5a-85e0-b73a75db21f2,player_0911,2025-07-23 10:12:24,Premium Pass,gear,8.02,USD,paypal,failed,android,AU
+4d1c0890-a539-4ebb-b1b8-2f4c2383b295,player_0001,2025-07-16 10:12:24,Gear Bundle,energy,263.58,USD,credit_card,failed,ios,KR
+15c7b618-77ee-42ff-a1a5-5b73df8da45d,player_0165,2025-10-12 10:12:24,Hyperdrive Bundle,characters,16.19,USD,paypal,completed,ios,AU
+2d8439da-ab89-4f8c-be94-4e2f32ab415f,player_0438,2025-07-08 10:12:24,Energy Refill,currency,14.54,USD,mobile_pay,refunded,ios,AU
+958a286f-8fd8-4ac4-9311-ebae85161527,player_0117,2025-09-06 10:12:24,Gear Bundle,energy,10.43,USD,credit_card,pending,ios,FR
+6a700154-4c2b-4d69-95fe-f32788136e63,player_0916,2025-09-11 10:12:24,Premium Pass,gear,14.79,USD,digital_wallet,refunded,android,US
+53e3ad48-2735-423a-b3b4-d97de88ff01d,player_0119,2025-07-17 10:12:24,Hyperdrive Bundle,characters,20.59,USD,paypal,refunded,android,JP
+00f2a4fa-c821-4e52-98bc-2377f998506b,player_0591,2025-10-19 10:12:24,Energy Refill,gear,259.92,USD,credit_card,pending,ios,IN
+55fcc54b-b58a-47a2-a2cd-c10042463bf6,player_0801,2025-08-21 10:12:24,Gear Bundle,energy,6.79,USD,mobile_pay,pending,ios,IN
+26b5c94d-09a3-4356-8ab3-b8e2b56e2699,player_0887,2025-08-08 10:12:24,Gear Bundle,gear,17.2,USD,digital_wallet,refunded,ios,IN
+e4f46e92-660e-4f71-ba4d-deccc51777d0,player_0686,2025-07-18 10:12:24,Premium Pass,bundles,16.37,USD,credit_card,pending,ios,FR
+2529afcb-ac88-449f-b4ba-42c9b6e9a7dc,player_0473,2025-07-07 10:12:24,Premium Pass,gear,11.3,USD,mobile_pay,completed,android,US
+0ae1af1b-8305-4792-aff0-25639ce6aa8d,player_0585,2025-07-25 10:12:24,Crystal Pack Small,energy,15.0,USD,credit_card,failed,android,JP
+c74d7906-6f95-4bb8-b20e-d511563ecc9b,player_0624,2025-08-17 10:12:24,Premium Pass,bundles,20.6,USD,paypal,pending,ios,BR
+5481bcc7-1161-4034-81b6-08e2bbea1ee8,player_0876,2025-10-06 10:12:24,Energy Refill,energy,191.08,USD,paypal,refunded,android,IN
+c92608c4-00f6-4f24-9f2b-02c8ad9c4905,player_0695,2025-07-21 10:12:24,Crystal Pack Medium,energy,1.28,USD,mobile_pay,completed,android,CA
+4bb25644-6b8d-46d5-9624-07a375ed7b43,player_0473,2025-10-13 10:12:24,Crystal Pack Small,bundles,13.1,USD,digital_wallet,completed,android,US
+7ad2bbd0-4be5-473b-bf6d-c6b231de5ba2,player_0178,2025-08-22 10:12:24,Character Shards,bundles,15.72,USD,credit_card,refunded,android,UK
+81816567-e028-4af8-886c-dc97ede74d2d,player_0663,2025-08-25 10:12:24,Starter Pack,characters,1.78,USD,credit_card,pending,ios,BR
+fc6561ef-feb4-44ec-91c2-79ec4d59cd91,player_0999,2025-10-29 10:12:24,Character Shards,characters,45.61,USD,credit_card,completed,ios,CA
+1e7ac2fc-f217-40ff-bddc-c39eafd54c4c,player_0953,2025-10-12 10:12:24,Premium Pass,bundles,1.21,USD,digital_wallet,refunded,android,BR
+53b8f98a-1683-4e0f-b511-76b5186ab058,player_0209,2025-10-04 10:12:24,Crystal Pack Small,characters,9.41,USD,digital_wallet,pending,android,CA
+fd441522-fd8b-4e66-9fe0-9b45506a5ccc,player_0967,2025-09-25 10:12:24,Hyperdrive Bundle,characters,15.71,USD,digital_wallet,failed,ios,IN
+779a0d71-52bc-45b0-89c7-4d01dbbf7847,player_0626,2025-09-09 10:12:24,Starter Pack,currency,26.74,USD,credit_card,failed,android,AU
+960aca13-e8d0-489c-8aec-e22628f16c3f,player_0211,2025-09-11 10:12:24,Energy Refill,bundles,13.52,USD,mobile_pay,pending,android,DE
+bf3597fe-4eb6-4c4b-9654-86d7be51a4f2,player_0023,2025-08-18 10:12:24,Starter Pack,currency,23.36,USD,mobile_pay,failed,ios,BR
+a98c8790-b109-4611-a960-dcdce7869ff8,player_0516,2025-09-12 10:12:24,Character Shards,energy,16.55,USD,paypal,completed,android,IN
+44037307-81b7-4058-b757-9673ad73dd8c,player_0761,2025-09-12 10:12:24,Crystal Pack Small,energy,5.77,USD,mobile_pay,failed,ios,UK
+02258bae-3173-4074-b154-68032e2b536c,player_0846,2025-09-08 10:12:24,Hyperdrive Bundle,bundles,45.24,USD,paypal,completed,ios,IN
+ad080055-8c91-499d-a7df-9c001920b44f,player_0070,2025-07-28 10:12:24,Hyperdrive Bundle,bundles,20.92,USD,credit_card,completed,android,CA
+550ee964-2c69-45d2-b49e-63256ef131da,player_0283,2025-07-16 10:12:24,Character Shards,currency,4.05,USD,paypal,pending,android,JP
+53242f0e-c0c5-4073-a2e2-5791682e0754,player_0984,2025-09-08 10:12:24,Premium Pass,characters,259.78,USD,mobile_pay,failed,ios,BR
+c5a9bdac-bbf0-4026-9af3-5f5dd4f62c40,player_0457,2025-08-30 10:12:24,Crystal Pack Small,currency,15.77,USD,mobile_pay,completed,android,BR
+08130372-05a2-4cfd-98d1-9e8b2acf3c16,player_0134,2025-09-23 10:12:24,Crystal Pack Medium,gear,5.64,USD,digital_wallet,completed,android,AU
+aa98a8b7-1a2c-4e48-a436-6592d1e1d1b6,player_0203,2025-07-18 10:12:24,Starter Pack,currency,6.99,USD,credit_card,completed,android,BR
+90a895d5-4e6e-4690-95a7-c355d10a2102,player_0221,2025-10-23 10:12:24,Crystal Pack Small,currency,279.09,USD,digital_wallet,pending,ios,IN
+ffad9b6d-b619-47d8-9388-8c1e494b67b9,player_0943,2025-08-27 10:12:24,Energy Refill,gear,10.62,USD,digital_wallet,refunded,android,JP
+37e353e2-45ec-4d0b-94ad-96672631dbc3,player_0948,2025-07-07 10:12:24,Character Shards,gear,15.4,USD,digital_wallet,failed,ios,KR
+4d6008bf-0fa9-4b19-b455-881709305a3d,player_0010,2025-10-01 10:12:24,Character Shards,energy,17.04,USD,credit_card,failed,android,FR
+ae2e305b-3ef9-4d99-8a2b-d8d00e3de91c,player_0411,2025-10-19 10:12:24,Hyperdrive Bundle,gear,102.67,USD,digital_wallet,refunded,ios,BR
+2057d1e0-9938-4b9d-833a-d9c80984812a,player_0332,2025-10-24 10:12:24,Crystal Pack Large,currency,10.95,USD,paypal,completed,ios,BR
+fcfb38f2-b6a4-4d9b-98da-56a45433b67d,player_0626,2025-09-18 10:12:24,Hyperdrive Bundle,gear,18.22,USD,paypal,failed,android,AU
+568a3ca6-9c0d-4e3d-a777-9bd668f74aee,player_0701,2025-08-13 10:12:24,Crystal Pack Medium,energy,2.28,USD,credit_card,pending,android,FR
+836e62a8-fe27-4dc1-a1b2-0aca5cdb4718,player_0619,2025-07-28 10:12:24,Gear Bundle,currency,20.9,USD,mobile_pay,pending,android,FR
+48c0cdd9-26c8-4390-b379-683151c4d008,player_0468,2025-08-09 10:12:24,Crystal Pack Medium,characters,30.98,USD,mobile_pay,refunded,android,US
+22f8da2d-4bb2-4f73-8078-acebd21f6373,player_0608,2025-08-14 10:12:24,Crystal Pack Small,characters,12.87,USD,paypal,pending,ios,IN
+4fa6d2d6-676c-4b54-b3a4-c5402af6d010,player_0314,2025-08-22 10:12:24,Starter Pack,bundles,29.4,USD,digital_wallet,refunded,ios,JP
+fc7bec21-4c77-4f12-8f80-671459a02b19,player_0666,2025-07-15 10:12:24,Premium Pass,characters,157.55,USD,mobile_pay,completed,ios,UK
+74cbac6f-b886-45f7-8e78-a5b55dca1039,player_0659,2025-07-10 10:12:24,Gear Bundle,currency,4.83,USD,paypal,refunded,android,AU
+cd873fe4-b830-439e-9174-ec0e3991c85d,player_0086,2025-08-23 10:12:24,Starter Pack,gear,14.8,USD,mobile_pay,pending,ios,DE
+cfdaa324-d7dd-40a4-99be-aeccd8b526a3,player_0561,2025-10-30 10:12:24,Hyperdrive Bundle,characters,11.03,USD,digital_wallet,pending,ios,UK
+a3ddd736-caca-40c7-86c4-8d0e54e65ee6,player_0060,2025-10-12 10:12:24,Character Shards,energy,14.12,USD,digital_wallet,completed,android,FR
+7959e92a-2f39-494f-b05a-901628737b72,player_0589,2025-10-09 10:12:24,Premium Pass,characters,8.31,USD,paypal,completed,ios,AU
+b6b4d042-8e44-4538-bb10-7b54781b15b7,player_0134,2025-09-02 10:12:24,Gear Bundle,energy,10.51,USD,credit_card,failed,android,AU
+0dccb34f-12fb-4457-8286-c22ab86d4359,player_0927,2025-10-17 10:12:24,Crystal Pack Medium,currency,15.01,USD,digital_wallet,refunded,ios,AU
+aa2a7dee-a9e4-4875-8d19-494aeb3b0bf7,player_0471,2025-10-25 10:12:24,Starter Pack,bundles,7.47,USD,digital_wallet,refunded,android,UK
+05d17347-d499-41ab-aa93-e7ab3bfc871c,player_0084,2025-10-23 10:12:24,Hyperdrive Bundle,energy,12.26,USD,paypal,completed,android,CA
+3dc31376-a795-4ee8-add8-0cd03409702c,player_0165,2025-07-13 10:12:24,Crystal Pack Large,energy,5.32,USD,digital_wallet,failed,ios,AU
+dabe7d1b-edca-440c-a9ae-617d0a5c3914,player_0840,2025-07-22 10:12:24,Crystal Pack Small,gear,9.31,USD,paypal,pending,ios,JP
+d5959784-2ab1-4936-a400-5569c1be070b,player_0856,2025-08-07 10:12:24,Character Shards,bundles,42.62,USD,credit_card,refunded,ios,BR
+ccfc916e-7a45-415e-b532-502ba1a4b1da,player_0793,2025-09-06 10:12:24,Starter Pack,currency,27.0,USD,paypal,failed,android,UK
+b7fafc25-a2cb-4149-9600-5855e51ebc47,player_0017,2025-07-27 10:12:24,Crystal Pack Large,bundles,31.87,USD,mobile_pay,failed,android,AU
+a7e7ef1f-e30c-4197-b2cb-711322940304,player_0900,2025-07-28 10:12:24,Crystal Pack Medium,characters,270.11,USD,digital_wallet,failed,ios,DE
+fc39ac98-ebbd-4402-bd3c-ad193c9cb552,player_0193,2025-08-20 10:12:24,Starter Pack,gear,16.99,USD,mobile_pay,completed,android,CA
+40504f9a-bb03-4be5-ae4a-0125dfd15dab,player_0617,2025-08-05 10:12:24,Energy Refill,characters,15.15,USD,digital_wallet,failed,ios,IN
+9ec07a7c-a443-4f7e-b388-556f7e6649d3,player_0297,2025-07-27 10:12:24,Starter Pack,gear,4.37,USD,mobile_pay,pending,ios,IN
+600b9aad-1b3d-4c4e-bc6d-6358a16c007b,player_0354,2025-07-15 10:12:24,Premium Pass,energy,7.13,USD,credit_card,completed,ios,BR
+16e65a85-b16f-428a-88b0-317cf9182693,player_0438,2025-07-20 10:12:24,Crystal Pack Medium,currency,10.89,USD,credit_card,failed,ios,AU
+640482aa-c9e7-4470-b122-91f72a47b0ea,player_0860,2025-07-30 10:12:24,Character Shards,characters,9.22,USD,mobile_pay,completed,ios,KR
+7cfbb6d2-41cf-483b-8f31-56f200d23df7,player_0518,2025-09-22 10:12:24,Gear Bundle,bundles,9.73,USD,digital_wallet,completed,android,BR
+7b84e2ad-e89c-4f7c-ab15-32ef6e927b59,player_0533,2025-08-10 10:12:24,Premium Pass,energy,21.57,USD,credit_card,pending,android,KR
+9c575d6b-bc76-4ca1-bd86-9ba5ab05cd08,player_0506,2025-08-29 10:12:24,Crystal Pack Medium,energy,14.97,USD,paypal,failed,ios,DE
+8488c3be-f8d5-42db-8aa4-c00c544b90c6,player_0435,2025-09-07 10:12:24,Crystal Pack Small,characters,7.14,USD,digital_wallet,failed,ios,FR
+82cd0db7-83f0-44ff-81d5-32c062cd3996,player_0880,2025-08-28 10:12:24,Crystal Pack Small,characters,19.11,USD,mobile_pay,failed,ios,IN
+cc8ee64c-878b-404e-9ed4-224392896351,player_0731,2025-09-14 10:12:24,Character Shards,characters,14.12,USD,paypal,pending,ios,BR
+d00afc40-02c7-413a-bd26-dd9cc8348af2,player_0602,2025-09-24 10:12:24,Energy Refill,characters,12.85,USD,mobile_pay,failed,android,DE
+c3f491e1-a550-4c52-a500-198274740532,player_0854,2025-09-05 10:12:24,Crystal Pack Medium,gear,7.41,USD,mobile_pay,refunded,ios,CA
+3a18643d-da03-4449-a019-b38a4e87198d,player_0270,2025-07-15 10:12:24,Crystal Pack Large,bundles,11.07,USD,paypal,completed,ios,DE
+80b9ab1f-d232-4e68-86e0-9e7789decbd1,player_0194,2025-07-19 10:12:24,Crystal Pack Large,gear,13.15,USD,paypal,refunded,android,KR
+27f93183-2489-474c-a67d-0466c920ecd2,player_0654,2025-10-21 10:12:24,Hyperdrive Bundle,bundles,8.17,USD,paypal,refunded,ios,KR
+db4c8972-15a7-4033-8a37-3a72697268d5,player_0699,2025-08-19 10:12:24,Gear Bundle,bundles,18.77,USD,digital_wallet,pending,ios,IN
+b19c6a6d-840c-4dfb-874d-61ddd6370c70,player_0024,2025-07-10 10:12:24,Starter Pack,currency,19.96,USD,paypal,failed,android,UK
+aec3ec23-a37e-4410-ab91-3f103197fba5,player_0119,2025-08-10 10:12:24,Starter Pack,energy,49.71,USD,digital_wallet,pending,android,JP
+34816785-1167-4a93-8e5a-b36cba43210a,player_0968,2025-09-10 10:12:24,Character Shards,currency,11.0,USD,paypal,pending,ios,US
+588231f1-2028-4c42-a1e3-d3cbb92e819e,player_0921,2025-08-01 10:12:24,Gear Bundle,currency,30.74,USD,paypal,pending,android,IN
+e64dbf2b-5786-4118-802e-303582f30ef6,player_0341,2025-10-15 10:12:24,Crystal Pack Small,bundles,27.97,USD,paypal,failed,ios,JP
+e9675064-25c9-4dc2-87a4-6a6bc135038a,player_0729,2025-10-02 10:12:24,Gear Bundle,currency,35.83,USD,mobile_pay,failed,ios,IN
+a6331572-e9e5-48e0-a2cb-99f5a3720ef1,player_0184,2025-09-19 10:12:24,Crystal Pack Medium,energy,21.56,USD,paypal,failed,ios,BR
+0195d238-6265-400b-8cb1-18556b61732e,player_0982,2025-08-25 10:12:24,Character Shards,currency,18.05,USD,mobile_pay,completed,ios,DE
+0c373196-fdc4-44aa-aa9f-9c0b5451f19d,player_0054,2025-10-26 10:12:24,Energy Refill,bundles,17.92,USD,paypal,completed,android,BR
+4adc1eb6-5e67-40c1-80bb-ff243e1b80ad,player_0427,2025-10-07 10:12:24,Crystal Pack Large,energy,18.19,USD,paypal,refunded,ios,DE
+0dab7cdf-5bbf-4fda-828e-8a21f64308d3,player_0234,2025-09-02 10:12:24,Gear Bundle,energy,4.62,USD,credit_card,failed,ios,AU
+3dc76d9f-b6e9-4139-8c7e-894b46e3891d,player_0200,2025-09-05 10:12:24,Hyperdrive Bundle,bundles,31.08,USD,mobile_pay,refunded,android,BR
+2b906eab-d789-4476-954f-7b04e160a13d,player_0486,2025-10-20 10:12:24,Hyperdrive Bundle,energy,24.2,USD,digital_wallet,pending,ios,AU
+bd9d0273-970c-483c-9fd3-ec00b12007cf,player_0798,2025-10-21 10:12:24,Energy Refill,currency,4.69,USD,digital_wallet,pending,android,DE
+ec0fb586-cb1e-4168-b7a7-7b9300adeea8,player_0191,2025-07-16 10:12:24,Hyperdrive Bundle,gear,11.25,USD,digital_wallet,failed,android,IN
+c0cc3772-c228-4757-b8e3-ae9c8ff0bb5a,player_0226,2025-08-13 10:12:24,Starter Pack,bundles,4.99,USD,credit_card,pending,android,CA
+cc961da7-011f-46b0-9133-61f5a0f379be,player_0624,2025-10-06 10:12:24,Crystal Pack Large,gear,5.91,USD,digital_wallet,pending,ios,BR
+0b284e17-a00e-4fda-b5ce-f93f88990320,player_0346,2025-08-27 10:12:24,Gear Bundle,bundles,199.5,USD,digital_wallet,pending,android,IN
+d305f48b-e70f-452d-be54-b725e0c9b31e,player_0817,2025-09-12 10:12:24,Premium Pass,characters,4.97,USD,paypal,completed,ios,UK
+9689f433-059f-4b89-8cab-251c49d4d301,player_0109,2025-07-15 10:12:24,Premium Pass,currency,11.52,USD,credit_card,refunded,android,DE
+d9201c54-44c5-45d7-8ab1-89799ac28664,player_0048,2025-10-12 10:12:24,Crystal Pack Large,energy,38.49,USD,credit_card,pending,android,AU
+be727a59-af90-465c-9e92-fe29f5585a4c,player_0015,2025-07-04 10:12:24,Premium Pass,gear,4.93,USD,credit_card,failed,android,DE
+012401f2-f09b-413b-987d-d6ca1ab837fa,player_0328,2025-07-24 10:12:24,Starter Pack,gear,271.57,USD,credit_card,completed,android,CA
+f0f34f56-7d2f-4608-983e-322eb559a86d,player_0555,2025-09-07 10:12:24,Character Shards,gear,41.32,USD,paypal,completed,ios,BR
+2a32a9a3-6270-4504-8ef7-3820d19256f2,player_0113,2025-10-03 10:12:24,Crystal Pack Small,currency,47.43,USD,digital_wallet,refunded,ios,CA
+7268be76-298a-45d7-9d0f-53ef3601f0ed,player_0640,2025-10-02 10:12:24,Premium Pass,characters,39.59,USD,paypal,failed,ios,DE
+80b61a48-e764-4ad1-b5ba-e8bcb577785f,player_0928,2025-09-16 10:12:24,Gear Bundle,currency,16.9,USD,mobile_pay,completed,android,JP
+51c98d2e-96a9-482c-a561-734ea5f1eafe,player_0882,2025-08-25 10:12:24,Starter Pack,energy,33.6,USD,digital_wallet,pending,ios,UK
+da250836-0e64-440c-91e7-22844249593f,player_0061,2025-10-12 10:12:24,Energy Refill,currency,18.01,USD,credit_card,completed,android,AU
+2840504d-eee7-4bf8-b64a-04d9ebcad4b5,player_0677,2025-08-28 10:12:24,Premium Pass,currency,6.92,USD,credit_card,refunded,ios,JP
+71d6b589-6443-4dd1-9128-a12e6927a4b3,player_0245,2025-07-31 10:12:24,Premium Pass,currency,295.61,USD,credit_card,pending,ios,AU
+46033613-e9cc-46d6-962d-9334026c8654,player_0399,2025-07-14 10:12:24,Crystal Pack Small,gear,147.37,USD,digital_wallet,completed,android,JP
+131df975-2efa-4370-8af3-0fa035cf9603,player_0508,2025-08-12 10:12:24,Gear Bundle,energy,2.97,USD,mobile_pay,pending,ios,US
+6198e785-8948-4f3d-95f5-4cb265c46d5a,player_0214,2025-08-28 10:12:24,Crystal Pack Medium,bundles,16.76,USD,paypal,failed,ios,US
+a77a6528-6b28-4931-84b0-26104b3fd4e4,player_0822,2025-09-27 10:12:24,Crystal Pack Small,bundles,2.37,USD,digital_wallet,refunded,ios,BR
+4f8ca5f2-90dd-4455-819e-fdbd8b549940,player_0732,2025-08-24 10:12:24,Energy Refill,bundles,29.5,USD,paypal,pending,ios,AU
+e53adb16-aca6-461f-8685-e68720fcc1cf,player_0109,2025-07-08 10:12:24,Energy Refill,currency,2.44,USD,paypal,failed,android,DE
+59d0d4ce-2615-4e99-9ba2-aea0c3ded20c,player_0730,2025-10-13 10:12:24,Hyperdrive Bundle,energy,18.04,USD,paypal,failed,android,CA
+c0872e83-ee36-460a-9c2c-7e15681ad573,player_0763,2025-09-28 10:12:24,Crystal Pack Small,bundles,15.11,USD,credit_card,completed,android,BR
+a48874da-bcd2-434b-8dc3-2f65f6cdc671,player_0525,2025-08-11 10:12:24,Starter Pack,characters,18.57,USD,mobile_pay,completed,ios,DE
+ae0ad278-5f47-4371-bf6c-a01623b99cc8,player_0234,2025-10-11 10:12:24,Crystal Pack Small,gear,5.63,USD,credit_card,refunded,ios,AU
+4cce3fac-c52a-4819-8e5a-3fbf6e3a3fcc,player_0307,2025-09-07 10:12:24,Gear Bundle,energy,9.44,USD,mobile_pay,pending,ios,UK
+ff2fb404-dee4-4180-80f1-97a888299ced,player_0249,2025-07-05 10:12:24,Character Shards,currency,105.59,USD,digital_wallet,completed,ios,UK
+8a2be0d6-e7e6-4ff7-9684-f7e41a94507d,player_0681,2025-09-30 10:12:24,Energy Refill,gear,9.64,USD,mobile_pay,completed,ios,FR
+09ef1491-b703-4de7-8f0e-fb1fd03662c5,player_0097,2025-10-11 10:12:24,Hyperdrive Bundle,characters,11.69,USD,mobile_pay,pending,ios,US
+842ae249-70c8-4e58-9469-81e3f0681db7,player_0093,2025-10-12 10:12:24,Crystal Pack Large,energy,1.1,USD,credit_card,failed,ios,US
+4beb0813-733f-4100-904f-5337b6cec42b,player_0032,2025-07-24 10:12:24,Crystal Pack Small,energy,13.41,USD,mobile_pay,pending,android,IN
+ef30b2a9-dee0-436d-9506-ccdf185a5f92,player_0092,2025-10-18 10:12:24,Premium Pass,energy,17.05,USD,credit_card,completed,ios,AU
+83206450-ae1a-4fd5-a97d-a645a1a69d43,player_0944,2025-07-20 10:12:24,Premium Pass,characters,3.99,USD,mobile_pay,completed,android,IN
+1c5f55bb-3d16-44a7-a48b-65eb7112c3b4,player_0950,2025-07-16 10:12:24,Crystal Pack Small,bundles,19.74,USD,paypal,pending,android,UK
+bb38dc63-fb44-4e4d-8954-6c059302a57f,player_0772,2025-09-27 10:12:24,Crystal Pack Medium,characters,38.74,USD,mobile_pay,pending,android,UK
+f965ce4e-ba8e-4c59-b7d9-d24efb17328a,player_0009,2025-10-26 10:12:24,Crystal Pack Large,gear,16.12,USD,credit_card,pending,ios,US
+4796bf8e-b5b5-47df-bd68-a16890c6dba6,player_0860,2025-08-31 10:12:24,Premium Pass,characters,5.75,USD,paypal,pending,ios,KR
+4300bf1f-bff6-4862-9311-afb5166a8ba1,player_0294,2025-08-29 10:12:24,Gear Bundle,currency,19.24,USD,paypal,refunded,android,US
+b54876d1-6b26-49eb-986c-50c57494b85d,player_0355,2025-08-11 10:12:24,Gear Bundle,characters,22.68,USD,mobile_pay,pending,android,DE
+c2978cc6-4df3-4974-b02e-c777d1417fe8,player_0724,2025-07-17 10:12:24,Energy Refill,energy,14.89,USD,credit_card,pending,ios,KR
+12c7f13f-766b-4d6a-ada9-72676d358ab3,player_0616,2025-10-04 10:12:24,Hyperdrive Bundle,bundles,19.72,USD,mobile_pay,completed,ios,UK
+aee5beb3-4aee-45b8-b0b3-3e96721ecc44,player_0830,2025-09-26 10:12:24,Character Shards,characters,189.16,USD,credit_card,failed,android,FR
+3dc97498-c1c1-49aa-b661-989f244dafda,player_0273,2025-07-21 10:12:24,Crystal Pack Small,gear,5.92,USD,digital_wallet,completed,ios,AU
+18633d78-78ec-4e3e-a4fb-c449ad0edd03,player_0707,2025-09-20 10:12:24,Energy Refill,currency,12.1,USD,paypal,pending,android,DE
+38f43b3c-f21f-46e7-a580-d9ee095169a2,player_0460,2025-09-03 10:12:24,Crystal Pack Medium,currency,10.27,USD,credit_card,refunded,ios,UK
+892a7793-453c-46b7-ba27-0c08a9cec6f4,player_0486,2025-09-30 10:12:24,Starter Pack,energy,18.0,USD,paypal,completed,ios,AU
+6529ba8c-fc62-438f-9d48-5d8889460f2c,player_0851,2025-08-05 10:12:24,Crystal Pack Medium,bundles,8.23,USD,mobile_pay,completed,android,IN
+d9a24bd2-22ea-4553-a3b5-d407e5ac911a,player_0501,2025-10-29 10:12:24,Gear Bundle,gear,4.8,USD,digital_wallet,failed,ios,UK
+6fcde4e8-d4f7-4cbe-9080-71573c283c39,player_0164,2025-07-07 10:12:24,Premium Pass,gear,47.66,USD,digital_wallet,pending,ios,CA
+1e8e2f62-9b97-4f86-b0e2-5a7dff55c7c5,player_0090,2025-09-01 10:12:24,Gear Bundle,energy,6.57,USD,digital_wallet,refunded,ios,DE
+8e6beea6-8a64-4432-925b-c21cc154e295,player_0956,2025-09-14 10:12:24,Starter Pack,characters,18.97,USD,paypal,refunded,ios,CA
+4a1182e7-b18c-4e5a-bf1c-ab7deebe14a8,player_0893,2025-09-14 10:12:24,Gear Bundle,bundles,14.86,USD,mobile_pay,completed,ios,US
+fbdf0c55-3dc7-4ad4-ac71-0e0a54c4be71,player_0350,2025-10-14 10:12:24,Crystal Pack Medium,energy,51.67,USD,credit_card,pending,android,DE
+0675d2ab-1ae4-4109-b8fe-0ff06acbcf5d,player_0065,2025-09-07 10:12:24,Character Shards,energy,10.81,USD,paypal,failed,ios,CA
+ee226b74-b197-4bb2-869a-30f3cbaf0118,player_0387,2025-07-17 10:12:24,Hyperdrive Bundle,energy,17.29,USD,mobile_pay,completed,ios,IN
+749a72e8-5de9-4854-840d-ee0c170b5e8f,player_0991,2025-09-23 10:12:24,Character Shards,gear,5.1,USD,credit_card,refunded,ios,IN
+df0a5869-71c2-4f78-9f1b-3cc253208e25,player_0040,2025-10-30 10:12:24,Energy Refill,bundles,3.59,USD,digital_wallet,failed,android,AU
+45b7e59f-c512-4a84-a210-717f5706f5b0,player_0930,2025-10-16 10:12:24,Premium Pass,bundles,36.05,USD,mobile_pay,completed,ios,AU
+1a506304-9ca0-484e-8514-f4865dd13da5,player_0072,2025-10-05 10:12:24,Crystal Pack Medium,bundles,216.61,USD,paypal,refunded,ios,FR
+5e31a965-0158-4318-9e01-ae648ae5b77c,player_0152,2025-09-02 10:12:24,Starter Pack,gear,180.81,USD,paypal,failed,ios,AU
+d58ce394-84b4-46a0-8c6c-ca59bcf70450,player_0330,2025-07-18 10:12:24,Crystal Pack Medium,characters,13.3,USD,mobile_pay,pending,android,US
+826815e8-3fbd-422c-b73b-5473f999a97f,player_0716,2025-08-31 10:12:24,Gear Bundle,characters,22.35,USD,paypal,pending,ios,DE
+200018ea-db56-4812-a4fd-d859a039eaac,player_0277,2025-10-31 10:12:24,Energy Refill,characters,14.41,USD,mobile_pay,pending,ios,KR
+3a2f35de-9140-43d8-a5ad-a0fcd27de495,player_0204,2025-07-30 10:12:24,Premium Pass,currency,14.26,USD,mobile_pay,pending,android,JP
+8bb206bb-0831-49f5-b0ff-467d5243166d,player_0776,2025-10-09 10:12:24,Hyperdrive Bundle,bundles,12.4,USD,paypal,failed,ios,BR
+5377e294-9c42-4bc5-886b-3c4ee888dfdf,player_0168,2025-08-03 10:12:24,Crystal Pack Medium,currency,17.44,USD,mobile_pay,refunded,ios,UK
+efd37a5e-8999-4524-8ee4-d8cc00ae7eb7,player_0789,2025-07-18 10:12:24,Starter Pack,gear,229.95,USD,mobile_pay,refunded,android,IN
+8077987d-e539-4bb2-9068-f3de5cee4c93,player_0914,2025-10-07 10:12:24,Starter Pack,bundles,13.76,USD,credit_card,failed,ios,IN
+124e37cf-d9d6-45f0-a0cb-7e1770e88111,player_0225,2025-07-27 10:12:24,Crystal Pack Small,energy,12.18,USD,digital_wallet,refunded,ios,BR
+90e91461-56dd-402a-8956-cf77c7ef3f23,player_0770,2025-08-25 10:12:24,Gear Bundle,gear,8.05,USD,digital_wallet,failed,android,UK
+fb7efd7e-0c96-4d78-a6ef-156e13e7f3e6,player_0659,2025-08-20 10:12:24,Starter Pack,characters,10.1,USD,digital_wallet,completed,android,AU
+6fa5544a-ee85-41ec-bdcd-bbbea926f729,player_0787,2025-07-25 10:12:24,Character Shards,gear,18.66,USD,credit_card,failed,ios,KR
+cb31e117-26e6-4f6d-95de-36aa4c1e3df7,player_0975,2025-09-02 10:12:24,Premium Pass,energy,14.25,USD,credit_card,completed,android,IN
+27cf4516-2e82-43c4-8a5d-7b6db15bcd2c,player_0644,2025-08-27 10:12:24,Crystal Pack Small,gear,266.31,USD,credit_card,refunded,android,DE
+b854afaa-9abb-4dd7-97de-b8f3a91983c6,player_0425,2025-07-11 10:12:24,Gear Bundle,characters,6.95,USD,credit_card,refunded,android,JP
+f019c945-e563-480a-8683-340416e25a77,player_0518,2025-07-15 10:12:24,Crystal Pack Large,currency,14.55,USD,digital_wallet,refunded,android,BR
+9073ca66-0bd0-4107-8dfa-647430fff6fd,player_0207,2025-07-22 10:12:24,Premium Pass,energy,2.29,USD,credit_card,refunded,ios,DE
+78881ee1-492d-4ce4-9d3d-d8f53ecfa30e,player_0593,2025-09-22 10:12:24,Crystal Pack Large,characters,10.61,USD,digital_wallet,pending,ios,US
+e0c81f7d-4dd7-4ab6-8d7f-e8d2368f44db,player_0744,2025-09-23 10:12:24,Crystal Pack Medium,currency,15.5,USD,mobile_pay,failed,android,CA
+3015c6ee-acbd-4c7c-92c6-a270d2830323,player_0911,2025-09-06 10:12:24,Premium Pass,bundles,49.85,USD,credit_card,pending,android,AU
+05ad91eb-73b2-447e-bccb-30f27c9976cf,player_0073,2025-09-13 10:12:24,Starter Pack,characters,19.75,USD,credit_card,pending,android,JP
+c6b1b4ef-0782-4a29-879d-cf185a0f9fb6,player_0522,2025-07-17 10:12:24,Crystal Pack Medium,characters,39.66,USD,digital_wallet,failed,ios,FR
+8e59c8aa-f535-406f-9a7a-3ed7a0dd9300,player_0555,2025-07-08 10:12:24,Gear Bundle,energy,34.18,USD,credit_card,refunded,ios,BR
+941ef07c-aa99-4ca0-a0b9-22717232a411,player_0944,2025-10-29 10:12:24,Gear Bundle,currency,13.12,USD,mobile_pay,failed,android,IN
+f31c5f0b-af33-417a-a028-37f32c04e6d1,player_0933,2025-07-12 10:12:24,Starter Pack,characters,7.98,USD,credit_card,failed,android,KR
+cbee4496-48aa-4b9d-8f4d-735e1c912333,player_0577,2025-10-05 10:12:24,Premium Pass,characters,9.65,USD,credit_card,failed,ios,KR
+fe8511b8-5bcc-4865-b78e-6ec5ffb64fcb,player_0549,2025-09-15 10:12:24,Starter Pack,currency,30.45,USD,digital_wallet,completed,android,BR
+04aa9d47-536f-4c41-a112-0015c7847942,player_0321,2025-09-07 10:12:24,Gear Bundle,gear,15.27,USD,credit_card,failed,ios,BR
+37e8f072-5b8b-43c1-8599-eb919e58188e,player_0876,2025-07-29 10:12:24,Crystal Pack Small,currency,126.36,USD,mobile_pay,completed,android,IN
+7fd6c70c-30f8-4892-8981-46d1dbd1e674,player_0285,2025-07-24 10:12:24,Premium Pass,currency,9.44,USD,paypal,pending,ios,FR
+762c4e7f-6014-4375-94d1-9228dd572bea,player_0426,2025-07-25 10:12:24,Crystal Pack Medium,currency,17.37,USD,digital_wallet,failed,android,AU
+e49c2112-2911-47b7-934b-1b733660e5f4,player_0143,2025-07-25 10:12:24,Starter Pack,characters,1.76,USD,digital_wallet,pending,android,IN
+bd222b39-4b29-40e1-b378-3d032ad20afe,player_0151,2025-10-10 10:12:24,Hyperdrive Bundle,gear,14.92,USD,mobile_pay,pending,ios,DE
+e0f2abaf-412c-452e-b17d-517112450b21,player_0189,2025-09-04 10:12:24,Gear Bundle,gear,18.55,USD,digital_wallet,pending,ios,KR
+3f417e8a-798e-49f7-b939-4a8b2bdf0456,player_0228,2025-07-10 10:12:24,Crystal Pack Medium,energy,43.87,USD,digital_wallet,pending,android,JP
+ed3ea07f-b2da-4dcf-99b6-e9eecd1d1a7c,player_0838,2025-07-21 10:12:24,Energy Refill,gear,23.5,USD,digital_wallet,failed,ios,FR
+f56eca53-8b14-485b-9818-c806d563db33,player_0580,2025-08-28 10:12:24,Starter Pack,energy,18.12,USD,paypal,refunded,ios,UK
+210b81de-80fe-445d-94f0-b6384b928ec1,player_0863,2025-07-08 10:12:24,Crystal Pack Small,gear,2.26,USD,paypal,pending,android,CA
+8d9923a1-6203-4ca3-b0b3-eafd67e71fa7,player_0920,2025-09-17 10:12:24,Crystal Pack Small,bundles,34.14,USD,digital_wallet,refunded,android,DE
+a3acac8a-5c11-4cad-a559-8e736656488d,player_0214,2025-10-17 10:12:24,Character Shards,bundles,11.6,USD,credit_card,completed,ios,US
+b5723d40-07b7-4bc5-b864-455eb13e072e,player_0086,2025-09-02 10:12:24,Character Shards,currency,18.03,USD,mobile_pay,completed,ios,DE
+81632f17-1fb0-4347-8854-c596e6130f6e,player_0428,2025-07-06 10:12:24,Premium Pass,currency,89.45,USD,credit_card,failed,android,DE
+2655304d-adf1-42fb-a0ee-7b6bf05fbd7c,player_0784,2025-10-17 10:12:24,Crystal Pack Medium,bundles,4.81,USD,digital_wallet,refunded,ios,KR
+a5e90aac-46e9-455c-826d-f48d6fb349dd,player_0507,2025-09-03 10:12:24,Starter Pack,currency,7.68,USD,digital_wallet,completed,android,US
+702a8173-43f2-4569-93d8-cd03384dd268,player_0268,2025-10-13 10:12:24,Starter Pack,currency,17.74,USD,digital_wallet,refunded,android,DE
+c5eb6666-c4d9-4820-885c-d672c45aea57,player_0415,2025-10-05 10:12:24,Energy Refill,currency,235.32,USD,digital_wallet,failed,android,IN
+562f17f5-a67e-46b1-9d6b-155b01b407e8,player_0952,2025-10-10 10:12:24,Starter Pack,characters,49.98,USD,credit_card,failed,ios,DE
+c35e50e2-c9f7-498d-a217-dc91f0f29a60,player_0731,2025-10-06 10:12:24,Crystal Pack Medium,bundles,28.03,USD,digital_wallet,refunded,ios,BR
+f2e11544-534f-44d7-8017-f70c47b421d8,player_0614,2025-09-12 10:12:24,Crystal Pack Large,bundles,3.57,USD,credit_card,pending,android,FR
+dfbd6b13-8829-4e2a-a4d4-973127f0f5d5,player_0556,2025-07-30 10:12:24,Character Shards,currency,20.65,USD,digital_wallet,pending,android,BR
+09111ee3-48b1-49a8-91d8-4d7944b99c03,player_0202,2025-08-20 10:12:24,Hyperdrive Bundle,gear,8.0,USD,digital_wallet,failed,android,FR
+c51d8eb4-7692-4606-8ac8-0350925320fc,player_0069,2025-07-11 10:12:24,Energy Refill,bundles,170.62,USD,credit_card,failed,android,FR
+15a46b8e-a488-46b8-9246-fac8a05e66f4,player_0283,2025-09-13 10:12:24,Hyperdrive Bundle,characters,16.33,USD,credit_card,pending,android,JP
+42d04607-c6ec-46bf-b284-32b93ac4b0a9,player_0200,2025-09-07 10:12:24,Premium Pass,currency,32.92,USD,mobile_pay,failed,android,BR
+e5022581-512b-40f4-94bb-2822e48c610d,player_0624,2025-10-28 10:12:24,Crystal Pack Large,bundles,34.84,USD,credit_card,pending,ios,BR
+648ea6cc-229b-4826-a00f-559896384fea,player_0578,2025-09-30 10:12:24,Starter Pack,characters,1.55,USD,credit_card,pending,android,FR
+5a4ec57a-22b8-484f-93c4-6c9979b46a97,player_0245,2025-10-13 10:12:24,Crystal Pack Small,bundles,248.24,USD,digital_wallet,refunded,ios,AU
+08a00d27-9d29-4beb-83cd-607a13fe7ab2,player_0475,2025-09-07 10:12:24,Energy Refill,gear,8.71,USD,credit_card,failed,ios,AU
+a8496fa9-d8c6-46f0-94fb-30156857abd8,player_0495,2025-10-03 10:12:24,Crystal Pack Large,gear,38.11,USD,paypal,completed,android,AU
+5d935605-cb3f-4e64-b758-06939223b1ee,player_0564,2025-08-05 10:12:24,Gear Bundle,characters,17.38,USD,mobile_pay,pending,android,CA
+82f9df0f-78a3-45c6-97c2-259430a58e5d,player_0513,2025-08-04 10:12:24,Hyperdrive Bundle,bundles,91.67,USD,credit_card,refunded,android,DE
+944bcd66-fbd3-46fa-96e2-b443c68d2449,player_0542,2025-08-23 10:12:24,Energy Refill,energy,34.95,USD,credit_card,pending,android,UK
+d6fcd631-951b-4ef7-a52e-518bd9a738b7,player_0919,2025-08-27 10:12:24,Energy Refill,bundles,1.6,USD,paypal,pending,android,KR
+521ce3a2-e1bc-404f-b205-600d5ce4ad3a,player_0258,2025-10-18 10:12:24,Starter Pack,energy,5.24,USD,digital_wallet,failed,ios,IN
+ddebc1d7-4f9e-49ff-af0e-58351f35ebab,player_0377,2025-09-17 10:12:24,Energy Refill,characters,7.31,USD,digital_wallet,completed,ios,FR
+00dfbeed-f191-468f-8962-255f4c8e51ab,player_0200,2025-09-22 10:12:24,Starter Pack,currency,10.36,USD,mobile_pay,failed,android,BR
+0f234c26-3de4-4051-bb9e-b49ebb5765e7,player_0064,2025-08-30 10:12:24,Crystal Pack Large,energy,1.15,USD,mobile_pay,completed,ios,US
+bdd28691-0517-488a-ba14-98c58328bac7,player_0187,2025-08-22 10:12:24,Starter Pack,gear,8.57,USD,mobile_pay,completed,ios,JP
+626a3a0e-b760-4014-ad40-dc801e50ea52,player_0469,2025-10-16 10:12:24,Energy Refill,energy,15.67,USD,digital_wallet,pending,android,AU
+c305f589-6dd3-42b0-ba2c-ff020bc3c0d1,player_0158,2025-07-05 10:12:24,Hyperdrive Bundle,bundles,47.02,USD,paypal,refunded,ios,DE
+6e7231e1-cf9d-4b45-aa52-0f4aceb45436,player_0837,2025-10-01 10:12:24,Crystal Pack Small,currency,6.95,USD,digital_wallet,pending,ios,JP
+aa622b99-7071-48f5-85be-6c3aad80f4d3,player_0286,2025-09-20 10:12:24,Crystal Pack Medium,gear,13.64,USD,credit_card,refunded,android,KR
+b7d77203-7f3f-4396-bbc6-25a19f28ef22,player_0846,2025-07-22 10:12:24,Starter Pack,gear,39.26,USD,credit_card,pending,ios,IN
+f7c2bae1-edf8-4faf-8a00-d14f7a433711,player_0311,2025-09-02 10:12:24,Gear Bundle,energy,17.67,USD,mobile_pay,pending,ios,KR
+dbc43599-6ebc-4c8b-a30a-7201ae39538f,player_0376,2025-10-24 10:12:24,Crystal Pack Large,bundles,16.87,USD,paypal,failed,ios,KR
+0ae1d91c-1959-44e0-b6f8-930674811416,player_0961,2025-07-27 10:12:24,Energy Refill,energy,44.07,USD,credit_card,completed,ios,JP
+333d99d6-a7b5-4ba8-9f30-57795ad76250,player_0550,2025-08-14 10:12:24,Premium Pass,characters,49.71,USD,credit_card,pending,android,FR
+666af7e1-6977-47d8-9ab8-ed0df275e83b,player_0167,2025-07-04 10:12:24,Crystal Pack Medium,bundles,17.1,USD,mobile_pay,refunded,android,CA
+c6344ba1-b28c-4795-a720-8d14184d2bff,player_0706,2025-10-23 10:12:24,Premium Pass,gear,7.07,USD,paypal,pending,android,CA
+c684c5c4-8999-412d-bf54-18eba4578429,player_0596,2025-07-21 10:12:24,Gear Bundle,bundles,3.67,USD,credit_card,completed,ios,JP
+0edee3f8-8d5a-4e49-85ed-33d13a91f4db,player_0566,2025-11-01 10:12:24,Hyperdrive Bundle,currency,3.03,USD,paypal,refunded,ios,BR
+5f6746fa-5b6d-4067-bf4f-831f78603519,player_0872,2025-10-23 10:12:24,Hyperdrive Bundle,gear,12.69,USD,credit_card,failed,ios,BR
+1bc27833-b10d-4d41-9719-6b145a12fbb2,player_0765,2025-10-01 10:12:24,Gear Bundle,energy,25.13,USD,credit_card,pending,android,IN
+ad2f9a9e-358c-44d3-92ae-189f3169e345,player_0522,2025-07-10 10:12:24,Crystal Pack Medium,bundles,23.08,USD,paypal,completed,ios,FR
+74c4edd6-d22a-4e7d-aae6-337d995543dd,player_0681,2025-07-31 10:12:24,Crystal Pack Small,gear,1.26,USD,credit_card,failed,ios,FR
+346c7297-5bd1-4868-8f9e-fab96be4f7b7,player_0656,2025-07-15 10:12:24,Hyperdrive Bundle,currency,13.43,USD,credit_card,failed,ios,BR
+90a72ada-3131-4174-a464-7d9a9b668c8d,player_0874,2025-10-30 10:12:24,Gear Bundle,currency,4.65,USD,mobile_pay,completed,android,AU
+2d5d44c0-bd2d-47af-b302-5b24383964f7,player_0063,2025-08-23 10:12:24,Crystal Pack Medium,currency,16.94,USD,mobile_pay,refunded,ios,UK
+bd8406a0-1993-44ca-bc70-cb57ddd6e9cd,player_0594,2025-08-03 10:12:24,Hyperdrive Bundle,bundles,105.34,USD,credit_card,pending,ios,KR
+6b07138e-066c-45dc-8e49-6cb9d3e7bbf0,player_0953,2025-10-19 10:12:24,Crystal Pack Medium,currency,15.78,USD,digital_wallet,refunded,android,BR
+b9878bba-b7ab-4ec7-b85b-b345642de2f6,player_0524,2025-08-21 10:12:24,Crystal Pack Small,characters,6.76,USD,credit_card,pending,ios,JP
+ccecb0e0-3ab8-4e27-92f9-1f75433c5a81,player_0973,2025-07-08 10:12:24,Gear Bundle,bundles,19.16,USD,digital_wallet,refunded,android,DE
+c71a1dbc-db34-40ff-97bb-c2abc7201383,player_0348,2025-07-25 10:12:24,Hyperdrive Bundle,currency,16.62,USD,paypal,failed,android,UK
+95b4286e-41af-43fa-ac90-d5593d265c5f,player_0785,2025-08-21 10:12:24,Character Shards,bundles,180.92,USD,paypal,completed,ios,AU
+d9b5ca28-885e-4716-8be6-00992aef2373,player_0627,2025-09-04 10:12:24,Gear Bundle,energy,41.82,USD,mobile_pay,failed,ios,DE
+e8294d7c-94e6-406c-b9fe-5aa3da4658d7,player_0622,2025-08-17 10:12:24,Crystal Pack Large,bundles,8.37,USD,credit_card,pending,android,AU
+b2acec29-6aa7-40be-a95b-7ad997064cec,player_0787,2025-11-01 10:12:24,Crystal Pack Medium,gear,5.64,USD,digital_wallet,failed,ios,KR
+537231f5-6bb7-46cd-b724-84e088c7497d,player_0070,2025-09-09 10:12:24,Energy Refill,bundles,48.59,USD,credit_card,refunded,android,CA
+a87f9bdf-3f30-4546-8ee0-d49c47d1c48d,player_0588,2025-09-12 10:12:24,Hyperdrive Bundle,currency,7.73,USD,paypal,completed,android,DE
+29c1b515-016e-4bbc-8652-5d3ca147f38a,player_0100,2025-09-26 10:12:24,Energy Refill,currency,19.62,USD,mobile_pay,pending,android,IN
+49ca1ac1-9e17-40ef-a612-583ae41c60b1,player_0211,2025-07-06 10:12:24,Premium Pass,gear,10.52,USD,credit_card,refunded,android,DE
+89e4c1db-82c2-4b4d-aede-a19cf4617898,player_0489,2025-09-28 10:12:24,Hyperdrive Bundle,bundles,20.83,USD,paypal,failed,ios,KR
+e301fabf-54c1-445e-b53e-fa6f77e6578c,player_0219,2025-10-08 10:12:24,Crystal Pack Large,characters,16.09,USD,paypal,completed,ios,AU
+40c5a3e1-4b8c-41d2-bc69-51188acca112,player_0072,2025-09-02 10:12:24,Gear Bundle,energy,299.04,USD,digital_wallet,refunded,ios,FR
+a8267eb0-e396-4933-b1da-d063f019a571,player_0297,2025-09-30 10:12:24,Crystal Pack Large,bundles,2.78,USD,credit_card,pending,ios,IN
+0f37d4d6-c15c-4035-8608-4a7740f207b7,player_0580,2025-08-08 10:12:24,Energy Refill,gear,17.46,USD,digital_wallet,failed,ios,UK
+de0dcb19-133e-4a2e-a0f9-2ce265a06487,player_0253,2025-09-21 10:12:24,Crystal Pack Medium,energy,11.33,USD,credit_card,failed,ios,KR
+3c35e870-2533-492d-8023-7b5b861f8630,player_0559,2025-07-15 10:12:24,Character Shards,gear,10.57,USD,credit_card,pending,ios,FR
+ac72dde8-f601-4c50-9ffb-43d64b03de8f,player_0195,2025-09-15 10:12:24,Gear Bundle,characters,117.82,USD,digital_wallet,failed,android,CA
+a818346a-813b-48c1-8298-5fc49b513274,player_0812,2025-08-21 10:12:24,Hyperdrive Bundle,currency,11.36,USD,paypal,completed,android,IN
+e50b9d4c-4dd0-4177-af4d-2a86d785a1bd,player_0022,2025-09-07 10:12:24,Energy Refill,bundles,32.54,USD,paypal,pending,android,DE
+4cab418d-88dd-494e-ad39-67f7f6c6d1fd,player_0954,2025-09-15 10:12:24,Premium Pass,characters,13.62,USD,digital_wallet,refunded,android,KR
+e16080bf-f79b-4447-9c31-b3094f0db83c,player_0756,2025-08-05 10:12:24,Character Shards,bundles,12.35,USD,paypal,completed,ios,KR
+bb7cbceb-fb85-4027-989c-f441429d8e21,player_0252,2025-07-21 10:12:24,Energy Refill,characters,12.83,USD,mobile_pay,completed,ios,US
+484eea2e-aa94-4d3b-aa80-8c52d0b1f554,player_0894,2025-08-25 10:12:24,Energy Refill,gear,4.9,USD,digital_wallet,completed,android,FR
+91576a29-08bc-4a2b-8556-a921f715cd1a,player_0627,2025-10-12 10:12:24,Crystal Pack Large,energy,45.73,USD,credit_card,completed,ios,DE
+89dfd8f6-cd67-4d05-8e0c-3d033d18ae75,player_0177,2025-07-14 10:12:24,Crystal Pack Medium,currency,163.59,USD,digital_wallet,pending,android,JP
+cc75424f-50ed-4dd0-b110-6d7bfbd75031,player_0373,2025-08-21 10:12:24,Crystal Pack Small,characters,124.05,USD,digital_wallet,failed,android,JP
+7ab33d02-333f-4295-b33d-9ffacf4bd68a,player_0612,2025-09-28 10:12:24,Energy Refill,characters,9.64,USD,mobile_pay,completed,ios,DE
+6039d134-5133-40c6-89fe-2edab13d2337,player_0956,2025-07-12 10:12:24,Gear Bundle,characters,16.94,USD,credit_card,completed,ios,CA
+45cc7144-ec2b-4dc9-9333-d31ea896350b,player_0643,2025-07-29 10:12:24,Character Shards,currency,104.24,USD,digital_wallet,refunded,android,UK
+e4643bb7-54a5-44ed-a6a0-8fbeabc20d1a,player_0403,2025-09-03 10:12:24,Crystal Pack Small,bundles,17.28,USD,digital_wallet,refunded,android,CA
+13418411-c5e6-46b1-97f6-e2ab6d238ff0,player_0022,2025-07-29 10:12:24,Starter Pack,characters,16.57,USD,credit_card,completed,android,DE
+4fbb1d7f-1d29-42c2-8f3b-76486378ddc0,player_0725,2025-10-22 10:12:24,Crystal Pack Small,gear,34.78,USD,credit_card,pending,ios,DE
+444c63eb-e110-44b7-b732-cb952844b71a,player_0388,2025-08-28 10:12:24,Starter Pack,energy,5.75,USD,paypal,refunded,ios,IN
+dc3b408d-9e97-4384-8923-6b705b8c86ef,player_0365,2025-10-30 10:12:24,Hyperdrive Bundle,bundles,16.05,USD,digital_wallet,refunded,ios,KR
+9f0b53f1-a5bf-4a1b-adf0-845e36693888,player_0960,2025-07-24 10:12:24,Energy Refill,characters,32.94,USD,paypal,failed,ios,CA
+a10a852c-e8e0-4737-86b6-af553e4b5513,player_0900,2025-10-14 10:12:24,Character Shards,energy,83.31,USD,paypal,pending,ios,DE
+dd64b144-20c9-4099-a5a3-a48ae98ca8d5,player_0393,2025-10-15 10:12:24,Energy Refill,bundles,6.0,USD,digital_wallet,refunded,ios,CA
+3e0f0418-cf5b-45b9-baaf-1b834246d450,player_0602,2025-07-26 10:12:24,Starter Pack,gear,4.44,USD,mobile_pay,refunded,android,DE
+cbac1bf0-c22e-4ace-9303-14e5daf9ab03,player_0783,2025-08-07 10:12:24,Crystal Pack Large,currency,7.44,USD,mobile_pay,pending,android,JP
+d63003ea-7505-4a53-9aa1-bc28f47c97be,player_0777,2025-10-21 10:12:24,Gear Bundle,energy,2.89,USD,mobile_pay,refunded,android,BR
+bb5c8fd4-3d4b-43b6-88b7-a148953189f3,player_0082,2025-10-28 10:12:24,Premium Pass,characters,5.31,USD,paypal,refunded,ios,KR
+923edd81-dd7c-4c1c-a681-056bc9de641a,player_0355,2025-08-02 10:12:24,Starter Pack,energy,39.46,USD,mobile_pay,pending,android,DE
+f77c7a8a-3ac1-4369-8f81-73d72d33da24,player_0659,2025-07-21 10:12:24,Gear Bundle,bundles,15.89,USD,mobile_pay,pending,android,AU
+fdff3e72-32d4-4cd9-bac7-28f28221585a,player_0179,2025-09-15 10:12:24,Gear Bundle,bundles,13.6,USD,digital_wallet,completed,android,CA
+c36efe33-94af-414d-ab50-ab282cf73b50,player_0127,2025-07-12 10:12:24,Character Shards,energy,22.25,USD,paypal,failed,ios,AU
+861df19b-43a3-4a03-97f4-5e24d086f33a,player_0050,2025-10-02 10:12:24,Crystal Pack Small,characters,3.48,USD,mobile_pay,failed,ios,CA
+bce1a1a2-9580-4b5a-89de-8bb219264119,player_0492,2025-09-10 10:12:24,Premium Pass,bundles,8.65,USD,mobile_pay,refunded,android,DE
+b716b108-2d6b-4f35-9279-421f1bd07fa9,player_0309,2025-07-29 10:12:24,Starter Pack,energy,19.76,USD,credit_card,refunded,android,JP
+28ade398-8878-4858-8b66-5b921820a544,player_0743,2025-10-05 10:12:24,Crystal Pack Medium,characters,37.29,USD,mobile_pay,failed,ios,UK
+b7c9da5e-9674-4e77-8f26-9caa72596151,player_0493,2025-07-25 10:12:24,Crystal Pack Large,currency,13.1,USD,credit_card,failed,ios,UK
+45f84157-df3d-430f-af73-4ace8229e528,player_0588,2025-07-29 10:12:24,Character Shards,gear,9.32,USD,credit_card,completed,android,DE
+4cefeb4d-1f19-42c5-9e2b-4eaa2265bbe4,player_0163,2025-08-14 10:12:24,Character Shards,bundles,6.33,USD,digital_wallet,refunded,ios,KR
+edac395a-74b8-41ff-be9c-37c27f1ae1f0,player_0059,2025-10-15 10:12:24,Character Shards,energy,8.61,USD,digital_wallet,failed,android,JP
+3de9f42b-1a9b-49db-8690-ab1bd8c45319,player_0726,2025-09-25 10:12:24,Starter Pack,bundles,39.46,USD,credit_card,refunded,ios,JP
+a4e22a88-1124-4704-8d26-9dc151ee6899,player_0445,2025-08-23 10:12:24,Crystal Pack Large,characters,33.22,USD,credit_card,completed,ios,US
+c496694f-7299-4e69-8fac-60cf94abc70d,player_0075,2025-08-23 10:12:24,Crystal Pack Medium,currency,14.64,USD,credit_card,completed,android,IN
+3a49af9f-a68c-45f4-8a5d-c642b484c5d2,player_0911,2025-07-29 10:12:24,Hyperdrive Bundle,bundles,16.5,USD,digital_wallet,completed,android,AU
+83572764-6bf9-446f-9785-b97d230bf305,player_0617,2025-09-12 10:12:24,Crystal Pack Medium,gear,4.45,USD,digital_wallet,failed,ios,IN
+fda39a87-8a14-4c67-a0e2-c3997aaad978,player_0187,2025-08-18 10:12:24,Gear Bundle,energy,7.46,USD,credit_card,refunded,ios,JP
+ed3d6b87-f40d-4b8a-8817-8dd515436365,player_0762,2025-09-06 10:12:24,Crystal Pack Small,energy,2.86,USD,credit_card,completed,ios,JP
+a6e6e755-28f4-46f8-b7f9-4bda8e9b9cd7,player_0260,2025-08-02 10:12:24,Energy Refill,energy,16.93,USD,digital_wallet,pending,android,KR
+1bd3e3cf-97b9-453f-b37d-66f4cc6029a8,player_0340,2025-09-28 10:12:24,Crystal Pack Large,bundles,12.05,USD,mobile_pay,refunded,android,FR
+b7f10dce-450a-45b2-bdff-22da002dfada,player_0575,2025-09-08 10:12:24,Crystal Pack Large,energy,7.64,USD,mobile_pay,pending,ios,JP
+6c8cdb31-c2d8-4f3e-9ae3-46aa8aca3e8a,player_0449,2025-07-15 10:12:24,Energy Refill,currency,7.02,USD,digital_wallet,completed,android,KR
+3219aecb-fd3f-44eb-a9b8-a976b1e49ddb,player_0832,2025-08-18 10:12:24,Energy Refill,currency,9.82,USD,paypal,pending,android,DE
+3cc8d91d-54e2-4765-bebd-f4ecfe1340e7,player_0015,2025-07-14 10:12:24,Character Shards,characters,18.29,USD,mobile_pay,pending,android,DE
+f23534cd-595e-49cf-bec9-5319b0867df7,player_0450,2025-07-04 10:12:24,Energy Refill,bundles,9.2,USD,digital_wallet,refunded,android,US
+651bee91-4711-488b-a572-1e50444c6316,player_0911,2025-09-06 10:12:24,Crystal Pack Large,bundles,14.57,USD,mobile_pay,refunded,android,AU
+218c0508-38b2-45e9-8d12-ea2bb4560eda,player_0417,2025-09-21 10:12:24,Crystal Pack Medium,currency,7.16,USD,mobile_pay,refunded,android,KR
+69af221e-f198-448e-9422-f0d7fcef4e78,player_0573,2025-08-17 10:12:24,Crystal Pack Small,bundles,9.15,USD,digital_wallet,completed,ios,BR
+a60fe20a-8dc2-4663-abc3-551f9b0de950,player_0334,2025-08-13 10:12:24,Crystal Pack Large,energy,18.01,USD,credit_card,refunded,ios,AU
+75b0372b-2825-4771-a35f-20464ff9c37d,player_0982,2025-10-22 10:12:24,Crystal Pack Small,bundles,18.87,USD,mobile_pay,refunded,ios,DE
+824509ae-7f9a-4e79-b5d8-5daf18efe60f,player_0741,2025-09-12 10:12:24,Premium Pass,energy,17.86,USD,digital_wallet,failed,ios,FR
+ef174cca-ef1c-4a68-a798-e481876facbc,player_0730,2025-09-02 10:12:24,Crystal Pack Medium,bundles,3.87,USD,credit_card,pending,android,CA
+bbd08f0e-9e7e-4b78-9139-b53c38aba038,player_0986,2025-09-25 10:12:24,Energy Refill,bundles,15.59,USD,digital_wallet,pending,ios,US
+0627d0a9-6f15-4bd9-8378-3457aaa27233,player_0652,2025-07-24 10:12:24,Crystal Pack Small,characters,297.39,USD,paypal,failed,ios,KR
+4f052e49-5cef-4ba9-9366-34b00c4bc984,player_0415,2025-07-28 10:12:24,Energy Refill,characters,99.31,USD,mobile_pay,failed,android,IN
+4a4ac104-68a4-418e-a35a-6f34610849f7,player_0745,2025-08-25 10:12:24,Premium Pass,bundles,9.46,USD,paypal,failed,ios,US
+aaae1c63-53a6-4fe7-95f2-7a857ed83189,player_0316,2025-07-31 10:12:24,Hyperdrive Bundle,currency,1.19,USD,credit_card,refunded,android,KR
+d2c33337-54be-43b5-b700-7ee3d3e28b23,player_0838,2025-10-10 10:12:24,Character Shards,energy,28.52,USD,mobile_pay,refunded,ios,FR
+ea90699c-0f6b-4267-9d5d-4ea557d3b0c5,player_0545,2025-07-17 10:12:24,Premium Pass,currency,8.33,USD,paypal,refunded,android,KR
+af021f4a-1ff7-4ffc-b2d2-e41914684415,player_0963,2025-10-21 10:12:24,Character Shards,bundles,5.94,USD,paypal,completed,ios,DE
+8c261b4c-7874-4108-aef3-d881d4111671,player_0711,2025-07-26 10:12:24,Crystal Pack Large,bundles,11.88,USD,mobile_pay,refunded,ios,UK
+8d47f769-8add-4ac1-8423-e52b1f8794a6,player_0786,2025-08-04 10:12:24,Character Shards,energy,6.66,USD,credit_card,failed,ios,JP
+e8fd1d78-52ec-455a-babb-e0e342b7157d,player_0317,2025-10-24 10:12:24,Energy Refill,bundles,33.33,USD,digital_wallet,pending,android,CA
+26fa4447-f510-49ca-a646-5327a849da9d,player_0788,2025-10-30 10:12:24,Premium Pass,characters,65.42,USD,digital_wallet,pending,ios,DE
+617dde44-315c-4555-a684-d19b0f67ee64,player_0805,2025-08-02 10:12:24,Crystal Pack Small,gear,18.59,USD,credit_card,refunded,ios,DE
+7f886d51-4f77-40a1-90a4-bb6b0f9a6b7d,player_0916,2025-09-29 10:12:24,Hyperdrive Bundle,bundles,2.06,USD,credit_card,failed,android,US
+ffe4d328-c33a-4312-823c-70a37adfe15d,player_0221,2025-07-17 10:12:24,Crystal Pack Medium,currency,277.37,USD,paypal,failed,ios,IN
+0d674e87-d24e-42bf-b91b-7a1d85a260cb,player_0724,2025-07-27 10:12:24,Character Shards,bundles,17.41,USD,paypal,refunded,ios,KR
+3200fc4c-09b6-4563-882a-fabfa5318714,player_0456,2025-09-16 10:12:24,Starter Pack,characters,18.69,USD,mobile_pay,refunded,android,AU
+df0a9848-aa53-419d-b4b4-e923f6726c79,player_0366,2025-09-06 10:12:24,Crystal Pack Small,gear,25.74,USD,mobile_pay,failed,android,CA
+b86e0fe5-6e85-47df-9970-5fbb0d3f36b5,player_0329,2025-08-27 10:12:24,Crystal Pack Small,bundles,31.67,USD,credit_card,pending,android,FR
+0788e77e-0525-4623-900b-4df37865f154,player_0963,2025-08-05 10:12:24,Premium Pass,energy,12.16,USD,credit_card,failed,ios,DE
+dadf7426-169b-422c-9d71-170f8b71a037,player_0762,2025-09-25 10:12:24,Crystal Pack Large,bundles,14.37,USD,credit_card,completed,ios,JP
+470e6e23-7499-4526-a689-1604c2aaff2b,player_0919,2025-08-09 10:12:24,Character Shards,characters,3.41,USD,credit_card,pending,android,KR
+86536640-2c81-4847-9fad-64805a9853c9,player_0482,2025-10-16 10:12:24,Character Shards,bundles,8.42,USD,mobile_pay,refunded,android,IN
+565f0dc4-5445-42df-a191-5f51c26b9bb1,player_0788,2025-10-30 10:12:24,Character Shards,bundles,89.15,USD,mobile_pay,completed,ios,DE
+7fe0da7d-ae7c-493e-bf68-fb710444f457,player_0047,2025-09-16 10:12:24,Crystal Pack Medium,characters,27.49,USD,credit_card,failed,android,IN
+40976c64-e179-4f9d-8143-e1617dda68ba,player_0416,2025-10-10 10:12:24,Energy Refill,currency,36.52,USD,mobile_pay,refunded,android,FR
+b47ff5c0-98b1-4e48-8f91-646c6ad8a493,player_0003,2025-07-28 10:12:24,Premium Pass,gear,2.61,USD,mobile_pay,pending,ios,BR
+f9ead611-fbb8-43e8-8cb7-e252596a8f16,player_0059,2025-10-13 10:12:24,Energy Refill,gear,5.17,USD,paypal,failed,android,JP
+3aca0770-1a5d-4284-8e9c-f84dcfe416b1,player_0040,2025-08-22 10:12:24,Crystal Pack Small,bundles,10.31,USD,paypal,completed,android,AU
+d250cd2a-d2ee-44e0-9aa8-90bef67fda8d,player_0568,2025-07-24 10:12:24,Crystal Pack Large,energy,13.67,USD,paypal,pending,ios,KR
+6ab14cf6-a49d-46a4-835e-318b25676c6d,player_0409,2025-07-22 10:12:24,Crystal Pack Large,energy,5.47,USD,digital_wallet,refunded,ios,BR
+13417b98-e067-470f-99e2-ea5c915f757e,player_0702,2025-10-19 10:12:24,Character Shards,gear,8.11,USD,digital_wallet,failed,android,CA
+a336cb1f-7c77-447b-bad7-179a8af0fcd4,player_0434,2025-08-31 10:12:24,Premium Pass,energy,18.92,USD,mobile_pay,refunded,android,IN
+b92de833-63f4-4dc9-9608-28f6906794d0,player_0784,2025-09-28 10:12:24,Energy Refill,gear,8.83,USD,credit_card,refunded,ios,KR
+052e272a-0da4-4402-b39e-067ece76cb28,player_0465,2025-08-06 10:12:24,Hyperdrive Bundle,characters,87.72,USD,credit_card,completed,ios,KR
+7feb213b-1a78-4863-a893-37635c13c652,player_0821,2025-07-06 10:12:24,Hyperdrive Bundle,gear,19.33,USD,credit_card,completed,android,IN
+56425120-deb4-461a-b9d2-4a04075ae486,player_0659,2025-07-05 10:12:24,Energy Refill,bundles,11.25,USD,mobile_pay,failed,android,AU
+98693864-b092-4cf2-aa5e-dfb3a16dc13e,player_0107,2025-07-28 10:12:24,Energy Refill,energy,1.48,USD,credit_card,completed,ios,US
+a0b002e7-97ea-44bb-bcae-ae0a8e797b00,player_0690,2025-09-22 10:12:24,Crystal Pack Medium,currency,11.06,USD,digital_wallet,refunded,android,AU
+6cd1b1bf-6611-45d0-a900-b62ad976d6e4,player_0018,2025-08-17 10:12:24,Gear Bundle,gear,172.96,USD,digital_wallet,refunded,ios,KR
+ca6accce-fe27-4e4c-a480-7ba88a793625,player_0928,2025-10-22 10:12:24,Starter Pack,energy,12.17,USD,digital_wallet,refunded,android,JP
+7876e0a2-317d-4c94-a5f2-3f39baadddba,player_0549,2025-10-08 10:12:24,Gear Bundle,bundles,42.35,USD,mobile_pay,pending,android,BR
+9e7627a5-197b-4ea8-a79a-6c6c7d0fd50d,player_0078,2025-07-05 10:12:24,Gear Bundle,bundles,5.16,USD,digital_wallet,failed,ios,UK
+8970b5d4-4076-49b2-95cb-f81dd6ac50c6,player_0573,2025-07-29 10:12:24,Character Shards,characters,30.83,USD,digital_wallet,pending,ios,BR
+9233125a-9238-483d-8063-e5bd0c9a6f2d,player_0111,2025-10-13 10:12:24,Premium Pass,characters,248.3,USD,credit_card,completed,android,IN
+f8a5e67d-deba-4f14-8c8d-dff800fba9b1,player_0832,2025-09-18 10:12:24,Character Shards,bundles,1.0,USD,mobile_pay,pending,android,DE
+abfca49c-c9e8-4915-812c-7a9866d86554,player_0663,2025-08-23 10:12:24,Starter Pack,characters,17.83,USD,mobile_pay,failed,ios,BR
+ebd63d0b-1e94-488b-9548-38f5fc6aa8c0,player_0128,2025-10-26 10:12:24,Crystal Pack Large,currency,19.54,USD,mobile_pay,completed,android,US
+22161893-d288-4b26-b801-7fbf020d2916,player_0893,2025-09-22 10:12:24,Crystal Pack Small,gear,18.26,USD,digital_wallet,pending,ios,US
+2b11552c-6e1b-45cb-aab9-fc1281fd0ca8,player_0497,2025-07-28 10:12:24,Starter Pack,energy,8.91,USD,digital_wallet,pending,android,FR
+658e5830-342d-40da-9a20-8e2b37402e3a,player_0538,2025-08-17 10:12:24,Energy Refill,energy,2.44,USD,digital_wallet,refunded,android,IN
+0c8be11a-9cc8-4350-bb5d-941d69220b66,player_0616,2025-10-02 10:12:24,Premium Pass,bundles,19.55,USD,credit_card,failed,ios,UK
+d5557298-e145-4a6c-bd12-1f191c3e5e94,player_0591,2025-08-19 10:12:24,Hyperdrive Bundle,currency,78.71,USD,digital_wallet,failed,ios,IN
+2ef7c362-215b-4748-86a6-fb12acf93986,player_0391,2025-08-31 10:12:24,Character Shards,bundles,19.56,USD,digital_wallet,failed,ios,KR
+8ef1308a-cf83-4fae-8ed7-52267c1ce16f,player_0058,2025-10-06 10:12:24,Hyperdrive Bundle,energy,203.5,USD,mobile_pay,refunded,ios,US
+a7e5a6b2-7ace-44e9-a9b6-67d23d034e8c,player_0450,2025-07-21 10:12:24,Energy Refill,gear,6.68,USD,digital_wallet,completed,android,US
+2832a0c8-4c81-47b3-9b64-1d214ed5a52c,player_0103,2025-10-01 10:12:24,Hyperdrive Bundle,gear,3.14,USD,mobile_pay,failed,android,KR
+f9562f56-4e9c-44fd-9d0c-cf8e6bb580db,player_0444,2025-07-23 10:12:24,Premium Pass,currency,37.52,USD,digital_wallet,pending,android,FR
+0031eff3-6297-4a5b-a671-2405ab372ca1,player_0690,2025-07-16 10:12:24,Crystal Pack Large,gear,11.72,USD,digital_wallet,failed,android,AU
+6729f039-ce33-4714-9fdc-054e1770b561,player_0161,2025-09-01 10:12:24,Gear Bundle,characters,10.05,USD,digital_wallet,pending,android,IN
+f75ad892-497a-4b69-8bbc-d5f2f63b9ac8,player_0973,2025-10-22 10:12:24,Hyperdrive Bundle,gear,3.68,USD,digital_wallet,refunded,android,DE
+669754a8-36a2-4335-a66b-eef09d2caff3,player_0729,2025-09-15 10:12:24,Crystal Pack Medium,energy,22.26,USD,credit_card,refunded,ios,IN
+39e54a34-c54c-490e-9b36-8a1dc33ebbd3,player_0934,2025-09-20 10:12:24,Hyperdrive Bundle,characters,8.09,USD,paypal,pending,android,FR
+2f16c643-30e2-4f9c-a7fc-b09dc93d7020,player_0434,2025-07-20 10:12:24,Crystal Pack Small,currency,12.29,USD,mobile_pay,completed,android,IN
+1d334196-b71a-4c54-b430-eb56a9efdaf0,player_0703,2025-09-22 10:12:24,Crystal Pack Medium,bundles,17.9,USD,paypal,refunded,android,DE
+eb45cf6f-66c0-4945-9ce6-6467a836c2c2,player_0926,2025-09-21 10:12:24,Gear Bundle,currency,11.46,USD,mobile_pay,completed,android,AU
+0bbc5444-39d3-4c37-a526-bff012c13e06,player_0411,2025-08-20 10:12:24,Gear Bundle,characters,106.03,USD,mobile_pay,refunded,ios,BR
+cd859015-c49c-4656-a681-24e81a5d0efb,player_0182,2025-10-16 10:12:24,Starter Pack,currency,43.69,USD,paypal,pending,ios,KR
+95761c38-0a79-43e2-9442-8439afe50486,player_0783,2025-08-15 10:12:24,Crystal Pack Small,bundles,5.44,USD,mobile_pay,pending,android,JP
+883ff584-8854-4c30-a35c-64262fb1b6dd,player_0745,2025-10-07 10:12:24,Character Shards,gear,8.06,USD,digital_wallet,failed,ios,US
+18855f3b-05ab-46a6-93c0-fffe23a0ebf7,player_0476,2025-07-05 10:12:24,Hyperdrive Bundle,currency,18.23,USD,digital_wallet,pending,ios,BR
+0f8b31ef-de48-4bdc-bdb2-e39712f3524a,player_0152,2025-08-29 10:12:24,Crystal Pack Medium,energy,96.48,USD,digital_wallet,completed,ios,AU
+19423acc-78ac-4a1a-9f04-f171fd1ddb55,player_0308,2025-08-26 10:12:24,Starter Pack,gear,10.31,USD,digital_wallet,pending,ios,US
+10cfffcb-e326-4519-aef8-28468888b48a,player_0480,2025-07-25 10:12:24,Starter Pack,characters,14.33,USD,digital_wallet,refunded,ios,IN
+77154678-cfca-4408-92cb-ef6f7ff4d12f,player_0212,2025-10-01 10:12:24,Starter Pack,bundles,1.89,USD,paypal,pending,android,KR
+06622480-6816-4796-82f9-617379bb459f,player_0201,2025-07-13 10:12:24,Premium Pass,bundles,9.3,USD,credit_card,refunded,ios,CA
+4fa14684-f74a-4aa3-878c-fe281b8deaff,player_0453,2025-08-09 10:12:24,Starter Pack,energy,11.81,USD,mobile_pay,failed,android,FR
+07f3d50c-3daa-4492-9d1a-073338678323,player_0086,2025-10-31 10:12:24,Crystal Pack Small,gear,40.59,USD,mobile_pay,failed,ios,DE
+f972df20-f0ee-41bf-b06d-d580c0f6a089,player_0295,2025-08-09 10:12:24,Crystal Pack Large,energy,1.87,USD,digital_wallet,pending,ios,US
+fec5d93b-75c7-4e98-872c-d7da020e2372,player_0349,2025-07-04 10:12:24,Crystal Pack Small,currency,12.58,USD,credit_card,refunded,android,CA
+ec8f6bcf-ff03-4fff-a46e-2977dccb73e0,player_0265,2025-08-15 10:12:24,Crystal Pack Large,characters,107.83,USD,digital_wallet,failed,android,FR
+29c4d557-a7ee-4969-9a9c-665a825b478c,player_0184,2025-10-14 10:12:24,Crystal Pack Large,gear,25.19,USD,mobile_pay,refunded,ios,BR
+7603ad1b-cebe-40c7-aeb6-25fd307f0c0a,player_0530,2025-10-02 10:12:24,Gear Bundle,currency,1.29,USD,mobile_pay,refunded,android,US
+09bda084-2e91-4c11-9046-f39843b2ecb7,player_0936,2025-08-30 10:12:24,Starter Pack,bundles,3.29,USD,mobile_pay,pending,ios,CA
+cde10241-27f7-4346-b225-3310a10e1f3b,player_0382,2025-08-19 10:12:24,Starter Pack,characters,187.79,USD,mobile_pay,failed,ios,BR
+d217d51c-ee8a-423c-87fa-0b7e48b1b5d4,player_0833,2025-08-23 10:12:24,Hyperdrive Bundle,bundles,9.08,USD,credit_card,failed,ios,US
+03a6518b-87ff-4cd6-a2d6-1cc35d5db073,player_0521,2025-11-01 10:12:24,Energy Refill,characters,10.4,USD,credit_card,failed,ios,US
+7a6ffebd-2dcb-49ea-be22-4c7cbb6ad1e9,player_0998,2025-10-07 10:12:24,Energy Refill,energy,38.37,USD,digital_wallet,pending,ios,JP
+fd8d6305-1478-4da9-be19-f1f109a66619,player_0221,2025-09-07 10:12:24,Energy Refill,currency,180.39,USD,digital_wallet,completed,ios,IN
+3677bc73-c0ab-40fc-b18b-4183b3c15bad,player_0389,2025-09-18 10:12:24,Character Shards,currency,8.69,USD,digital_wallet,refunded,android,KR
+3b41860b-7b8f-4a06-a579-0a6b44f1f580,player_0012,2025-09-05 10:12:24,Crystal Pack Large,energy,13.18,USD,credit_card,failed,android,FR
+c3bd73d4-f377-4c7e-a087-226818dc4a1e,player_0788,2025-09-13 10:12:24,Hyperdrive Bundle,bundles,186.88,USD,credit_card,pending,ios,DE
+05cf141e-16e1-4bcd-a73d-770e6a788b0b,player_0381,2025-09-01 10:12:24,Hyperdrive Bundle,gear,43.93,USD,paypal,refunded,ios,IN
+b5b99030-ed94-44d6-a44d-0ef73e770693,player_0788,2025-08-21 10:12:24,Hyperdrive Bundle,characters,269.36,USD,credit_card,failed,ios,DE
+eb1445b4-411c-4b58-b351-892ac5e1513a,player_0562,2025-08-01 10:12:24,Gear Bundle,currency,30.81,USD,paypal,refunded,ios,CA
+62e67812-b1f0-46a1-9898-db4fbd4204f2,player_0538,2025-10-19 10:12:24,Crystal Pack Small,bundles,10.1,USD,paypal,completed,android,IN
+e38302c8-e98d-4ded-9c14-c04784e0f6fc,player_0768,2025-07-18 10:12:24,Energy Refill,energy,19.19,USD,paypal,completed,android,FR
+77f4b1d6-cdb8-4de2-9a01-18549c5d3283,player_0153,2025-09-10 10:12:24,Hyperdrive Bundle,characters,11.62,USD,digital_wallet,completed,android,UK
+ea62e857-0bf4-407d-8a49-72fbf4419462,player_0630,2025-09-08 10:12:24,Character Shards,energy,24.94,USD,digital_wallet,refunded,ios,UK
+4526990b-4665-480e-a849-4fed59b4d906,player_0640,2025-09-19 10:12:24,Crystal Pack Small,bundles,35.0,USD,digital_wallet,refunded,ios,DE
+f8ebdc84-b268-4a85-9e07-3967daa060fb,player_0494,2025-09-15 10:12:24,Energy Refill,energy,19.92,USD,mobile_pay,refunded,android,FR
+a00d547e-0eba-4884-9f21-6594053189c2,player_0353,2025-07-24 10:12:24,Energy Refill,gear,5.62,USD,credit_card,completed,android,FR
+3d76cc79-aa59-45e1-9ba0-9a5cbf62f46e,player_0086,2025-09-22 10:12:24,Starter Pack,bundles,47.45,USD,paypal,failed,ios,DE
+f32c074e-fbf1-47dc-9647-e3fe04f6bb07,player_0795,2025-10-31 10:12:24,Crystal Pack Large,gear,6.57,USD,credit_card,completed,ios,CA
+05cc0ea2-2438-4d71-93b6-f408ed4e319d,player_0077,2025-08-13 10:12:24,Energy Refill,gear,11.27,USD,digital_wallet,pending,android,IN
+8fa83fac-8588-4722-b09f-11c1eb3798a2,player_0414,2025-10-05 10:12:24,Hyperdrive Bundle,gear,7.5,USD,mobile_pay,refunded,android,DE
+ad1df6d5-396e-4c96-a71b-0f403202a266,player_0014,2025-08-13 10:12:24,Hyperdrive Bundle,currency,3.82,USD,paypal,failed,ios,KR
+f255d788-0cd8-4351-a3ec-71087b2d3316,player_0406,2025-07-04 10:12:24,Gear Bundle,currency,3.16,USD,mobile_pay,completed,ios,DE
+f4bbacf7-6af7-43e7-8f00-95c41aa4cfc9,player_0493,2025-07-23 10:12:24,Gear Bundle,energy,9.87,USD,paypal,completed,ios,UK
+a73bc15e-6823-4dc5-b649-44277e0789cc,player_0078,2025-09-11 10:12:24,Hyperdrive Bundle,currency,8.19,USD,digital_wallet,completed,ios,UK
+3fc26720-9d2f-40a4-8796-08c79b31491f,player_0028,2025-10-21 10:12:24,Energy Refill,bundles,7.52,USD,digital_wallet,completed,android,CA
+1c6e5e40-23d6-4b4d-bae4-971c803c3363,player_0430,2025-10-03 10:12:24,Crystal Pack Small,gear,13.31,USD,digital_wallet,failed,android,AU
+f1bd3cf9-c9df-4834-a110-8696daf73318,player_0856,2025-10-27 10:12:24,Gear Bundle,gear,6.89,USD,mobile_pay,completed,ios,BR
+d6abe5e3-fdeb-4b34-99c2-5adc06b8b4fc,player_0146,2025-08-11 10:12:24,Crystal Pack Large,characters,188.43,USD,digital_wallet,completed,ios,DE
+6838455f-3f53-4c32-9e6b-c3ef75f3c2a8,player_0187,2025-09-11 10:12:24,Crystal Pack Small,bundles,17.61,USD,mobile_pay,failed,ios,JP
+0a0840e3-f34c-4df3-83a6-9523c74502c0,player_0614,2025-08-14 10:12:24,Premium Pass,gear,5.59,USD,credit_card,pending,android,FR
+4cffeb83-2859-4ee7-8a41-b0ed0187d84d,player_0430,2025-07-24 10:12:24,Character Shards,energy,13.45,USD,paypal,refunded,android,AU
+09990ced-b1a4-4424-afc4-43264c846371,player_0757,2025-09-25 10:12:24,Crystal Pack Large,gear,10.25,USD,mobile_pay,failed,android,AU
+39bb5310-5682-4ed1-9b7f-3b5b4b43cfa6,player_0536,2025-07-26 10:12:24,Crystal Pack Medium,bundles,10.68,USD,credit_card,pending,android,CA
+69a0635c-b421-48b2-be38-6fe28e7b07d2,player_0500,2025-10-02 10:12:24,Gear Bundle,characters,7.63,USD,mobile_pay,failed,ios,JP
+beb7f152-b2e8-48ec-8a22-e8d7b8b59cb6,player_0486,2025-08-11 10:12:24,Premium Pass,bundles,33.62,USD,paypal,completed,ios,AU
+03b31601-1b10-4909-9d24-8dcb59d9598b,player_0890,2025-07-26 10:12:24,Crystal Pack Small,gear,1.76,USD,mobile_pay,pending,ios,FR
+a81bc5b8-a8d0-4508-a590-12a522a37f2b,player_0814,2025-08-18 10:12:24,Hyperdrive Bundle,currency,45.82,USD,mobile_pay,refunded,ios,BR
+bbd9bd35-dbde-474f-93ae-6fd764db53d9,player_0983,2025-08-30 10:12:24,Energy Refill,currency,13.0,USD,mobile_pay,completed,ios,JP
+f6df7517-f2e7-45ae-9772-281df04ed7bf,player_0110,2025-08-06 10:12:24,Crystal Pack Medium,bundles,11.93,USD,credit_card,refunded,ios,CA
+9c915076-1ebf-4aaf-b32e-ee071979fc37,player_0956,2025-10-06 10:12:24,Crystal Pack Small,energy,2.39,USD,credit_card,refunded,ios,CA
+5426448f-8232-49a0-a74c-5e454203fa6d,player_0769,2025-09-10 10:12:24,Hyperdrive Bundle,currency,48.17,USD,paypal,completed,android,JP
+9e211f0e-4ea7-42ee-a39e-7b8f94a78db7,player_0903,2025-10-03 10:12:24,Hyperdrive Bundle,gear,17.3,USD,digital_wallet,completed,ios,DE
+2fcf682a-63a0-4221-a886-f184e970866f,player_0996,2025-08-07 10:12:24,Crystal Pack Medium,gear,4.42,USD,credit_card,completed,ios,JP
+01d0e82f-61c1-4f3d-a1b1-61cced502365,player_0796,2025-09-14 10:12:24,Gear Bundle,bundles,5.79,USD,digital_wallet,pending,android,US
+d372e9cf-3ef1-45fe-954a-3befce838b2e,player_0266,2025-09-15 10:12:24,Crystal Pack Medium,characters,9.34,USD,mobile_pay,pending,ios,AU
+0c5a94f2-1f43-4f11-a6de-250680a1f4a5,player_0889,2025-09-09 10:12:24,Starter Pack,bundles,3.04,USD,digital_wallet,refunded,android,US
+39f72a1c-e6cd-4a4a-a701-5635ac216397,player_0855,2025-10-10 10:12:24,Crystal Pack Large,energy,15.63,USD,mobile_pay,refunded,android,US
+3c211227-0755-4b4e-9ee1-29eddf56c071,player_0951,2025-07-23 10:12:24,Gear Bundle,bundles,15.16,USD,mobile_pay,failed,android,BR
+062ec9bf-bf4b-4099-b6ce-b705df48536b,player_0149,2025-10-28 10:12:24,Hyperdrive Bundle,energy,29.99,USD,digital_wallet,completed,ios,DE
+4224c86c-2c11-47c8-9c59-383832de41af,player_0155,2025-09-03 10:12:24,Character Shards,currency,18.17,USD,mobile_pay,refunded,ios,US
+4cfeae90-7ad2-4102-9e43-1cb9263eec59,player_0438,2025-10-20 10:12:24,Crystal Pack Small,gear,18.72,USD,paypal,refunded,ios,AU
+661798aa-e0ae-48e5-9942-dcf5959eff6f,player_0886,2025-07-04 10:12:24,Crystal Pack Medium,gear,18.93,USD,mobile_pay,refunded,ios,JP
+33e692e3-489e-42ee-9335-f0b7696fd982,player_0310,2025-10-21 10:12:24,Energy Refill,currency,45.35,USD,mobile_pay,failed,android,AU
+dee702b4-8ef5-4eb8-871b-8507b83cdfe7,player_0828,2025-07-26 10:12:24,Crystal Pack Large,bundles,2.98,USD,mobile_pay,failed,ios,KR
+d73cc8cf-7912-4d1c-807b-d21f884dfc20,player_0835,2025-09-18 10:12:24,Hyperdrive Bundle,characters,220.55,USD,digital_wallet,failed,android,UK
+e84d260c-bcab-44ff-b66d-481b2606cd96,player_0882,2025-07-31 10:12:24,Gear Bundle,currency,49.37,USD,credit_card,pending,ios,UK
+6ff732fa-1e6b-4890-928b-ad8690f5d808,player_0867,2025-07-05 10:12:24,Starter Pack,energy,37.86,USD,credit_card,failed,ios,AU
+f4ba62db-7443-4033-842c-cbf3584b3be2,player_0578,2025-08-17 10:12:24,Premium Pass,characters,10.61,USD,credit_card,pending,android,FR
+95dcfa45-5cca-46b5-afa7-b163acaecf42,player_0119,2025-07-21 10:12:24,Character Shards,bundles,29.64,USD,paypal,refunded,android,JP
+25bbd555-408e-48d8-8523-cede1a2a1e7d,player_0117,2025-07-05 10:12:24,Crystal Pack Large,gear,7.17,USD,paypal,refunded,ios,FR
+c9cec799-3b60-4c22-b6b8-e3bb2217115c,player_0247,2025-08-08 10:12:24,Starter Pack,gear,8.92,USD,credit_card,failed,ios,FR
+b0287b14-0d9f-449d-9755-5b64961d7206,player_0255,2025-09-07 10:12:24,Gear Bundle,currency,5.96,USD,paypal,refunded,android,BR
+069ceacf-b913-4061-a600-6629aa299aaf,player_0198,2025-08-05 10:12:24,Energy Refill,characters,10.58,USD,mobile_pay,pending,ios,CA
+4c29c2fa-4a48-4698-820f-533c0f71e294,player_0379,2025-09-21 10:12:24,Premium Pass,currency,7.7,USD,paypal,pending,android,AU
+b5f3bff2-77ff-4c15-992e-4e04d37ac794,player_0515,2025-07-20 10:12:24,Crystal Pack Large,currency,18.95,USD,paypal,failed,android,KR
+69e8339a-8e78-4bb3-a759-331051b23177,player_0503,2025-07-04 10:12:24,Energy Refill,gear,10.53,USD,credit_card,completed,android,FR
+6c50b0ef-0dde-4133-aefb-3166bbf6b522,player_0075,2025-08-20 10:12:24,Gear Bundle,characters,13.67,USD,mobile_pay,pending,android,IN
+0d5e0e3e-5559-4ac8-af79-2a52f066e59b,player_0327,2025-07-14 10:12:24,Crystal Pack Small,gear,26.66,USD,digital_wallet,completed,android,UK
+65f6a147-7573-461e-b8d5-b8694d4d6b1c,player_0063,2025-08-28 10:12:24,Hyperdrive Bundle,characters,18.19,USD,credit_card,refunded,ios,UK
+cce06d3d-45bb-42ab-b3f8-b63273a7124a,player_0313,2025-10-12 10:12:24,Crystal Pack Large,bundles,9.94,USD,paypal,pending,ios,JP
+0d0cb040-94d8-4458-aecd-d91630de0c46,player_0109,2025-09-23 10:12:24,Crystal Pack Large,energy,1.61,USD,paypal,refunded,android,DE
+28beeba0-1a42-4597-8de1-d65edd3490e2,player_0621,2025-08-26 10:12:24,Character Shards,characters,18.79,USD,digital_wallet,refunded,ios,JP
+79359e0f-a3d8-4769-9be7-cbd6c5052ec6,player_0781,2025-10-12 10:12:24,Character Shards,characters,9.57,USD,digital_wallet,pending,android,UK
+cf1fd7ed-38b3-450f-8247-804cb710fef5,player_0891,2025-09-05 10:12:24,Premium Pass,bundles,25.12,USD,mobile_pay,refunded,ios,FR
+3e46e65c-6066-452d-a70b-ff30b1ed065a,player_0811,2025-07-12 10:12:24,Hyperdrive Bundle,energy,203.6,USD,credit_card,failed,android,JP
+c57ec89d-92d2-4f1f-8419-128deb16cc19,player_0899,2025-07-27 10:12:24,Starter Pack,bundles,146.2,USD,mobile_pay,pending,ios,BR
+27e6b59b-3518-4c64-9eaa-5583f102e0a4,player_0755,2025-08-20 10:12:24,Character Shards,currency,6.49,USD,paypal,refunded,ios,KR
+e302125f-ab64-42dd-8927-396fa8eb72ff,player_0524,2025-08-31 10:12:24,Starter Pack,characters,7.58,USD,digital_wallet,refunded,ios,JP
+ecaf67a1-4d3f-48da-86f3-219258cf9f3f,player_0181,2025-08-29 10:12:24,Crystal Pack Small,gear,5.94,USD,paypal,refunded,android,DE
+47b5ba64-7bad-4401-a652-f142010c9290,player_0845,2025-08-10 10:12:24,Starter Pack,energy,9.03,USD,paypal,pending,android,UK
+d303d32c-2769-495c-8712-a84f1cbd0701,player_0006,2025-10-28 10:12:24,Premium Pass,currency,4.63,USD,paypal,completed,ios,US
+060b0d19-f63a-464e-821c-1b3d90b0c39d,player_0049,2025-09-01 10:12:24,Crystal Pack Small,gear,162.55,USD,paypal,failed,android,US
+141c8c30-313d-4aac-9111-996e91fbb362,player_0640,2025-10-27 10:12:24,Hyperdrive Bundle,energy,46.18,USD,paypal,pending,ios,DE
+dd18972a-b848-4536-8fe5-52f016432641,player_0759,2025-10-07 10:12:24,Energy Refill,currency,2.93,USD,credit_card,completed,ios,JP
+8d7180f8-2844-47cb-b889-3e7ec8483f3b,player_0052,2025-09-12 10:12:24,Hyperdrive Bundle,currency,23.13,USD,paypal,pending,android,KR
+8ae2b3c9-aab4-4730-b0e9-93cfe75dbf0c,player_0226,2025-09-08 10:12:24,Crystal Pack Small,currency,3.56,USD,paypal,failed,android,CA
+7edc6596-e5e7-4b23-8436-3acd2a6adf28,player_0683,2025-10-08 10:12:24,Energy Refill,gear,2.36,USD,paypal,refunded,android,US
+b58b659c-de5a-4418-9343-3762206b1760,player_0445,2025-08-24 10:12:24,Energy Refill,bundles,45.91,USD,paypal,failed,ios,US
+cdf71dcf-8c33-4244-8144-aa0bf2cfbe07,player_0081,2025-07-21 10:12:24,Energy Refill,energy,8.9,USD,credit_card,completed,android,DE
+219f38bf-47cd-4c5c-80e7-a40e8faffcbe,player_0565,2025-08-07 10:12:24,Premium Pass,currency,8.17,USD,digital_wallet,pending,ios,IN
+dad24b56-272a-4055-94d1-d8f72d10114f,player_0777,2025-10-02 10:12:24,Energy Refill,currency,14.6,USD,mobile_pay,refunded,android,BR
+977c0d39-7314-463d-b151-9b5ba4b94aa0,player_0631,2025-10-28 10:12:24,Premium Pass,characters,19.06,USD,paypal,failed,ios,BR
+88f42c75-e604-4d15-8b55-93f41323c55d,player_0750,2025-07-14 10:12:24,Hyperdrive Bundle,energy,19.09,USD,paypal,pending,android,BR
+8b571931-4430-4da1-adc0-86127e02bf89,player_0934,2025-07-05 10:12:24,Energy Refill,currency,18.55,USD,paypal,refunded,android,FR
+0e2a1968-8f39-41a4-b09f-33dc9671d785,player_0421,2025-08-11 10:12:24,Character Shards,gear,9.47,USD,credit_card,refunded,ios,CA
+cdbf7e99-6301-46be-a80f-a0cbc298fece,player_0071,2025-10-16 10:12:24,Hyperdrive Bundle,gear,2.23,USD,credit_card,completed,android,FR
+dc336309-2a29-489b-8d6f-97d83379ef9e,player_0886,2025-09-21 10:12:24,Starter Pack,currency,17.46,USD,digital_wallet,pending,ios,JP
+8f191e83-c73f-4000-9cd9-b4467dcea9e5,player_0329,2025-08-03 10:12:24,Hyperdrive Bundle,currency,32.68,USD,credit_card,refunded,android,FR
+fff3c502-32dd-4244-95bd-43fc1642f174,player_0351,2025-08-11 10:12:24,Premium Pass,energy,7.72,USD,digital_wallet,refunded,android,IN
+bf8c251e-7beb-48fd-a933-5dd314daef5e,player_0008,2025-07-05 10:12:24,Hyperdrive Bundle,characters,8.1,USD,digital_wallet,completed,ios,UK
+3b2855d8-b296-4dcb-b41e-4ff2688b147d,player_0719,2025-07-27 10:12:24,Crystal Pack Large,currency,22.61,USD,mobile_pay,completed,ios,US
+c52da76c-b8de-498c-aee4-d6949e19b768,player_0668,2025-09-06 10:12:24,Starter Pack,characters,19.12,USD,credit_card,refunded,android,JP
+102deea5-6f21-44a9-88aa-170fd2e40f61,player_0340,2025-10-22 10:12:24,Character Shards,energy,46.56,USD,credit_card,pending,android,FR
+3ec8eb75-0929-4ac8-8ea9-925c1024b18d,player_0429,2025-08-14 10:12:24,Crystal Pack Large,currency,1.18,USD,credit_card,failed,ios,KR
+11a6c701-1c1b-4366-997b-9ea6fb1b51f8,player_0532,2025-07-16 10:12:24,Premium Pass,characters,16.02,USD,digital_wallet,completed,android,UK
+1fdc3145-4119-45b3-ad3c-f26ae49c7089,player_0306,2025-09-01 10:12:24,Crystal Pack Large,gear,51.82,USD,digital_wallet,failed,ios,JP
+e22cdc43-5491-4e76-b71c-bd7b43774169,player_0276,2025-08-28 10:12:24,Starter Pack,energy,256.33,USD,paypal,completed,android,FR
+cef9278c-92bf-4c3a-abc3-cbdbc3ab0b2f,player_0767,2025-10-03 10:12:24,Character Shards,energy,4.19,USD,credit_card,failed,ios,BR
+e963aaa9-00db-41ac-ba74-526dc56bf898,player_0404,2025-07-04 10:12:24,Character Shards,characters,12.84,USD,paypal,refunded,android,AU
+43e5dbc1-f69e-43ba-8e3b-26f9ab91ab95,player_0537,2025-08-08 10:12:24,Energy Refill,gear,13.9,USD,credit_card,completed,ios,AU
+557d2a02-aba2-4833-ab5e-b52f339d82fb,player_0217,2025-09-25 10:12:24,Character Shards,energy,12.26,USD,mobile_pay,refunded,ios,UK
+abfff792-af78-47e4-8fea-30bebd8302a5,player_0311,2025-07-26 10:12:24,Gear Bundle,characters,17.78,USD,credit_card,refunded,ios,KR
+882f37ea-c56b-440a-ab03-0ff2bf3f4cd6,player_0185,2025-07-24 10:12:24,Gear Bundle,bundles,19.01,USD,credit_card,completed,ios,FR
+865905b6-95af-4828-8932-8507993f358b,player_0624,2025-09-02 10:12:24,Crystal Pack Large,gear,41.63,USD,digital_wallet,pending,ios,BR
+1717dbec-14a6-4608-9ddc-88d160f193a2,player_0082,2025-09-11 10:12:24,Hyperdrive Bundle,characters,8.8,USD,digital_wallet,failed,ios,KR
+df13bd2c-b2ee-4afd-bef1-5528491c949a,player_0489,2025-09-16 10:12:24,Energy Refill,currency,49.01,USD,mobile_pay,failed,ios,KR
+8439f0f3-0e44-4f4b-bf65-744b16fdc2f5,player_0663,2025-08-24 10:12:24,Starter Pack,gear,5.63,USD,credit_card,completed,ios,BR
+1e699d73-0fcc-4452-bddb-9a25e2a053f6,player_0689,2025-07-13 10:12:24,Starter Pack,currency,38.38,USD,credit_card,pending,android,IN
+afac8797-59c9-4840-aa15-cc784c3cc8b8,player_0428,2025-10-18 10:12:24,Crystal Pack Large,currency,160.95,USD,credit_card,pending,android,DE
+dcd08e9c-469e-4e9a-ad26-abdfcb018764,player_0187,2025-07-26 10:12:24,Hyperdrive Bundle,currency,7.88,USD,mobile_pay,pending,ios,JP
+af009b41-fd8d-4493-ad49-1074059dbaa4,player_0234,2025-10-06 10:12:24,Energy Refill,bundles,5.49,USD,digital_wallet,failed,ios,AU
+418839a9-8945-4d60-8eac-a7f6bc97c1d3,player_0376,2025-10-30 10:12:24,Crystal Pack Medium,gear,3.19,USD,digital_wallet,completed,ios,KR
+bbb7b1f9-9781-43de-bf56-2d87abea1c01,player_0577,2025-10-21 10:12:24,Character Shards,characters,17.85,USD,mobile_pay,pending,ios,KR
+10195b95-e620-4cbd-90ea-9c9ade223970,player_0519,2025-11-01 10:12:24,Premium Pass,characters,17.13,USD,paypal,refunded,ios,JP
+a355125e-f1b8-4e16-8ec3-1a0eb73f737f,player_0495,2025-10-26 10:12:24,Character Shards,currency,35.9,USD,digital_wallet,failed,android,AU
+e8ddf28e-a2cf-4c76-b563-759317a7a02e,player_0842,2025-10-16 10:12:24,Premium Pass,characters,15.45,USD,paypal,completed,ios,DE

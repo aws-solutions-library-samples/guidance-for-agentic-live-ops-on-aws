@@ -1,0 +1,9 @@
+{
+    "name": "s3-vectors-index-handler",
+    "version": "1.0.0",
+    "description": "Lambda function to manage S3 Vector indexes",
+    "main": "index.js",
+    "dependencies": {
+        "@aws-sdk/client-s3vectors": "^3.857.0"
+    }
+}

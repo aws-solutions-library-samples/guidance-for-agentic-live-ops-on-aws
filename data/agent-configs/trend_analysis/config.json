@@ -1,0 +1,9 @@
+{
+    "agent_id": "trend_analysis",
+    "display_name": "Trend Analysis Agent",
+    "description": "Identifies player behavior trends and preference evolution with historical comparisons.",
+    "agent_type": "analytics",
+    "model_key": "",
+    "tool_sets": ["athena"],
+    "enabled": true
+}

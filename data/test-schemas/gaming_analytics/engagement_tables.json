@@ -1,0 +1,105 @@
+{
+    "tables": {
+        "gameplay": {
+            "description": "Per-session gameplay records across game modes",
+            "columns": {
+                "gameplay_id": { "type": "STRING", "nullable": false },
+                "player_id": { "type": "STRING", "nullable": false },
+                "session_date": { "type": "STRING", "nullable": false },
+                "game_mode": {
+                    "type": "STRING",
+                    "nullable": false,
+                    "description": "arena_battles, fleet_battles, galactic_war, raids"
+                },
+                "duration_minutes": { "type": "DOUBLE", "nullable": true },
+                "battles_fought": { "type": "INT", "nullable": true },
+                "battles_won": { "type": "INT", "nullable": true },
+                "experience_gained": { "type": "BIGINT", "nullable": true },
+                "credits_earned": { "type": "BIGINT", "nullable": true },
+                "energy_consumed": { "type": "INT", "nullable": true },
+                "characters_used": { "type": "STRING", "nullable": true },
+                "difficulty_level": {
+                    "type": "STRING",
+                    "nullable": true,
+                    "description": "easy, normal, hard"
+                }
+            },
+            "primary_key": ["gameplay_id"],
+            "foreign_keys": { "player_id": "players.player_id" }
+        },
+        "session_details": {
+            "description": "Session-level telemetry with device info and quality metrics",
+            "columns": {
+                "session_id": { "type": "STRING", "nullable": false },
+                "player_id": { "type": "STRING", "nullable": false },
+                "session_start_time": { "type": "STRING", "nullable": false },
+                "session_end_time": { "type": "STRING", "nullable": false },
+                "session_duration_minutes": { "type": "DOUBLE", "nullable": true },
+                "device_model": { "type": "STRING", "nullable": true },
+                "platform": { "type": "STRING", "nullable": true },
+                "network_type": {
+                    "type": "STRING",
+                    "nullable": true,
+                    "description": "wifi, cellular, 5g"
+                },
+                "activities_completed": { "type": "INT", "nullable": true },
+                "battles_fought": { "type": "INT", "nullable": true },
+                "energy_spent": { "type": "INT", "nullable": true },
+                "crystals_spent": { "type": "INT", "nullable": true },
+                "social_interactions": { "type": "INT", "nullable": true },
+                "session_quality_score": {
+                    "type": "DOUBLE",
+                    "nullable": true,
+                    "description": "Composite score 0.0-1.0 based on latency, crashes, engagement"
+                }
+            },
+            "primary_key": ["session_id"],
+            "foreign_keys": { "player_id": "players.player_id" }
+        },
+        "daily_activities": {
+            "description": "Daily recurring task completion and reward tracking",
+            "columns": {
+                "activity_id": { "type": "STRING", "nullable": false },
+                "player_id": { "type": "STRING", "nullable": false },
+                "activity_date": { "type": "STRING", "nullable": false },
+                "activity_type": {
+                    "type": "STRING",
+                    "nullable": false,
+                    "description": "daily_challenge, energy_refresh, guild_donation"
+                },
+                "activity_count": { "type": "INT", "nullable": true },
+                "points_earned": { "type": "INT", "nullable": true },
+                "time_spent_minutes": { "type": "INT", "nullable": true },
+                "completion_status": {
+                    "type": "STRING",
+                    "nullable": true,
+                    "description": "completed, partial, skipped"
+                },
+                "reward_claimed": { "type": "BOOLEAN", "nullable": true }
+            },
+            "primary_key": ["activity_id"],
+            "foreign_keys": { "player_id": "players.player_id" }
+        },
+        "event_participation": {
+            "description": "Limited-time event participation, scores, and rewards",
+            "columns": {
+                "event_id": { "type": "STRING", "nullable": false },
+                "player_id": { "type": "STRING", "nullable": false },
+                "event_name": { "type": "STRING", "nullable": false },
+                "event_type": {
+                    "type": "STRING",
+                    "nullable": false,
+                    "description": "tournament, raid, conquest, galactic_challenge"
+                },
+                "participation_date": { "type": "STRING", "nullable": false },
+                "participation_level": { "type": "STRING", "nullable": true },
+                "score_achieved": { "type": "INT", "nullable": true },
+                "rank_achieved": { "type": "INT", "nullable": true },
+                "rewards_earned": { "type": "INT", "nullable": true },
+                "completion_percentage": { "type": "DOUBLE", "nullable": true }
+            },
+            "primary_key": ["event_id", "player_id"],
+            "foreign_keys": { "player_id": "players.player_id" }
+        }
+    }
+}

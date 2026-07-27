@@ -1,0 +1,9 @@
+{
+    "agent_id": "incident_response",
+    "display_name": "Incident Response Agent",
+    "description": "Analyzes real-time metrics and historical data to diagnose and remediate live incidents.",
+    "agent_type": "monitoring",
+    "model_key": "",
+    "tool_sets": ["realtime", "athena"],
+    "enabled": true
+}

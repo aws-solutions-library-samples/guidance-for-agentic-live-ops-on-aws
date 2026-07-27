@@ -1,0 +1,99 @@
+// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// SPDX-License-Identifier: MIT-0
+
+// Dialog-specific styles
+.dialog {
+    background: white;
+    border: 1px solid #e9ebed;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 0;
+    margin: 16px 0;
+    max-width: 500px;
+
+    .content {
+        position: relative;
+        padding: 20px;
+
+        .dismiss {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+        }
+
+        .inner-content {
+            margin-right: 32px; // Make room for dismiss button
+        }
+    }
+
+    .footer {
+        padding: 16px 20px;
+        border-top: 1px solid #e9ebed;
+        background-color: #fafbfc;
+        border-radius: 0 0 8px 8px;
+    }
+}
+
+.dialog-container {
+    .dialog-content {
+        padding: 16px;
+    }
+
+    .dialog-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+        margin-top: 16px;
+    }
+
+    .dialog-header {
+        margin-bottom: 16px;
+    }
+
+    .dialog-body {
+        margin-bottom: 16px;
+    }
+}
+
+// Feedback dialog specific styles
+.feedback-dialog {
+    .feedback-form {
+        .form-field {
+            margin-bottom: 16px;
+        }
+
+        .rating-container {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .feedback-textarea {
+            min-height: 100px;
+        }
+    }
+}
+
+// Modal overlay styles
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+}

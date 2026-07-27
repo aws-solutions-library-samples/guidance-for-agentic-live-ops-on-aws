@@ -1,0 +1,9 @@
+{
+    "agent_id": "player_segmentation",
+    "display_name": "Player Segmentation Agent",
+    "description": "Creates behavior-based segments for campaign effectiveness with churn scoring.",
+    "agent_type": "analytics",
+    "model_key": "",
+    "tool_sets": ["athena"],
+    "enabled": true
+}

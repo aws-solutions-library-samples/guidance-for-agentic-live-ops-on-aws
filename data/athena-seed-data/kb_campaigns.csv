@@ -1,0 +1,6 @@
+campaign_id,campaign_name,campaign_type,start_date,end_date,budget,target_audience,channel,status
+CAMP_001,Summer Legends Event,acquisition,2025-07-13,2025-07-23,76739.54,returning_players,search_engine,active
+CAMP_002,New Player Welcome,acquisition,2025-09-19,2025-10-17,63144.33,new_players,facebook,active
+CAMP_003,Holiday Special Offer,acquisition,2025-09-05,2025-09-19,60512.06,all_players,search_engine,completed
+CAMP_004,Arena Championship,acquisition,2025-07-19,2025-08-03,78292.66,returning_players,mobile_ads,completed
+CAMP_005,Guild Wars Promotion,retention,2025-08-28,2025-09-08,96149.18,whales,facebook,active

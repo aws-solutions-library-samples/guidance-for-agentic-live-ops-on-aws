@@ -1,0 +1,102 @@
+// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// SPDX-License-Identifier: MIT-0
+
+.question-selector {
+    &__modal {
+        max-height: 80vh;
+    }
+
+    &__categories {
+        border-right: 1px solid var(--color-border-divider-default);
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+
+    &__questions {
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+
+    &__card {
+        transition: all 0.2s ease;
+        cursor: pointer;
+        border: 1px solid var(--color-border-container-top);
+
+        &:hover {
+            border-color: var(--color-border-item-focused);
+            box-shadow: var(--shadow-container);
+        }
+    }
+
+    &__tag {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+    }
+
+    &__category-button {
+        text-align: left;
+
+        &--selected {
+            background-color: var(--color-background-item-selected);
+            border-color: var(--color-border-item-selected);
+        }
+    }
+
+    &__search {
+        background: linear-gradient(
+            135deg,
+            var(--color-background-container-header) 0%,
+            var(--color-background-layout-main) 100%
+        );
+    }
+
+    &__header {
+        background: var(--color-background-container-header);
+        border-bottom: 1px solid var(--color-border-divider-default);
+    }
+}
+
+// Gaming theme enhancements
+.question-selector--gaming {
+    .question-selector__card {
+        background: linear-gradient(
+            145deg,
+            var(--color-background-container-content) 0%,
+            rgba(var(--color-background-container-content), 0.95) 100%
+        );
+    }
+
+    .question-selector__tag {
+        background: linear-gradient(
+            90deg,
+            var(--color-background-status-info) 0%,
+            rgba(var(--color-background-status-info), 0.8) 100%
+        );
+    }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+    .question-selector {
+        &__categories,
+        &__questions {
+            max-height: 50vh;
+        }
+    }
+}
+
+// Dark mode support
+@media (prefers-color-scheme: dark) {
+    .question-selector__card {
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.1);
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+}

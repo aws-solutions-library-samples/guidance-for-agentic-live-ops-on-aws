@@ -1,0 +1,9 @@
+{
+    "agent_id": "performance_metrics",
+    "display_name": "Performance Metrics Agent",
+    "description": "Provides KPI dashboards and monetization analysis with ARPU, MAU, retention, and revenue trends.",
+    "agent_type": "analytics",
+    "model_key": "",
+    "tool_sets": ["athena"],
+    "enabled": true
+}

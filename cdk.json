@@ -1,0 +1,384 @@
+{
+    "app": "npx ts-node --prefer-ts-exts bin/app.ts",
+    "requireApproval": "never",
+    "watch": {
+        "include": ["**"],
+        "exclude": [
+            "README.md",
+            "cdk*.json",
+            "**/*.d.ts",
+            "**/*.js",
+            "tsconfig.json",
+            "package*.json",
+            "yarn.lock",
+            "node_modules",
+            "test"
+        ]
+    },
+    "context": {
+        "projectId": "liveops",
+        "modelConfig": {
+            "defaultModelId": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+            "agents": {
+                "orchestrator": "us.anthropic.claude-sonnet-4-6",
+                "performance_metrics": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+                "creative_optimization": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+                "trend_analysis": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+                "fact_checking": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+                "player_targeting": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+                "player_segmentation": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+                "acquisition_optimization": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+                "incident_response": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+                "realtime_monitor": "us.anthropic.claude-haiku-4-5-20251001-v1:0"
+            }
+        },
+        "branding": {
+            "appTitle": "Agentic Live Ops",
+            "logoUrl": "/favicon.png",
+            "faviconUrl": "/aws-smile.svg",
+            "primaryColor": "#0972d3",
+            "domainLabel": "gaming"
+        },
+
+        "analytics": {
+            "_comment": "Defines the Glue catalog tables and Athena workgroup. Each table entry creates a Glue CfnTable pointing to s3://{dataBucket}/{s3Prefix}. Seed data is loaded separately via 'npm run hydrate-athena'. These tables are the permanent schema — not just seed data. Add/remove tables here to change what Athena can query.",
+            "databaseName": "liveops",
+            "tables": [
+                {
+                    "name": "players",
+                    "s3Prefix": "athena/players/",
+                    "columns": [
+                        { "name": "player_id", "type": "string" },
+                        { "name": "username", "type": "string" },
+                        { "name": "account_created", "type": "string" },
+                        { "name": "player_level", "type": "int" },
+                        { "name": "arena_rank", "type": "int" },
+                        { "name": "combat_power", "type": "bigint" },
+                        { "name": "guild_id", "type": "string" },
+                        { "name": "country", "type": "string" },
+                        { "name": "platform", "type": "string" },
+                        { "name": "segment", "type": "string" },
+                        { "name": "last_login", "type": "string" },
+                        { "name": "characters_owned", "type": "int" },
+                        { "name": "legendary_heroes_owned", "type": "int" }
+                    ]
+                },
+                {
+                    "name": "arena_battles",
+                    "s3Prefix": "athena/arena_battles/",
+                    "columns": [
+                        { "name": "battle_id", "type": "string" },
+                        { "name": "player_id", "type": "string" },
+                        { "name": "battle_type", "type": "string" },
+                        { "name": "battle_timestamp", "type": "string" },
+                        { "name": "opponent_player_id", "type": "string" },
+                        { "name": "player_rank_before", "type": "int" },
+                        { "name": "player_rank_after", "type": "int" },
+                        { "name": "battle_result", "type": "string" },
+                        { "name": "team_power_used", "type": "bigint" },
+                        { "name": "opponent_team_power", "type": "bigint" },
+                        { "name": "battle_duration_seconds", "type": "int" },
+                        { "name": "crystals_earned", "type": "int" },
+                        { "name": "arena_tokens_earned", "type": "int" },
+                        { "name": "characters_used", "type": "string" },
+                        { "name": "strategy_effectiveness", "type": "double" }
+                    ]
+                },
+                {
+                    "name": "campaigns",
+                    "s3Prefix": "athena/campaigns/",
+                    "columns": [
+                        { "name": "campaign_id", "type": "string" },
+                        { "name": "campaign_name", "type": "string" },
+                        { "name": "campaign_type", "type": "string" },
+                        { "name": "start_date", "type": "string" },
+                        { "name": "end_date", "type": "string" },
+                        { "name": "budget", "type": "double" },
+                        { "name": "target_audience", "type": "string" },
+                        { "name": "channel", "type": "string" },
+                        { "name": "status", "type": "string" }
+                    ]
+                },
+                {
+                    "name": "character_interactions",
+                    "s3Prefix": "athena/character_interactions/",
+                    "columns": [
+                        { "name": "interaction_id", "type": "string" },
+                        { "name": "player_id", "type": "string" },
+                        { "name": "character_name", "type": "string" },
+                        { "name": "interaction_type", "type": "string" },
+                        { "name": "interaction_timestamp", "type": "string" },
+                        { "name": "level_before", "type": "int" },
+                        { "name": "level_after", "type": "int" },
+                        { "name": "power_before", "type": "bigint" },
+                        { "name": "power_after", "type": "bigint" },
+                        { "name": "star_level_before", "type": "int" },
+                        { "name": "star_level_after", "type": "int" },
+                        { "name": "relic_level_before", "type": "int" },
+                        { "name": "relic_level_after", "type": "int" },
+                        { "name": "gear_pieces_applied", "type": "int" },
+                        { "name": "credits_spent", "type": "bigint" },
+                        { "name": "materials_used", "type": "int" }
+                    ]
+                },
+                {
+                    "name": "daily_activities",
+                    "s3Prefix": "athena/daily_activities/",
+                    "columns": [
+                        { "name": "activity_id", "type": "string" },
+                        { "name": "player_id", "type": "string" },
+                        { "name": "activity_date", "type": "string" },
+                        { "name": "activity_type", "type": "string" },
+                        { "name": "activity_count", "type": "int" },
+                        { "name": "points_earned", "type": "int" },
+                        { "name": "time_spent_minutes", "type": "int" },
+                        { "name": "completion_status", "type": "string" },
+                        { "name": "reward_claimed", "type": "boolean" }
+                    ]
+                },
+                {
+                    "name": "event_participation",
+                    "s3Prefix": "athena/event_participation/",
+                    "columns": [
+                        { "name": "event_id", "type": "string" },
+                        { "name": "player_id", "type": "string" },
+                        { "name": "event_name", "type": "string" },
+                        { "name": "event_type", "type": "string" },
+                        { "name": "participation_date", "type": "string" },
+                        { "name": "participation_level", "type": "string" },
+                        { "name": "score_achieved", "type": "int" },
+                        { "name": "rank_achieved", "type": "int" },
+                        { "name": "rewards_earned", "type": "int" },
+                        { "name": "completion_percentage", "type": "double" }
+                    ]
+                },
+                {
+                    "name": "gameplay",
+                    "s3Prefix": "athena/gameplay/",
+                    "columns": [
+                        { "name": "gameplay_id", "type": "string" },
+                        { "name": "player_id", "type": "string" },
+                        { "name": "session_date", "type": "string" },
+                        { "name": "game_mode", "type": "string" },
+                        { "name": "duration_minutes", "type": "double" },
+                        { "name": "battles_fought", "type": "int" },
+                        { "name": "battles_won", "type": "int" },
+                        { "name": "experience_gained", "type": "bigint" },
+                        { "name": "credits_earned", "type": "bigint" },
+                        { "name": "energy_consumed", "type": "int" },
+                        { "name": "characters_used", "type": "string" },
+                        { "name": "difficulty_level", "type": "string" }
+                    ]
+                },
+                {
+                    "name": "guild_activities",
+                    "s3Prefix": "athena/guild_activities/",
+                    "columns": [
+                        { "name": "activity_id", "type": "string" },
+                        { "name": "player_id", "type": "string" },
+                        { "name": "guild_id", "type": "string" },
+                        { "name": "activity_type", "type": "string" },
+                        { "name": "activity_timestamp", "type": "string" },
+                        { "name": "contribution_score", "type": "int" },
+                        { "name": "damage_dealt", "type": "bigint" },
+                        { "name": "energy_donated", "type": "int" },
+                        { "name": "guild_tokens_earned", "type": "int" },
+                        { "name": "participation_rank", "type": "int" },
+                        { "name": "raid_tier", "type": "string" },
+                        { "name": "territory_battles_participated", "type": "int" },
+                        { "name": "territory_war_battles", "type": "int" }
+                    ]
+                },
+                {
+                    "name": "incidents",
+                    "s3Prefix": "athena/incidents/",
+                    "columns": [
+                        { "name": "incident_id", "type": "string" },
+                        { "name": "incident_type", "type": "string" },
+                        { "name": "severity", "type": "string" },
+                        { "name": "start_time", "type": "string" },
+                        { "name": "resolution_time", "type": "string" },
+                        { "name": "affected_players", "type": "int" },
+                        { "name": "description", "type": "string" },
+                        { "name": "resolution_status", "type": "string" },
+                        { "name": "compensation_given", "type": "boolean" },
+                        { "name": "compensation_amount", "type": "double" }
+                    ]
+                },
+                {
+                    "name": "monetization_events",
+                    "s3Prefix": "athena/monetization_events/",
+                    "columns": [
+                        { "name": "transaction_id", "type": "string" },
+                        { "name": "player_id", "type": "string" },
+                        { "name": "transaction_timestamp", "type": "string" },
+                        { "name": "purchase_type", "type": "string" },
+                        { "name": "item_considered", "type": "string" },
+                        { "name": "amount_usd", "type": "double" },
+                        { "name": "purchase_decision", "type": "string" },
+                        { "name": "payment_method", "type": "string" },
+                        { "name": "first_time_purchase", "type": "boolean" },
+                        { "name": "player_level_at_purchase", "type": "int" },
+                        { "name": "days_since_install", "type": "int" },
+                        { "name": "segment_classification", "type": "string" }
+                    ]
+                },
+                {
+                    "name": "purchases",
+                    "s3Prefix": "athena/purchases/",
+                    "columns": [
+                        { "name": "purchase_id", "type": "string" },
+                        { "name": "player_id", "type": "string" },
+                        { "name": "purchase_date", "type": "string" },
+                        { "name": "item_name", "type": "string" },
+                        { "name": "item_category", "type": "string" },
+                        { "name": "price_usd", "type": "double" },
+                        { "name": "currency_type", "type": "string" },
+                        { "name": "payment_method", "type": "string" },
+                        { "name": "transaction_status", "type": "string" },
+                        { "name": "platform", "type": "string" },
+                        { "name": "country", "type": "string" }
+                    ]
+                },
+                {
+                    "name": "session_details",
+                    "s3Prefix": "athena/session_details/",
+                    "columns": [
+                        { "name": "session_id", "type": "string" },
+                        { "name": "player_id", "type": "string" },
+                        { "name": "session_start_time", "type": "string" },
+                        { "name": "session_end_time", "type": "string" },
+                        { "name": "session_duration_minutes", "type": "double" },
+                        { "name": "device_model", "type": "string" },
+                        { "name": "platform", "type": "string" },
+                        { "name": "network_type", "type": "string" },
+                        { "name": "activities_completed", "type": "int" },
+                        { "name": "battles_fought", "type": "int" },
+                        { "name": "energy_spent", "type": "int" },
+                        { "name": "crystals_spent", "type": "int" },
+                        { "name": "social_interactions", "type": "int" },
+                        { "name": "session_quality_score", "type": "double" }
+                    ]
+                },
+                {
+                    "name": "social_interactions",
+                    "s3Prefix": "athena/social_interactions/",
+                    "columns": [
+                        { "name": "interaction_id", "type": "string" },
+                        { "name": "player_id", "type": "string" },
+                        { "name": "target_player_id", "type": "string" },
+                        { "name": "interaction_type", "type": "string" },
+                        { "name": "interaction_date", "type": "string" },
+                        { "name": "message_length", "type": "int" },
+                        { "name": "sentiment", "type": "string" },
+                        { "name": "response_received", "type": "boolean" },
+                        { "name": "guild_context", "type": "boolean" },
+                        { "name": "influence_score", "type": "double" }
+                    ]
+                },
+                {
+                    "name": "user_acquisition",
+                    "s3Prefix": "athena/user_acquisition/",
+                    "columns": [
+                        { "name": "acquisition_id", "type": "string" },
+                        { "name": "player_id", "type": "string" },
+                        { "name": "install_date", "type": "string" },
+                        { "name": "acquisition_channel", "type": "string" },
+                        { "name": "campaign_id", "type": "string" },
+                        { "name": "cost_per_install", "type": "double" },
+                        { "name": "lifetime_value", "type": "double" },
+                        { "name": "retention_d1", "type": "boolean" },
+                        { "name": "retention_d7", "type": "boolean" },
+                        { "name": "retention_d30", "type": "boolean" },
+                        { "name": "first_purchase_date", "type": "string" },
+                        { "name": "country", "type": "string" },
+                        { "name": "platform", "type": "string" }
+                    ]
+                },
+                {
+                    "name": "game_events",
+                    "s3Prefix": "athena/game_events/",
+                    "format": "json",
+                    "columns": [
+                        { "name": "event_id", "type": "string" },
+                        { "name": "event_type", "type": "string" },
+                        { "name": "player_id", "type": "string" },
+                        { "name": "timestamp", "type": "string" },
+                        { "name": "platform", "type": "string" },
+                        { "name": "region", "type": "string" },
+                        { "name": "details", "type": "string" }
+                    ]
+                }
+            ]
+        },
+
+        "demoHeartbeat": {
+            "enabled": true,
+            "scenario": "baseline",
+            "intervalSeconds": 60,
+            "batchSize": 500,
+            "spikeProbability": 0.15
+        },
+
+        "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
+        "@aws-cdk/core:checkSecretUsage": true,
+        "@aws-cdk/core:target-partitions": ["aws", "aws-cn"],
+        "@aws-cdk-containers/ecs-service-extensions:enableDefaultLogDriver": true,
+        "@aws-cdk/aws-ec2:uniqueImdsv2TemplateName": true,
+        "@aws-cdk/aws-ecs:arnFormatIncludesClusterName": true,
+        "@aws-cdk/aws-iam:minimizePolicies": true,
+        "@aws-cdk/core:validateSnapshotRemovalPolicy": true,
+        "@aws-cdk/aws-codepipeline:crossAccountKeyAliasStackSafeResourceName": true,
+        "@aws-cdk/aws-s3:createDefaultLoggingPolicy": true,
+        "@aws-cdk/aws-sns-subscriptions:restrictSqsDescryption": true,
+        "@aws-cdk/aws-apigateway:disableCloudWatchRole": true,
+        "@aws-cdk/core:enablePartitionLiterals": true,
+        "@aws-cdk/aws-events:eventsTargetQueueSameAccount": true,
+        "@aws-cdk/aws-ecs:disableExplicitDeploymentControllerForCircuitBreaker": true,
+        "@aws-cdk/aws-iam:importedRoleStackSafeDefaultPolicyName": true,
+        "@aws-cdk/aws-s3:serverAccessLogsUseBucketPolicy": true,
+        "@aws-cdk/aws-route53-patters:useCertificate": true,
+        "@aws-cdk/customresources:installLatestAwsSdkDefault": false,
+        "@aws-cdk/aws-rds:databaseProxyUniqueResourceName": true,
+        "@aws-cdk/aws-codedeploy:removeAlarmsFromDeploymentGroup": true,
+        "@aws-cdk/aws-apigateway:authorizerChangeDeploymentLogicalId": true,
+        "@aws-cdk/aws-ec2:launchTemplateDefaultUserData": true,
+        "@aws-cdk/aws-secretsmanager:useAttachedSecretResourcePolicyForSecretTargetAttachments": true,
+        "@aws-cdk/aws-redshift:columnId": true,
+        "@aws-cdk/aws-stepfunctions-tasks:enableEmrServicePolicyV2": true,
+        "@aws-cdk/aws-ec2:restrictDefaultSecurityGroup": false,
+        "@aws-cdk/aws-apigateway:requestValidatorUniqueId": true,
+        "@aws-cdk/aws-kms:aliasNameRef": true,
+        "@aws-cdk/aws-autoscaling:generateLaunchTemplateInsteadOfLaunchConfig": true,
+        "@aws-cdk/core:includePrefixInUniqueNameGeneration": true,
+        "@aws-cdk/aws-efs:denyAnonymousAccess": true,
+        "@aws-cdk/aws-opensearchservice:enableOpensearchMultiAzWithStandby": true,
+        "@aws-cdk/aws-lambda-nodejs:useLatestRuntimeVersion": true,
+        "@aws-cdk/aws-efs:mountTargetOrderInsensitiveLogicalId": true,
+        "@aws-cdk/aws-rds:auroraClusterChangeScopeOfInstanceParameterGroupWithEachParameters": true,
+        "@aws-cdk/aws-appsync:useArnForSourceApiAssociationIdentifier": true,
+        "@aws-cdk/aws-rds:preventRenderingDeprecatedCredentials": true,
+        "@aws-cdk/aws-codepipeline-actions:useNewDefaultBranchForCodeCommitSource": true,
+        "@aws-cdk/aws-cloudwatch-actions:changeLambdaPermissionLogicalIdForLambdaAction": true,
+        "@aws-cdk/aws-codepipeline:crossAccountKeysDefaultValueToFalse": true,
+        "@aws-cdk/aws-codepipeline:defaultPipelineTypeToV2": true,
+        "@aws-cdk/aws-kms:reduceCrossAccountRegionPolicyScope": true,
+        "@aws-cdk/aws-eks:nodegroupNameAttribute": true,
+        "@aws-cdk/aws-ec2:ebsDefaultGp3Volume": true,
+        "@aws-cdk/aws-ecs:removeDefaultDeploymentAlarm": true,
+        "@aws-cdk/custom-resources:logApiResponseDataPropertyTrueDefault": false,
+        "@aws-cdk/aws-s3:keepNotificationInImportedBucket": false,
+        "@aws-cdk/aws-ecs:enableImdsBlockingDeprecatedFeature": false,
+        "@aws-cdk/aws-ecs:disableEcsImdsBlocking": true,
+        "@aws-cdk/aws-ecs:reduceEc2FargateCloudWatchPermissions": true,
+        "@aws-cdk/aws-dynamodb:resourcePolicyPerReplica": true,
+        "@aws-cdk/aws-ec2:ec2SumTImeoutEnabled": true,
+        "@aws-cdk/aws-appsync:appSyncGraphQLAPIScopeLambdaPermission": true,
+        "@aws-cdk/aws-rds:setCorrectValueForDatabaseInstanceReadReplicaInstanceResourceId": true,
+        "@aws-cdk/core:cfnIncludeRejectComplexResourceUpdateCreatePolicyIntrinsics": true,
+        "@aws-cdk/aws-lambda-nodejs:sdkV3ExcludeSmithyPackages": true,
+        "@aws-cdk/aws-stepfunctions-tasks:fixRunEcsTaskPolicy": true,
+        "@aws-cdk/aws-ec2:bastionHostUseAmazonLinux2023ByDefault": true,
+        "@aws-cdk/aws-route53-targets:userPoolDomainNameMethodWithoutCustomResource": true
+    }
+}

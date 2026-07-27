@@ -25,3 +25,20 @@ cdk.out
 **/data/**.csv
 
 .env
+
+### Python ###
+.venv
+__pycache__
+.ruff_cache
+
+### CDK / TypeScript ###
+.cdk.staging
+cdk.context.json
+*.tsbuildinfo
+
+### Generated output ###
+reports
+kb-eval-results
+synthetic_data
+.playwright-mcp
+

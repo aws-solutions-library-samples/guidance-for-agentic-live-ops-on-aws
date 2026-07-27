@@ -1,0 +1,9 @@
+{
+    "agent_id": "fact_checking",
+    "display_name": "Fact-Checking Agent",
+    "description": "Verifies claims against knowledge base data and assesses analytical accuracy.",
+    "agent_type": "analytics",
+    "model_key": "",
+    "tool_sets": ["athena"],
+    "enabled": true
+}

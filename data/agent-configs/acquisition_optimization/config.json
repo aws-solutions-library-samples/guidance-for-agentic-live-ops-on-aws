@@ -1,0 +1,9 @@
+{
+    "agent_id": "acquisition_optimization",
+    "display_name": "Acquisition Optimization Agent",
+    "description": "Optimizes user acquisition campaigns with CPI, ROAS, and retention analysis.",
+    "agent_type": "analytics",
+    "model_key": "",
+    "tool_sets": ["athena"],
+    "enabled": true
+}

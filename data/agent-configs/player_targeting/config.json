@@ -1,0 +1,9 @@
+{
+    "agent_id": "player_targeting",
+    "display_name": "Player Targeting Agent",
+    "description": "Predicts character demand and drives targeted offers with acquisition rate analysis.",
+    "agent_type": "analytics",
+    "model_key": "",
+    "tool_sets": ["athena"],
+    "enabled": true
+}

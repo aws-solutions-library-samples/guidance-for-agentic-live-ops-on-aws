@@ -1,0 +1,21 @@
+incident_id,incident_type,severity,start_time,resolution_time,affected_players,description,resolution_status,compensation_given,compensation_amount
+INC_0001,server_downtime,high,2025-09-14 10:12:24,2025-09-15 13:12:24,7127,System incident affecting purchases,resolved,False,0
+INC_0002,server_downtime,high,2025-10-09 10:12:24,2025-10-09 13:12:24,2482,System incident affecting login,investigating,False,0
+INC_0003,feature_bug,low,2025-09-29 10:12:24,2025-09-30 16:12:24,6050,System incident affecting gameplay,resolved,True,0
+INC_0004,performance_degradation,low,2025-10-21 10:12:24,2025-10-23 03:12:24,9375,System incident affecting purchases,investigating,True,0
+INC_0005,feature_bug,low,2025-09-09 10:12:24,2025-09-10 10:12:24,3867,System incident affecting gameplay,monitoring,False,4551
+INC_0006,payment_failure,medium,2025-10-20 10:12:24,2025-10-22 03:12:24,3051,System incident affecting gameplay,investigating,False,0
+INC_0007,login_issues,medium,2025-09-09 10:12:24,2025-09-11 08:12:24,8037,System incident affecting login,monitoring,True,1774
+INC_0008,server_downtime,critical,2025-08-22 10:12:24,2025-08-22 17:12:24,674,System incident affecting login,investigating,False,412
+INC_0009,login_issues,low,2025-09-15 10:12:24,2025-09-15 20:12:24,8672,System incident affecting purchases,monitoring,False,0
+INC_0010,payment_failure,low,2025-08-18 10:12:24,2025-08-19 13:12:24,5478,System incident affecting gameplay,monitoring,True,2978
+INC_0011,data_sync_error,low,2025-08-14 10:12:24,2025-08-16 02:12:24,1862,System incident affecting purchases,resolved,False,466
+INC_0012,feature_bug,critical,2025-09-22 10:12:24,2025-09-22 11:12:24,7860,System incident affecting purchases,resolved,True,3607
+INC_0013,performance_degradation,medium,2025-10-22 10:12:24,2025-10-22 11:12:24,2302,System incident affecting login,monitoring,False,0
+INC_0014,connectivity_issues,critical,2025-09-18 10:12:24,2025-09-18 23:12:24,1816,System incident affecting purchases,monitoring,True,458
+INC_0015,server_downtime,medium,2025-09-25 10:12:24,2025-09-26 02:12:24,7275,System incident affecting purchases,resolved,True,3489
+INC_0016,payment_failure,critical,2025-09-07 10:12:24,2025-09-08 13:12:24,718,System incident affecting gameplay,resolved,True,0
+INC_0017,payment_failure,high,2025-10-20 10:12:24,2025-10-21 13:12:24,8368,System incident affecting login,monitoring,True,0
+INC_0018,payment_failure,high,2025-09-03 10:12:24,2025-09-04 07:12:24,2464,System incident affecting data sync,monitoring,True,2082
+INC_0019,data_sync_error,low,2025-09-10 10:12:24,2025-09-12 03:12:24,2368,System incident affecting data sync,investigating,False,163
+INC_0020,feature_bug,critical,2025-10-31 10:12:24,2025-11-01 09:12:24,9018,System incident affecting data sync,resolved,False,2714

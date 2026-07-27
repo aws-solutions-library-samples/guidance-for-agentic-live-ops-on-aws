@@ -1,0 +1,119 @@
+// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// SPDX-License-Identifier: MIT-0
+
+// Chat-specific styles
+.chat-container {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+
+    &.classic {
+        // Classic theme specific styles
+        .awsui-container {
+            border-radius: 0;
+        }
+    }
+
+    .awsui-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .awsui-container-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .awsui-container-footer {
+        margin-top: auto;
+    }
+}
+
+// Scrollable container for messages
+.scrollable-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+}
+
+// Fitted container
+.fitted-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+// Message styles
+.message-container {
+    margin-bottom: 16px;
+}
+
+// File token group styles
+.file-token-group {
+    margin-top: 8px;
+}
+
+// Loading indicator styles
+.loading-dots {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+// Support prompt styles
+.support-prompt-group {
+    margin: 16px 0;
+}
+
+// Code view styles
+.code-view-container {
+    margin: 16px 0;
+
+    .code-view-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+        margin-top: 8px;
+    }
+}
+
+// Feedback styles
+.feedback-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+// Alert styles in chat
+.chat-alert {
+    margin-bottom: 16px;
+}
+
+// Chat bubble padding overrides
+// Target our custom wrapper class for better control
+.chat-bubble-content-wrapper {
+    padding: 10px !important;
+
+    // Reset any nested padding to avoid double padding
+    .awsui-space-between {
+        padding: 0 !important;
+    }
+}
+
+// Additional global overrides for Cloudscape ChatBubble component
+:global {
+    // Target Cloudscape ChatBubble internal structure
+    .awsui-chat-bubble-content,
+    .awsui-chat-bubble-body,
+    [class*="awsui-chat-bubble"] [class*="content"] {
+        padding: 24px !important;
+    }
+
+    // Ensure our wrapper takes precedence
+    .chat-bubble-content-wrapper {
+        padding: 24px !important;
+    }
+}
