@@ -105,7 +105,7 @@
         "@aws-sdk/lib-dynamodb": "^3.914.0",
         "@aws/pdk": "^0.26.14",
         "@cdklabs/generative-ai-cdk-constructs": "^0.1.309",
-        "aws-cdk-lib": "^2.221.0",
+        "aws-cdk-lib": "^2.263.0",
         "cdk-nag": "^2.37.40",
         "constructs": "^10.4.2",
         "deploy-time-build": "^0.4.1"
