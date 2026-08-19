@@ -63,8 +63,15 @@ export default function Chat({
 
     const [prompt, setPrompt] = useState("");
     const promptInputRef = useRef<HTMLTextAreaElement>(null);
-    const [sessionId, setSessionId] = useState<string | undefined>(undefined);
-    const { save: autoSave } = useConversations();
+    const {
+        save: autoSave,
+        activeId,
+        updateMessages,
+        getMessages,
+        getSessionId,
+        setSessionId,
+        isActiveLoading,
+    } = useConversations();
 
     const [reportModalOpen, setReportModalOpen] = useState(false);
     const [agentsModalOpen, setAgentsModalOpen] = useState(false);
@@ -74,13 +81,7 @@ export default function Chat({
     // Chat hook (REST API)
     const { sendMessage, isLoading } = useChat();
 
-    const partsRef = useRef<MessagePart[]>([]);
-
     const lastMessageContent = messages[messages.length - 1]?.content;
-
-    useEffect(() => {
-        setMessages([]);
-    }, []);
 
     // When the monitor panel injects a prompt, set it in the input
     useEffect(() => {
@@ -102,9 +103,19 @@ export default function Chat({
     }, [lastMessageContent]);
 
     const onPromptSend = async ({ detail: { value } }: { detail: { value: string } }) => {
-        if (!value || value.length === 0 || isLoading) {
+        if (!value || value.length === 0 || isLoading || isActiveLoading) {
             return;
         }
+
+        // Snapshot the conversation this send belongs to. The user may switch to a
+        // different conversation while the response streams; every state mutation and
+        // the eventual save below must target THIS conversation, never the active view.
+        const initiatingId = activeId;
+        let streamSessionId = getSessionId(initiatingId);
+
+        // Per-request parts accumulator — local so concurrent streams in different
+        // conversations never interleave through shared component state.
+        let parts: MessagePart[] = [];
 
         // Create dynamic authorId based on user info
         const authorId = userInfo?.name
@@ -121,7 +132,7 @@ export default function Chat({
             timestamp: new Date().toLocaleTimeString(),
         };
 
-        setMessages((prevMessages) => [...prevMessages, newMessage]);
+        updateMessages(initiatingId, (prev) => [...prev, newMessage]);
         setPrompt("");
         setActiveReport(undefined);
 
@@ -134,10 +145,7 @@ export default function Chat({
             loading: true,
         };
 
-        setMessages((prevMessages) => [...prevMessages, loadingMessage]);
-
-        // Reset parts accumulator for this request
-        partsRef.current = [];
+        updateMessages(initiatingId, (prev) => [...prev, loadingMessage]);
 
         const requestId = `chat-${Date.now()}-${Math.random().toString(36).substring(2, 15)}`;
 
@@ -148,7 +156,7 @@ export default function Chat({
                 header: "Input Error",
                 content: "Message is too long (maximum 10,000 characters)",
             };
-            setMessages((prev) => {
+            updateMessages(initiatingId, (prev) => {
                 const without = prev.filter((m) => m.type !== "chat-bubble" || !m.loading);
                 return [...without, errorMessage];
             });
@@ -170,7 +178,7 @@ export default function Chat({
                     const status = (meta.status as string) || "";
 
                     if (status === "invoking" || status === "initializing") {
-                        partsRef.current = upsertPart(partsRef.current, {
+                        parts = upsertPart(parts, {
                             id: agentId,
                             type: "agent-step",
                             agentName,
@@ -180,7 +188,7 @@ export default function Chat({
                     } else {
                         // completed or no status
                         const detail = (meta.agent_result as string) || content || "";
-                        partsRef.current = upsertPart(partsRef.current, {
+                        parts = upsertPart(parts, {
                             id: agentId,
                             type: "agent-step",
                             agentName,
@@ -190,14 +198,14 @@ export default function Chat({
                         });
                     }
                 } else if (rType === "analysis") {
-                    partsRef.current = upsertPart(partsRef.current, {
+                    parts = upsertPart(parts, {
                         id: `analysis-${Date.now()}`,
                         type: "analysis",
                         label: content.slice(0, 120) || "Analysis",
                         status: "completed",
                     });
                 } else if (rType === "memory") {
-                    partsRef.current = upsertPart(partsRef.current, {
+                    parts = upsertPart(parts, {
                         id: `memory-${Date.now()}`,
                         type: "memory",
                         label: content.slice(0, 120) || "Memory",
@@ -205,15 +213,15 @@ export default function Chat({
                     });
                 }
 
-                // Sync partsRef to loading message
-                setMessages((prev) => {
+                // Sync parts to the loading message of the initiating conversation
+                updateMessages(initiatingId, (prev) => {
                     const copy = [...prev];
                     const idx = copy.findIndex((m) => m.type === "chat-bubble" && m.loading);
                     if (idx >= 0 && copy[idx].type === "chat-bubble") {
                         copy[idx] = {
                             ...copy[idx],
                             type: "chat-bubble" as const,
-                            parts: [...partsRef.current],
+                            parts: [...parts],
                         };
                     }
                     return copy;
@@ -221,17 +229,17 @@ export default function Chat({
             } else if (event.eventType === "content") {
                 const newChunk = event.content || "";
                 // Find existing text-main part to accumulate
-                const existing = partsRef.current.find((p) => p.id === "text-main");
+                const existing = parts.find((p) => p.id === "text-main");
                 const accumulated =
                     existing && existing.type === "text" ? existing.content + newChunk : newChunk;
 
-                partsRef.current = upsertPart(partsRef.current, {
+                parts = upsertPart(parts, {
                     id: "text-main",
                     type: "text",
                     content: accumulated,
                 });
 
-                setMessages((prev) => {
+                updateMessages(initiatingId, (prev) => {
                     const copy = [...prev];
                     const idx = copy.findIndex((m) => m.type === "chat-bubble" && m.loading);
                     if (idx >= 0 && copy[idx].type === "chat-bubble") {
@@ -239,7 +247,7 @@ export default function Chat({
                             ...copy[idx],
                             type: "chat-bubble" as const,
                             content: accumulated,
-                            parts: [...partsRef.current],
+                            parts: [...parts],
                         };
                     }
                     return copy;
@@ -247,20 +255,20 @@ export default function Chat({
             } else if (event.eventType === "sources") {
                 const sources = event.sources;
                 if (sources) {
-                    partsRef.current = upsertPart(partsRef.current, {
+                    parts = upsertPart(parts, {
                         id: "sources-main",
                         type: "sources",
                         data: sources,
                     });
 
-                    setMessages((prev) => {
+                    updateMessages(initiatingId, (prev) => {
                         const copy = [...prev];
                         const idx = copy.findIndex((m) => m.type === "chat-bubble" && m.loading);
                         if (idx >= 0 && copy[idx].type === "chat-bubble") {
                             copy[idx] = {
                                 ...copy[idx],
                                 type: "chat-bubble" as const,
-                                parts: [...partsRef.current],
+                                parts: [...parts],
                                 sources,
                             };
                         }
@@ -268,19 +276,20 @@ export default function Chat({
                     });
                 }
             } else if (event.eventType === "session_id") {
-                if (event.sessionId && event.sessionId !== sessionId) {
-                    setSessionId(event.sessionId);
+                if (event.sessionId && event.sessionId !== streamSessionId) {
+                    streamSessionId = event.sessionId;
+                    setSessionId(initiatingId, event.sessionId);
                 }
             } else if (event.eventType === "complete") {
                 // Get final content from text-main part
-                const textPart = partsRef.current.find((p) => p.id === "text-main");
+                const textPart = parts.find((p) => p.id === "text-main");
                 const finalContent =
                     textPart && textPart.type === "text"
                         ? textPart.content
                         : "No response received. Please try again.";
 
                 // Get final sources from sources-main part
-                const sourcesPart = partsRef.current.find((p) => p.id === "sources-main");
+                const sourcesPart = parts.find((p) => p.id === "sources-main");
                 const finalSources =
                     sourcesPart && sourcesPart.type === "sources" ? sourcesPart.data : undefined;
 
@@ -294,35 +303,66 @@ export default function Chat({
                     actions: "feedback",
                     contentToCopy: cleanedContent || finalContent,
                     loading: false,
-                    parts: [...partsRef.current],
+                    parts: [...parts],
                     sources: finalSources,
                 };
 
-                setMessages((prev) => {
-                    const without = prev.filter((m) => m.type !== "chat-bubble" || !m.loading);
-                    const updated = [...without, finalMessage];
+                // Build the committed buffer for the INITIATING conversation deterministically
+                // AT CALL TIME: take the freshest snapshot (updateMessages keeps this in
+                // lockstep via buffersRef), drop the in-flight loading bubble, and append the
+                // final message. This must be computed here, NOT captured from inside a
+                // setState updater: a React state updater is not guaranteed to run
+                // synchronously at the dispatch site, so reading a variable it assigns is a
+                // read-after-write hazard that yields an EMPTY array and silently skips the
+                // save (the #8 regression where brand-new conversations were never persisted).
+                const finalBuffer: Message[] = [
+                    ...getMessages(initiatingId).filter(
+                        (m) => m.type !== "chat-bubble" || !m.loading
+                    ),
+                    finalMessage,
+                ];
 
-                    // Autosave conversation
-                    const serialized = updated
-                        .filter(
-                            (m): m is Message & { type: "chat-bubble" } =>
-                                m.type === "chat-bubble" && !("loading" in m && m.loading)
-                        )
-                        .map((m) => ({
-                            type: m.type,
-                            authorId: m.authorId,
-                            content: typeof m.content === "string" ? m.content : "",
-                            timestamp: m.timestamp,
-                            ...("sources" in m && m.sources
-                                ? { sources: m.sources as Record<string, unknown> }
-                                : {}),
-                            ...("parts" in m && m.parts && m.parts.length > 0
-                                ? { parts: m.parts as unknown[] }
-                                : {}),
-                        }));
-                    autoSave(serialized, sessionId).catch(() => {});
+                // Commit with a PURE updater (no side effects → StrictMode-safe, no double
+                // append/save). finalBuffer already folds in all prior messages, so replacing
+                // the buffer wholesale keeps the rendered history and the saved payload
+                // byte-identical.
+                updateMessages(initiatingId, () => finalBuffer);
 
-                    return updated;
+                // Serialize + persist ONCE (the `complete` event is de-duped upstream in
+                // useChat) from the INITIATING conversation's committed buffer — never the
+                // active view.
+                const serialized = finalBuffer
+                    .filter(
+                        (m): m is Message & { type: "chat-bubble" } =>
+                            m.type === "chat-bubble" && !("loading" in m && m.loading)
+                    )
+                    .map((m) => ({
+                        type: m.type,
+                        authorId: m.authorId,
+                        content: typeof m.content === "string" ? m.content : "",
+                        timestamp: m.timestamp,
+                        ...("sources" in m && m.sources
+                            ? { sources: m.sources as Record<string, unknown> }
+                            : {}),
+                        ...("parts" in m && m.parts && m.parts.length > 0
+                            ? { parts: m.parts as unknown[] }
+                            : {}),
+                    }));
+
+                // Never silently swallow a save failure: log it and surface an alert in the
+                // initiating conversation so the user knows the turn was not persisted.
+                autoSave(serialized, streamSessionId, undefined, initiatingId).catch((err) => {
+                    console.error("[Chat] Failed to save conversation", initiatingId, err);
+                    updateMessages(initiatingId, (prev) => [
+                        ...prev,
+                        {
+                            type: "alert",
+                            header: "Save Failed",
+                            content:
+                                "Your latest message could not be saved and may not appear in chat history. " +
+                                (err instanceof Error ? err.message : String(err)),
+                        },
+                    ]);
                 });
             }
         };
@@ -335,13 +375,13 @@ export default function Chat({
                 content:
                     error instanceof Error ? error.message : "An error occurred during streaming",
             };
-            setMessages((prev) => {
+            updateMessages(initiatingId, (prev) => {
                 const without = prev.filter((m) => m.type !== "chat-bubble" || !m.loading);
                 return [...without, errorMessage];
             });
         };
 
-        await sendMessage(value, sessionId, { onEvent, onError }, requestId);
+        await sendMessage(value, streamSessionId, { onEvent, onError }, requestId);
     };
 
     const addMessage = (index: number, message: Message) => {
@@ -456,7 +496,7 @@ export default function Chat({
                                 ariaLabel={isLoading ? "Prompt input - processing" : "Prompt input"}
                                 placeholder="Ask a question (max 10,000 characters)"
                                 autoFocus
-                                disabled={isLoading}
+                                disabled={isLoading || isActiveLoading}
                                 minRows={3}
                                 maxRows={10}
                             />

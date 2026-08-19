@@ -2,12 +2,11 @@
 // SPDX-License-Identifier: MIT-0
 
 import { ContentLayout, Header } from "@cloudscape-design/components";
-import { useEffect, useRef, useState } from "react";
+import { Dispatch, SetStateAction, useCallback, useRef, useState } from "react";
 import ChatComponent from "../../components/Chat/chat";
-import { Message, MessagePart } from "../../components/Chat/config";
+import { Message } from "../../components/Chat/config";
 import { Report } from "../../services/monitor-service";
 import { useConversations } from "../../contexts/ConversationsContext";
-import { SerializedMessage } from "../../services/conversations-service";
 
 interface ChatProps {
     injectedPrompt?: string;
@@ -15,37 +14,25 @@ interface ChatProps {
     onInjectedPromptConsumed?: () => void;
 }
 
-function deserialize(msgs: SerializedMessage[]): Message[] {
-    return msgs.map((m) => ({
-        type: "chat-bubble" as const,
-        authorId: m.authorId,
-        content: m.content,
-        timestamp: m.timestamp,
-        ...(m.sources ? { sources: m.sources } : {}),
-        ...(m.parts && m.parts.length > 0 ? { parts: m.parts as MessagePart[] } : {}),
-        ...(m.authorId === "gen-ai"
-            ? { actions: "feedback" as const, contentToCopy: m.content }
-            : {}),
-    }));
-}
-
 const Chat = ({ injectedPrompt, injectedReport, onInjectedPromptConsumed }: ChatProps) => {
-    const [messages, setMessages] = useState<Message[]>([]);
     const [isQuestionSelectorVisible, setIsQuestionSelectorVisible] = useState(false);
     const messagesContainerRef = useRef<HTMLDivElement>(null);
     const [localInjectedPrompt, setLocalInjectedPrompt] = useState<string | undefined>(undefined);
-    const { activeId, load } = useConversations();
-    const prevActiveId = useRef(activeId);
+    const { activeId, activeMessages, updateMessages } = useConversations();
 
-    // When activeId changes (sidebar click or new chat), load or clear messages
-    useEffect(() => {
-        if (activeId !== prevActiveId.current) {
-            prevActiveId.current = activeId;
-            load(activeId)
-                .then((msgs) => setMessages(deserialize(msgs)))
-                .catch(() => setMessages([])); // New chat or not found — clear
-        }
-    }, [activeId, load]);
+    // Message buffers live per-conversation in ConversationsContext. Expose the
+    // familiar Dispatch<SetStateAction<Message[]>> signature that targets the active
+    // conversation, so ChatComponent's active-view mutations keep working unchanged
+    // while streaming writes route through updateMessages(initiatingId, ...).
+    const setMessages = useCallback<Dispatch<SetStateAction<Message[]>>>(
+        (action) =>
+            updateMessages(activeId, (prev) =>
+                typeof action === "function"
+                    ? (action as (p: Message[]) => Message[])(prev)
+                    : action
+            ),
+        [activeId, updateMessages]
+    );
 
     // Use prop-injected prompt if provided, otherwise local
     const activePrompt = injectedPrompt ?? localInjectedPrompt;
@@ -57,7 +44,7 @@ const Chat = ({ injectedPrompt, injectedReport, onInjectedPromptConsumed }: Chat
     return (
         <ContentLayout header={<Header variant="h1">Chat</Header>}>
             <ChatComponent
-                messages={messages}
+                messages={activeMessages}
                 setMessages={setMessages}
                 isQuestionSelectorVisible={isQuestionSelectorVisible}
                 setIsQuestionSelectorVisible={setIsQuestionSelectorVisible}
