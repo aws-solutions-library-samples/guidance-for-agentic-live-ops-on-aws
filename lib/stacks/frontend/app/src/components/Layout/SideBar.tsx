@@ -13,15 +13,15 @@ import { useConversations } from "../../contexts/ConversationsContext";
 const SideBar = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    const { conversations, activeId, load, remove, newChat } = useConversations();
+    const { conversations, activeId, switchConversation, remove, newChat } = useConversations();
 
     const handleNew = () => {
         newChat();
         navigate("/");
     };
 
-    const handleLoad = async (id: string) => {
-        await load(id);
+    const handleLoad = (id: string) => {
+        switchConversation(id);
         navigate("/");
     };
 
