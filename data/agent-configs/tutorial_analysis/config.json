@@ -1,0 +1,9 @@
+{
+    "agent_id": "tutorial_analysis",
+    "display_name": "Tutorial Analysis Agent",
+    "description": "Analyzes the branching new-player tutorial (FTUE / onboarding): step funnels, drop-off points, step orders and paths, step-to-step transitions, retry loops, optional modules, tutorial versions, and which tutorial paths lead to better D1/D7/D30 retention. Use for any question about the tutorial, onboarding, or first-time user experience.",
+    "agent_type": "analytics",
+    "model_key": "",
+    "tool_sets": ["athena"],
+    "enabled": true
+}

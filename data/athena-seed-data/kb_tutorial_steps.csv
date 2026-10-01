@@ -1,0 +1,17 @@
+step_id,step_name,module,nominal_order,is_optional,is_branch_entry,description
+intro_cutscene,Intro Cutscene,core,1,0,0,Opening story cutscene
+movement_basics,Movement Basics,core,2,0,0,Learn to move and use the camera
+first_battle,First Battle,core,3,0,0,Scripted first fight that can be failed and retried
+combat_skills,Combat Skills,combat,4,0,1,Learn hero skills (entry step of the combat module)
+combo_attack,Combo Attack,combat,5,0,0,Chain skills into a combo
+gather_resources,Gather Resources,crafting,6,1,1,Collect materials (entry step of the optional crafting module)
+craft_item,Craft Item,crafting,7,1,0,Craft a first item; long step in v1 and shortened in v2
+join_guild,Join Guild,social,8,1,1,Join a guild (entry step of the optional social module)
+guild_chat,Guild Chat,social,9,1,0,Send a first guild chat message
+equip_gear,Equip Gear,core,10,0,0,Equip gear on the main hero
+first_quest,First Quest,core,11,0,0,Complete the first story quest
+boss_battle,Boss Battle,core,12,0,0,Tutorial boss fight that can be failed and retried
+shop_intro,Shop Intro,core,13,0,0,Guided visit to the in-game shop
+hero_upgrade,Hero Upgrade,core,14,0,0,Upgrade a hero with earned resources
+daily_rewards,Daily Rewards,core,15,0,0,Claim the first daily reward
+tutorial_complete,Tutorial Complete,core,16,0,0,End of tutorial

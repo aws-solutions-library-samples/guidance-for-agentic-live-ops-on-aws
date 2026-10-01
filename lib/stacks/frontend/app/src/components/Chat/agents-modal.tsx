@@ -111,6 +111,18 @@ const AGENTS: AgentInfo[] = [
             "Are there any recurring incident patterns on weekends?",
         ],
     },
+    {
+        name: "Tutorial Analysis Agent",
+        icon: "🎓",
+        tagline: "Tutorial funnels, paths, and retention impact",
+        description:
+            "Analyzes the branching new-player tutorial: where players drop off, which orders they take through tutorial modules, retry loops on battles, and which paths lead to better D1/D7 retention.",
+        examples: [
+            "Where do players drop off in the tutorial?",
+            "What are the most common module orders through the tutorial?",
+            "Which tutorial branch leads to better D7 retention?",
+        ],
+    },
 ];
 
 interface AgentsModalProps {

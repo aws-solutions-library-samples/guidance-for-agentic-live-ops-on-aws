@@ -34,6 +34,25 @@ This document provides sample questions you can ask the Agentic Live Ops system,
 ### 6. Additional Recommendations
 - "What else would you recommend for this campaign I haven't considered?"
 
+## 🎓 Tutorial Analysis Agent
+
+**Purpose**: Analyzes the branching new-player tutorial: funnels, drop-off, step orders, retry loops, and which paths lead to better retention (synthetic cohort of new installs, September - October 2025).
+
+### Funnel & Drop-off
+- "Show me the tutorial funnel: how many players reach each step and where do they drop off?"
+- "Which tutorial step has the highest quit rate, and how long do players spend on it?"
+- "Did tutorial version v2 reduce drop-off compared to v1?"
+
+### Paths & Branches
+- "What are the most common orders players take through the tutorial modules, and how does each order affect completion?"
+- "Build the step-to-step transition graph for the tutorial and highlight loops and dead ends"
+- "Does the module players choose first at the hub change their chance of finishing the tutorial?"
+
+### Tutorial & Retention
+- "Which tutorial branch leads to better D7 retention?"
+- "Do players who skip the optional crafting or social modules retain worse at D7?"
+- "Do players who fail the first battle multiple times churn more?"
+
 ## 🎯 Player Character Targeting Agent
 
 **Purpose**: Analyzes character acquisition patterns and predicts player targeting preferences based on actual player data.

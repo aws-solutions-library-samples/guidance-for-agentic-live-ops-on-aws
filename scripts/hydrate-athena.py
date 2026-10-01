@@ -38,6 +38,9 @@ TABLE_MAP = {
     "kb_session_details.csv": "session_details",
     "kb_social_interactions.csv": "social_interactions",
     "kb_user_acquisition.csv": "user_acquisition",
+    "kb_tutorial_steps.csv": "tutorial_steps",
+    "kb_tutorial_events.csv": "tutorial_events",
+    "kb_tutorial_players.csv": "tutorial_players",
 }
 
 

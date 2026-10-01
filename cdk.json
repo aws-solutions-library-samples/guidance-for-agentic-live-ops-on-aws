@@ -29,6 +29,7 @@
                 "player_segmentation": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
                 "acquisition_optimization": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
                 "incident_response": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+                "tutorial_analysis": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
                 "realtime_monitor": "us.anthropic.claude-haiku-4-5-20251001-v1:0"
             }
         },
@@ -293,6 +294,61 @@
                         { "name": "first_purchase_date", "type": "string" },
                         { "name": "country", "type": "string" },
                         { "name": "platform", "type": "string" }
+                    ]
+                },
+                {
+                    "name": "tutorial_steps",
+                    "s3Prefix": "athena/tutorial_steps/",
+                    "columns": [
+                        { "name": "step_id", "type": "string" },
+                        { "name": "step_name", "type": "string" },
+                        { "name": "module", "type": "string" },
+                        { "name": "nominal_order", "type": "int" },
+                        { "name": "is_optional", "type": "int" },
+                        { "name": "is_branch_entry", "type": "int" },
+                        { "name": "description", "type": "string" }
+                    ]
+                },
+                {
+                    "name": "tutorial_events",
+                    "s3Prefix": "athena/tutorial_events/",
+                    "columns": [
+                        { "name": "event_id", "type": "string" },
+                        { "name": "player_id", "type": "string" },
+                        { "name": "step_id", "type": "string" },
+                        { "name": "event_type", "type": "string" },
+                        { "name": "event_timestamp", "type": "string" },
+                        { "name": "step_seq", "type": "int" },
+                        { "name": "attempt_number", "type": "int" },
+                        { "name": "duration_seconds", "type": "int" },
+                        { "name": "session_number", "type": "int" },
+                        { "name": "tutorial_version", "type": "string" }
+                    ]
+                },
+                {
+                    "name": "tutorial_players",
+                    "s3Prefix": "athena/tutorial_players/",
+                    "columns": [
+                        { "name": "player_id", "type": "string" },
+                        { "name": "install_date", "type": "string" },
+                        { "name": "platform", "type": "string" },
+                        { "name": "country", "type": "string" },
+                        { "name": "acquisition_channel", "type": "string" },
+                        { "name": "tutorial_version", "type": "string" },
+                        { "name": "first_module", "type": "string" },
+                        { "name": "module_order", "type": "string" },
+                        { "name": "skipped_crafting", "type": "int" },
+                        { "name": "skipped_social", "type": "int" },
+                        { "name": "first_battle_fails", "type": "int" },
+                        { "name": "boss_battle_fails", "type": "int" },
+                        { "name": "completed_tutorial", "type": "int" },
+                        { "name": "last_step_id", "type": "string" },
+                        { "name": "steps_completed", "type": "int" },
+                        { "name": "total_tutorial_minutes", "type": "double" },
+                        { "name": "retention_d1", "type": "int" },
+                        { "name": "retention_d7", "type": "int" },
+                        { "name": "retention_d30", "type": "int" },
+                        { "name": "purchased_within_d7", "type": "int" }
                     ]
                 },
                 {
