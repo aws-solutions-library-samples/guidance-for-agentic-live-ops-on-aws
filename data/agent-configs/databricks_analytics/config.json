@@ -1,0 +1,12 @@
+{
+    "agent_id": "databricks_analytics",
+    "display_name": "Databricks Analytics Agent",
+    "description": "Queries a Databricks SQL warehouse for analytics data stored in the customer's lakehouse.",
+    "agent_type": "analytics",
+    "model_key": "",
+    "tool_sets": ["external_sql"],
+    "config_overrides": {
+        "external_sql_connection_id": "liveops/external/databricks"
+    },
+    "enabled": false
+}

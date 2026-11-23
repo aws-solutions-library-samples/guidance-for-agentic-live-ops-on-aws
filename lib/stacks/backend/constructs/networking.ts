@@ -103,6 +103,10 @@ export class Networking extends Construct {
             service: new InterfaceVpcEndpointAwsService("bedrock-agentcore-control"),
             subnets: { subnetType: SubnetType.PRIVATE_ISOLATED },
         });
+        vpc.addInterfaceEndpoint("secretsManagerEndpoint", {
+            service: InterfaceVpcEndpointAwsService.SECRETS_MANAGER,
+            subnets: { subnetType: SubnetType.PRIVATE_ISOLATED },
+        });
 
         this.vpc = vpc;
         this.runtimeSecurityGroup = runtimeSecurityGroup;

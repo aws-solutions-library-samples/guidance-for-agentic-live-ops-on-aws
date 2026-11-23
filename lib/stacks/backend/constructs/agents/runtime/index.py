@@ -69,6 +69,10 @@ from tools.entity_resolution import (
     get_entity_link_artifacts,
     clear_entity_link_artifacts,
 )
+from tools.external_sql import (
+    get_external_query_artifacts,
+    clear_external_query_artifacts,
+)
 from tools.memory import (
     get_memory_session_manager as _get_memory_session_manager,
     MEMORY_ID,
@@ -351,6 +355,7 @@ async def process_query_streaming(
         clear_schema_search_artifacts()  # Reset schema search tracking for this request
         clear_graph_query_artifacts()  # Reset graph query tracking for this request
         clear_entity_link_artifacts()  # Reset entity link tracking for this request
+        clear_external_query_artifacts()  # Reset external SQL tracking for this request
 
         # Emit session ID immediately for frontend tracking
         if session_id:
@@ -737,6 +742,7 @@ async def process_query_streaming(
         schema_search_artifacts = get_schema_search_artifacts()
         graph_query_artifacts = get_graph_query_artifacts()
         entity_link_artifacts = get_entity_link_artifacts()
+        external_query_artifacts = get_external_query_artifacts()
         logger.info(
             "Sources collection complete",
             extra={
@@ -746,6 +752,7 @@ async def process_query_streaming(
                 "schema_search_count": len(schema_search_artifacts),
                 "graph_query_count": len(graph_query_artifacts),
                 "entity_link_count": len(entity_link_artifacts),
+                "external_query_count": len(external_query_artifacts),
             },
         )
         if (
@@ -755,6 +762,7 @@ async def process_query_streaming(
             or schema_search_artifacts
             or graph_query_artifacts
             or entity_link_artifacts
+            or external_query_artifacts
         ):
             yield f"data: {
                 json.dumps(
@@ -766,6 +774,7 @@ async def process_query_streaming(
                         'schema_searches': schema_search_artifacts[:10],
                         'graph_queries': graph_query_artifacts[:10],
                         'entity_links': entity_link_artifacts[:10],
+                        'external_queries': external_query_artifacts[:10],
                         'timestamp': time.time(),
                     }
                 )

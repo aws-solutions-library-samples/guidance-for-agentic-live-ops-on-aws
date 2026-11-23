@@ -22,3 +22,9 @@ gunicorn>=21.0.0
 
 # Gremlin client for Neptune graph traversal
 gremlinpython>=3.7.0
+
+# External SQL data source connectors (pinned; 4.x keeps the classic
+# snowflake.connector API used by tools/external_sql.py)
+databricks-sql-connector==4.9.0
+snowflake-connector-python==4.8.1
+psycopg2-binary==2.9.13

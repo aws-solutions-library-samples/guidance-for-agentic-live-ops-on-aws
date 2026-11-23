@@ -1,0 +1,1609 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Technical Design: External Data Source Support</title>
+        <style>
+            :root {
+                --aws-orange: #ff9900;
+                --aws-dark: #232f3e;
+                --aws-light: #f2f3f3;
+                --aws-blue: #147eba;
+                --aws-green: #1b660f;
+                --aws-red: #d13212;
+                --border: #d5dbdb;
+                --text: #16191f;
+                --text-secondary: #545b64;
+                --bg-code: #f8f9fa;
+                --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            }
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family:
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+                    sans-serif;
+                color: var(--text);
+                line-height: 1.6;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 40px 24px;
+                background: #fff;
+            }
+
+            /* Header */
+            .doc-header {
+                border-bottom: 3px solid var(--aws-orange);
+                padding-bottom: 24px;
+                margin-bottom: 32px;
+            }
+            .doc-header h1 {
+                font-size: 28px;
+                font-weight: 700;
+                color: var(--aws-dark);
+                margin-bottom: 16px;
+            }
+            .meta-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 8px 24px;
+                font-size: 14px;
+            }
+            .meta-grid .label {
+                font-weight: 600;
+                color: var(--text-secondary);
+            }
+            .meta-grid .value {
+                color: var(--text);
+            }
+            .meta-grid a {
+                color: var(--aws-blue);
+                text-decoration: none;
+            }
+            .meta-grid a:hover {
+                text-decoration: underline;
+            }
+            .status-badge {
+                display: inline-block;
+                background: #fff4e0;
+                color: #b8860b;
+                padding: 2px 10px;
+                border-radius: 12px;
+                font-size: 12px;
+                font-weight: 600;
+            }
+
+            /* Sections */
+            h2 {
+                font-size: 22px;
+                font-weight: 700;
+                color: var(--aws-dark);
+                margin: 40px 0 16px;
+                padding-bottom: 8px;
+                border-bottom: 2px solid var(--aws-light);
+            }
+            h3 {
+                font-size: 17px;
+                font-weight: 600;
+                color: var(--aws-dark);
+                margin: 28px 0 12px;
+            }
+            h4 {
+                font-size: 15px;
+                font-weight: 600;
+                color: var(--text-secondary);
+                margin: 20px 0 8px;
+            }
+            p {
+                margin: 8px 0;
+                font-size: 15px;
+            }
+            ul,
+            ol {
+                margin: 8px 0 8px 24px;
+                font-size: 15px;
+            }
+            li {
+                margin: 4px 0;
+            }
+
+            /* Tables */
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 16px 0;
+                font-size: 14px;
+                box-shadow: var(--shadow);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            thead th {
+                background: var(--aws-dark);
+                color: #fff;
+                padding: 10px 14px;
+                text-align: left;
+                font-weight: 600;
+                font-size: 13px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+            tbody td {
+                padding: 10px 14px;
+                border-bottom: 1px solid var(--border);
+                vertical-align: top;
+            }
+            tbody tr:last-child td {
+                border-bottom: none;
+            }
+            tbody tr:nth-child(even) {
+                background: var(--aws-light);
+            }
+            tbody tr:hover {
+                background: #e8eaed;
+            }
+
+            /* Code */
+            code {
+                background: var(--bg-code);
+                padding: 2px 6px;
+                border-radius: 4px;
+                font-size: 13px;
+                font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+                color: var(--aws-dark);
+            }
+            pre {
+                background: var(--aws-dark);
+                color: #f8f9fa;
+                padding: 16px 20px;
+                border-radius: 8px;
+                overflow-x: auto;
+                font-size: 13px;
+                line-height: 1.5;
+                margin: 16px 0;
+                box-shadow: var(--shadow);
+            }
+            pre code {
+                background: none;
+                padding: 0;
+                color: inherit;
+                font-size: inherit;
+            }
+
+            /* Callout boxes */
+            .callout {
+                border-radius: 8px;
+                padding: 16px 20px;
+                margin: 16px 0;
+                font-size: 14px;
+            }
+            .callout-info {
+                background: #ebf5fb;
+                border-left: 4px solid var(--aws-blue);
+            }
+            .callout-warn {
+                background: #fef9e7;
+                border-left: 4px solid var(--aws-orange);
+            }
+            .callout-success {
+                background: #eafaf1;
+                border-left: 4px solid var(--aws-green);
+            }
+            .callout strong {
+                display: block;
+                margin-bottom: 4px;
+            }
+
+            /* Diagrams */
+            .diagram {
+                margin: 24px 0;
+                padding: 24px;
+                background: var(--aws-light);
+                border-radius: 12px;
+                box-shadow: var(--shadow);
+            }
+            .diagram-title {
+                text-align: center;
+                font-weight: 600;
+                font-size: 14px;
+                color: var(--text-secondary);
+                margin-bottom: 16px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            .diagram svg {
+                display: block;
+                margin: 0 auto;
+            }
+
+            /* Phase timeline */
+            .timeline {
+                margin: 24px 0;
+                position: relative;
+            }
+            .timeline::before {
+                content: "";
+                position: absolute;
+                left: 24px;
+                top: 0;
+                bottom: 0;
+                width: 3px;
+                background: var(--border);
+                border-radius: 2px;
+            }
+            .phase {
+                position: relative;
+                padding-left: 60px;
+                margin-bottom: 24px;
+            }
+            .phase-dot {
+                position: absolute;
+                left: 14px;
+                top: 4px;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background: var(--aws-orange);
+                color: #fff;
+                font-size: 12px;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow:
+                    0 0 0 4px #fff,
+                    0 0 0 6px var(--border);
+            }
+            .phase-card {
+                background: #fff;
+                border: 1px solid var(--border);
+                border-radius: 8px;
+                padding: 16px 20px;
+                box-shadow: var(--shadow);
+            }
+            .phase-card h4 {
+                margin: 0 0 4px;
+                color: var(--aws-dark);
+                font-size: 15px;
+            }
+            .phase-card .effort {
+                font-size: 12px;
+                color: var(--text-secondary);
+                margin-bottom: 8px;
+            }
+            .phase-card ul {
+                margin: 8px 0 0 16px;
+                font-size: 14px;
+            }
+            .phase-card .asana-link {
+                display: inline-block;
+                margin-top: 8px;
+                font-size: 12px;
+                color: var(--aws-blue);
+                text-decoration: none;
+            }
+            .phase-card .asana-link:hover {
+                text-decoration: underline;
+            }
+
+            /* Scope cards */
+            .scope-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+                margin: 16px 0;
+            }
+            .scope-card {
+                border-radius: 8px;
+                padding: 16px 20px;
+                border: 1px solid var(--border);
+                box-shadow: var(--shadow);
+            }
+            .scope-card.in-scope {
+                border-top: 3px solid var(--aws-green);
+            }
+            .scope-card.out-scope {
+                border-top: 3px solid var(--text-secondary);
+            }
+            .scope-card h4 {
+                margin: 0 0 8px;
+                font-size: 14px;
+            }
+            .scope-card ul {
+                margin: 4px 0 0 16px;
+                font-size: 14px;
+            }
+            .scope-card.in-scope h4 {
+                color: var(--aws-green);
+            }
+            .scope-card.out-scope h4 {
+                color: var(--text-secondary);
+            }
+
+            /* Open questions */
+            .question {
+                background: #fff;
+                border: 1px solid var(--aws-orange);
+                border-radius: 8px;
+                padding: 14px 18px;
+                margin: 12px 0;
+                box-shadow: var(--shadow);
+            }
+            .question .q-num {
+                display: inline-block;
+                background: var(--aws-orange);
+                color: #fff;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 24px;
+                font-size: 12px;
+                font-weight: 700;
+                margin-right: 8px;
+            }
+            .question strong {
+                font-size: 14px;
+            }
+            .question p {
+                font-size: 14px;
+                margin-top: 6px;
+                color: var(--text-secondary);
+            }
+
+            /* Comparison columns */
+            .compare {
+                display: grid;
+                grid-template-columns: 1fr 40px 1fr;
+                gap: 0;
+                align-items: start;
+                margin: 24px 0;
+            }
+            .compare-col {
+                background: #fff;
+                border: 1px solid var(--border);
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: var(--shadow);
+            }
+            .compare-arrow {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                color: var(--aws-orange);
+                font-weight: 700;
+            }
+            .compare-col h4 {
+                text-align: center;
+                margin-bottom: 12px;
+            }
+            .compare-col.today {
+                border-top: 3px solid var(--text-secondary);
+            }
+            .compare-col.after {
+                border-top: 3px solid var(--aws-green);
+            }
+
+            /* Footer */
+            .doc-footer {
+                margin-top: 48px;
+                padding-top: 16px;
+                border-top: 1px solid var(--border);
+                font-size: 13px;
+                color: var(--text-secondary);
+                font-style: italic;
+            }
+
+            @media print {
+                body {
+                    max-width: 100%;
+                    padding: 20px;
+                }
+                .phase-dot {
+                    box-shadow: none;
+                    border: 2px solid var(--aws-orange);
+                }
+                pre {
+                    white-space: pre-wrap;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- ─── HEADER ─────────────────────────────────────────────────────── -->
+        <div class="doc-header">
+            <h1>Technical Design: External Data Source Support</h1>
+            <div class="meta-grid">
+                <div>
+                    <span class="label">Author</span><br /><span class="value">Gage McGilvra</span>
+                </div>
+                <div>
+                    <span class="label">Date</span><br /><span class="value"
+                        >September 21, 2026</span
+                    >
+                </div>
+                <div>
+                    <span class="label">Status</span><br /><span class="status-badge"
+                        >Draft — Pending Review</span
+                    >
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── WHAT ───────────────────────────────────────────────────────── -->
+        <h2>What We're Building</h2>
+        <p>
+            A generic framework that lets customers bring their own data into LiveOps
+            <strong>without copying it</strong>. Customers point us at tables they already have — in
+            their own S3 buckets, in Snowflake, in Databricks — and our agents can query that data
+            immediately alongside the built-in gaming tables.
+        </p>
+        <p>
+            Today the solution only works with CSV and JSON files inside our S3 bucket. Every
+            customer has to ETL their data into our format before they get any value. This change
+            removes that requirement.
+        </p>
+
+        <!-- ─── WHY ─────────────────────────────────────────────────────────── -->
+        <h2>Why</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 30%">Reason</th>
+                    <th>Detail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Customer demand</strong></td>
+                    <td>
+                        Customers using Snowflake want to query their existing data through LiveOps
+                        agents. They shouldn't have to duplicate data into our bucket first.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Broader applicability</strong></td>
+                    <td>
+                        Most game studios already have data in a lakehouse (Snowflake, Databricks,
+                        or Parquet/Iceberg on S3). If we can't read it where it lives, we're asking
+                        them to build an ETL pipeline before evaluating the solution.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Production quality</strong></td>
+                    <td>
+                        A reusable generic framework, not a customer-specific proof of concept. This
+                        should work for any customer with any supported data format.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- ─── SCOPE ──────────────────────────────────────────────────────── -->
+        <h2>Scope</h2>
+        <div class="scope-grid">
+            <div class="scope-card in-scope">
+                <h4>✅ In Scope</h4>
+                <ul>
+                    <li>Parquet and Iceberg table formats in Athena</li>
+                    <li>External S3 buckets (cross-account)</li>
+                    <li>Partition key support for large datasets</li>
+                    <li>Optional column specification (schema inference)</li>
+                    <li>Snowflake via Athena Federated Query</li>
+                    <li>Schema discovery pipeline updates</li>
+                    <li>Documentation and end-to-end validation</li>
+                </ul>
+            </div>
+            <div class="scope-card out-scope">
+                <h4>🔮 Out of Scope (Future)</h4>
+                <ul>
+                    <li>Direct SDK connectors (already built separately)</li>
+                    <li>UI for managing external connections</li>
+                    <li>Real-time streaming from external sources</li>
+                    <li>Write-back to external sources</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ─── DESIGN PRINCIPLE ──────────────────────────────────────────── -->
+        <h2>Design Principle: Everything Goes Through Athena</h2>
+        <p>
+            Rather than building separate query tools for each data platform, we extend the existing
+            Athena path. Athena already supports Parquet, Iceberg, and federated connectors
+            natively.
+        </p>
+
+        <div class="callout callout-success">
+            <strong>Why this matters:</strong>
+            Agents use the same <code>query_data</code> tool — no new tools needed. Schema
+            discovery, join paths, and entity resolution work the same way. The orchestrator doesn't
+            need to know whether a table is local CSV or external Snowflake.
+        </div>
+
+        <!-- Architecture: Before/After -->
+        <div class="diagram">
+            <div class="diagram-title">Architecture — Before &amp; After</div>
+            <div class="compare" style="grid-template-columns: 380px 60px 1fr; align-items: start">
+                <div class="compare-col today">
+                    <h4 style="color: var(--text-secondary)">Today</h4>
+                    <svg
+                        width="100%"
+                        height="420"
+                        viewBox="0 0 340 420"
+                        preserveAspectRatio="xMidYMid meet"
+                    >
+                        <defs>
+                            <marker
+                                id="arrow1"
+                                viewBox="0 0 10 10"
+                                refX="8"
+                                refY="5"
+                                markerWidth="6"
+                                markerHeight="6"
+                                orient="auto-start-auto"
+                            >
+                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#545B64" />
+                            </marker>
+                        </defs>
+                        <rect x="80" y="10" width="180" height="44" rx="6" fill="#232F3E" />
+                        <text
+                            x="170"
+                            y="38"
+                            text-anchor="middle"
+                            fill="#fff"
+                            font-size="14"
+                            font-weight="600"
+                        >
+                            User Question
+                        </text>
+                        <line
+                            x1="170"
+                            y1="54"
+                            x2="170"
+                            y2="84"
+                            stroke="#545B64"
+                            stroke-width="2"
+                            marker-end="url(#arrow1)"
+                        />
+                        <rect x="80" y="90" width="180" height="44" rx="6" fill="#147EBA" />
+                        <text
+                            x="170"
+                            y="118"
+                            text-anchor="middle"
+                            fill="#fff"
+                            font-size="14"
+                            font-weight="600"
+                        >
+                            Orchestrator
+                        </text>
+                        <line
+                            x1="170"
+                            y1="134"
+                            x2="170"
+                            y2="164"
+                            stroke="#545B64"
+                            stroke-width="2"
+                            marker-end="url(#arrow1)"
+                        />
+                        <rect x="80" y="170" width="180" height="44" rx="6" fill="#147EBA" />
+                        <text
+                            x="170"
+                            y="198"
+                            text-anchor="middle"
+                            fill="#fff"
+                            font-size="14"
+                            font-weight="600"
+                        >
+                            Sub-Agent
+                        </text>
+                        <line
+                            x1="170"
+                            y1="214"
+                            x2="170"
+                            y2="244"
+                            stroke="#545B64"
+                            stroke-width="2"
+                            marker-end="url(#arrow1)"
+                        />
+                        <rect x="60" y="250" width="220" height="44" rx="6" fill="#FF9900" />
+                        <text
+                            x="170"
+                            y="278"
+                            text-anchor="middle"
+                            fill="#fff"
+                            font-size="14"
+                            font-weight="600"
+                        >
+                            query_data → Athena
+                        </text>
+                        <line
+                            x1="170"
+                            y1="294"
+                            x2="170"
+                            y2="334"
+                            stroke="#545B64"
+                            stroke-width="2"
+                            marker-end="url(#arrow1)"
+                        />
+                        <rect
+                            x="50"
+                            y="340"
+                            width="240"
+                            height="60"
+                            rx="6"
+                            fill="#F2F3F3"
+                            stroke="#D5DBDB"
+                            stroke-width="1.5"
+                        />
+                        <text
+                            x="170"
+                            y="366"
+                            text-anchor="middle"
+                            fill="#545B64"
+                            font-size="14"
+                            font-weight="600"
+                        >
+                            S3 (Our Bucket Only)
+                        </text>
+                        <text x="170" y="388" text-anchor="middle" fill="#545B64" font-size="12">
+                            CSV / JSON
+                        </text>
+                    </svg>
+                </div>
+                <div class="compare-arrow">→</div>
+                <div class="compare-col after">
+                    <h4 style="color: var(--aws-green)">After This Change</h4>
+                    <svg
+                        width="100%"
+                        height="560"
+                        viewBox="0 0 620 560"
+                        preserveAspectRatio="xMidYMid meet"
+                    >
+                        <defs>
+                            <marker
+                                id="arrow2"
+                                viewBox="0 0 10 10"
+                                refX="8"
+                                refY="5"
+                                markerWidth="6"
+                                markerHeight="6"
+                                orient="auto-start-auto"
+                            >
+                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#545B64" />
+                            </marker>
+                            <marker
+                                id="arrow3"
+                                viewBox="0 0 10 10"
+                                refX="8"
+                                refY="5"
+                                markerWidth="6"
+                                markerHeight="6"
+                                orient="auto-start-auto"
+                            >
+                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#1B660F" />
+                            </marker>
+                        </defs>
+
+                        <!-- Top stack: centered -->
+                        <rect x="220" y="10" width="180" height="44" rx="6" fill="#232F3E" />
+                        <text
+                            x="310"
+                            y="38"
+                            text-anchor="middle"
+                            fill="#fff"
+                            font-size="14"
+                            font-weight="600"
+                        >
+                            User Question
+                        </text>
+                        <line
+                            x1="310"
+                            y1="54"
+                            x2="310"
+                            y2="84"
+                            stroke="#545B64"
+                            stroke-width="2"
+                            marker-end="url(#arrow2)"
+                        />
+
+                        <rect x="220" y="90" width="180" height="44" rx="6" fill="#147EBA" />
+                        <text
+                            x="310"
+                            y="118"
+                            text-anchor="middle"
+                            fill="#fff"
+                            font-size="14"
+                            font-weight="600"
+                        >
+                            Orchestrator
+                        </text>
+                        <line
+                            x1="310"
+                            y1="134"
+                            x2="310"
+                            y2="164"
+                            stroke="#545B64"
+                            stroke-width="2"
+                            marker-end="url(#arrow2)"
+                        />
+
+                        <rect x="220" y="170" width="180" height="44" rx="6" fill="#147EBA" />
+                        <text
+                            x="310"
+                            y="198"
+                            text-anchor="middle"
+                            fill="#fff"
+                            font-size="14"
+                            font-weight="600"
+                        >
+                            Sub-Agent
+                        </text>
+                        <line
+                            x1="310"
+                            y1="214"
+                            x2="310"
+                            y2="244"
+                            stroke="#545B64"
+                            stroke-width="2"
+                            marker-end="url(#arrow2)"
+                        />
+
+                        <rect x="200" y="250" width="220" height="44" rx="6" fill="#FF9900" />
+                        <text
+                            x="310"
+                            y="278"
+                            text-anchor="middle"
+                            fill="#fff"
+                            font-size="14"
+                            font-weight="600"
+                        >
+                            query_data → Athena
+                        </text>
+
+                        <!-- Fork from Athena: L-shaped branches -->
+                        <!-- Left branch line -->
+                        <line
+                            x1="220"
+                            y1="294"
+                            x2="220"
+                            y2="340"
+                            stroke="#1B660F"
+                            stroke-width="2"
+                        />
+                        <line
+                            x1="220"
+                            y1="340"
+                            x2="155"
+                            y2="340"
+                            stroke="#1B660F"
+                            stroke-width="2"
+                        />
+                        <line
+                            x1="155"
+                            y1="340"
+                            x2="155"
+                            y2="378"
+                            stroke="#1B660F"
+                            stroke-width="2"
+                            marker-end="url(#arrow3)"
+                        />
+
+                        <!-- Right branch line -->
+                        <line
+                            x1="400"
+                            y1="294"
+                            x2="400"
+                            y2="340"
+                            stroke="#1B660F"
+                            stroke-width="2"
+                        />
+                        <line
+                            x1="400"
+                            y1="340"
+                            x2="465"
+                            y2="340"
+                            stroke="#1B660F"
+                            stroke-width="2"
+                        />
+                        <line
+                            x1="465"
+                            y1="340"
+                            x2="465"
+                            y2="378"
+                            stroke="#1B660F"
+                            stroke-width="2"
+                            marker-end="url(#arrow3)"
+                        />
+
+                        <!-- OR badge -->
+                        <rect
+                            x="293"
+                            y="325"
+                            width="34"
+                            height="22"
+                            rx="11"
+                            fill="#fff"
+                            stroke="#1B660F"
+                            stroke-width="1.5"
+                        />
+                        <text
+                            x="310"
+                            y="341"
+                            text-anchor="middle"
+                            fill="#1B660F"
+                            font-size="11"
+                            font-weight="700"
+                        >
+                            OR
+                        </text>
+
+                        <!-- Path labels -->
+                        <text
+                            x="100"
+                            y="370"
+                            text-anchor="middle"
+                            fill="#1B660F"
+                            font-size="11"
+                            font-weight="600"
+                        >
+                            Path A — Direct
+                        </text>
+                        <text
+                            x="520"
+                            y="370"
+                            text-anchor="middle"
+                            fill="#1B660F"
+                            font-size="11"
+                            font-weight="600"
+                        >
+                            Path B — Federated
+                        </text>
+
+                        <!-- Left box: S3 (Any Bucket) -->
+                        <rect
+                            x="30"
+                            y="386"
+                            width="250"
+                            height="60"
+                            rx="6"
+                            fill="#EAFAF1"
+                            stroke="#1B660F"
+                            stroke-width="1.5"
+                        />
+                        <text
+                            x="155"
+                            y="412"
+                            text-anchor="middle"
+                            fill="#1B660F"
+                            font-size="14"
+                            font-weight="600"
+                        >
+                            S3 (Any Bucket)
+                        </text>
+                        <text x="155" y="432" text-anchor="middle" fill="#1B660F" font-size="12">
+                            Parquet / Iceberg / CSV / JSON
+                        </text>
+
+                        <!-- Right box 1: Glue Connector -->
+                        <rect
+                            x="340"
+                            y="386"
+                            width="250"
+                            height="60"
+                            rx="6"
+                            fill="#EAFAF1"
+                            stroke="#1B660F"
+                            stroke-width="1.5"
+                        />
+                        <text
+                            x="465"
+                            y="412"
+                            text-anchor="middle"
+                            fill="#1B660F"
+                            font-size="14"
+                            font-weight="600"
+                        >
+                            Glue Connector
+                        </text>
+                        <text x="465" y="432" text-anchor="middle" fill="#1B660F" font-size="12">
+                            (Lambda function)
+                        </text>
+
+                        <!-- Arrow from Glue Connector down to Snowflake -->
+                        <line
+                            x1="465"
+                            y1="446"
+                            x2="465"
+                            y2="482"
+                            stroke="#1B660F"
+                            stroke-width="2"
+                            marker-end="url(#arrow3)"
+                        />
+
+                        <!-- Right box 2: Snowflake / Databricks -->
+                        <rect
+                            x="340"
+                            y="490"
+                            width="250"
+                            height="60"
+                            rx="6"
+                            fill="#EAFAF1"
+                            stroke="#1B660F"
+                            stroke-width="1.5"
+                        />
+                        <text
+                            x="465"
+                            y="516"
+                            text-anchor="middle"
+                            fill="#1B660F"
+                            font-size="14"
+                            font-weight="600"
+                        >
+                            Snowflake / Databricks
+                        </text>
+                        <text x="465" y="536" text-anchor="middle" fill="#1B660F" font-size="12">
+                            Redshift / Any JDBC Source
+                        </text>
+                    </svg>
+                </div>
+            </div>
+            <p
+                style="
+                    text-align: center;
+                    font-size: 13px;
+                    color: var(--text-secondary);
+                    margin-top: 12px;
+                "
+            >
+                <strong>No changes</strong> to the agent runtime, orchestrator, or tool code. The
+                expansion happens entirely in infrastructure (Glue, IAM, networking) and
+                configuration (<code>cdk.json</code>).
+            </p>
+        </div>
+
+        <!-- ─── COMPONENT CHANGES ─────────────────────────────────────────── -->
+        <h2>Component Changes</h2>
+
+        <h3>1. Table Definition Schema (cdk.json)</h3>
+        <p>
+            The new schema adds optional fields while keeping
+            <strong>full backward compatibility</strong>. A table definition with no new fields
+            behaves exactly as it does today.
+        </p>
+
+        <div class="compare" style="grid-template-columns: 1fr 24px 1fr">
+            <div class="compare-col today">
+                <h4 style="color: var(--text-secondary); font-size: 13px">Current Format</h4>
+                <pre><code>{
+  "tableName": "players",
+  "s3DataPath": "data/.../kb_players.csv",
+  "columns": [
+    {"name": "player_id", "type": "string"},
+    {"name": "username", "type": "string"}
+  ]
+}</code></pre>
+            </div>
+            <div class="compare-arrow" style="font-size: 18px">→</div>
+            <div class="compare-col after">
+                <h4 style="color: var(--aws-green); font-size: 13px">
+                    New Format (External Parquet)
+                </h4>
+                <pre><code>{
+  "tableName": "player_sessions",
+  "description": "Session data from customer S3",
+  "format": "parquet",
+  "location": {
+    "type": "s3",
+    "bucket": "customer-data-lake-prod",
+    "prefix": "game-analytics/sessions/",
+    "accountId": "111122223333"
+  },
+  "columns": [],
+  "partitionKeys": [
+    {"name": "event_date", "type": "date"},
+    {"name": "region", "type": "string"}
+  ],
+  "schemaInference": true
+}</code></pre>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>New Field</th>
+                    <th>Required</th>
+                    <th>Default</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>format</code></td>
+                    <td>No</td>
+                    <td><code>csv</code></td>
+                    <td>
+                        Table format: <code>csv</code>, <code>json</code>, <code>parquet</code>,
+                        <code>iceberg</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>location</code></td>
+                    <td>No</td>
+                    <td>Internal bucket</td>
+                    <td>Where the data lives. If omitted, uses the solution's own S3 bucket</td>
+                </tr>
+                <tr>
+                    <td><code>location.type</code></td>
+                    <td>If location set</td>
+                    <td>—</td>
+                    <td>
+                        <code>s3</code> for direct access, <code>federated</code> for Glue Connector
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>location.bucket</code></td>
+                    <td>If s3</td>
+                    <td>—</td>
+                    <td>S3 bucket name</td>
+                </tr>
+                <tr>
+                    <td><code>location.prefix</code></td>
+                    <td>If s3</td>
+                    <td>—</td>
+                    <td>S3 key prefix</td>
+                </tr>
+                <tr>
+                    <td><code>location.accountId</code></td>
+                    <td>No</td>
+                    <td>Same account</td>
+                    <td>Cross-account bucket owner</td>
+                </tr>
+                <tr>
+                    <td><code>location.connectorName</code></td>
+                    <td>If federated</td>
+                    <td>—</td>
+                    <td>Glue Connector name for Snowflake/Databricks</td>
+                </tr>
+                <tr>
+                    <td><code>location.connectionProperties</code></td>
+                    <td>If federated</td>
+                    <td>—</td>
+                    <td>Connector-specific config</td>
+                </tr>
+                <tr>
+                    <td><code>partitionKeys</code></td>
+                    <td>No</td>
+                    <td>None</td>
+                    <td>Partition columns for Hive-style partitioned data</td>
+                </tr>
+                <tr>
+                    <td><code>schemaInference</code></td>
+                    <td>No</td>
+                    <td><code>false</code></td>
+                    <td>If true + columns empty, infer schema from data files</td>
+                </tr>
+                <tr>
+                    <td><code>description</code></td>
+                    <td>No</td>
+                    <td>None</td>
+                    <td>Human-readable description, included in Schema KB</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>2. Glue Catalog Changes (analytics.ts)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Format</th>
+                    <th>Glue SerDe / Table Type</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>csv</code></td>
+                    <td><code>OpenCSVSerde</code></td>
+                    <td>Existing ✓</td>
+                </tr>
+                <tr>
+                    <td><code>json</code></td>
+                    <td><code>JsonSerDe</code></td>
+                    <td>Existing ✓</td>
+                </tr>
+                <tr>
+                    <td><code>parquet</code></td>
+                    <td><code>ParquetHiveSerDe</code></td>
+                    <td style="color: var(--aws-green); font-weight: 600">New</td>
+                </tr>
+                <tr>
+                    <td><code>iceberg</code></td>
+                    <td><code>table_type=ICEBERG</code> table property</td>
+                    <td style="color: var(--aws-green); font-weight: 600">New</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            If <code>location</code> is set, use the specified bucket/prefix. If
+            <code>partitionKeys</code> is set, register them. If <code>schemaInference</code> is
+            true and columns are empty, let the SerDe infer from data files.
+        </p>
+
+        <h3>3. IAM and Cross-Account Access (agents/index.ts)</h3>
+        <ul>
+            <li>Scan table definitions for unique external <code>location.bucket</code> values</li>
+            <li>
+                Add <code>s3:GetObject</code> and <code>s3:ListBucket</code> scoped to each external
+                bucket prefix
+            </li>
+            <li>
+                For cross-account buckets: customer adds a bucket policy granting our role access
+            </li>
+            <li>For KMS-encrypted buckets: customer grants <code>kms:Decrypt</code> to our role</li>
+        </ul>
+
+        <h3>4. Schema Discovery Pipeline Updates</h3>
+        <ul>
+            <li>
+                <strong>Schema Agent:</strong> Include source location and format metadata in
+                generated docs
+            </li>
+            <li>
+                <strong>Schema KB:</strong> External table docs indexed alongside internal tables —
+                no separate KB
+            </li>
+            <li>
+                <strong>Neptune graph:</strong> External tables appear with join paths to internal
+                tables
+            </li>
+            <li>
+                <strong>Bug fix:</strong> Schema lookup currently assumes all tables are in the
+                liveops store — update to search all registered tables regardless of location
+            </li>
+        </ul>
+
+        <h3>5. Snowflake Integration (Federated Query)</h3>
+        <p>
+            First external platform connector using the
+            <a href="https://docs.aws.amazon.com/athena/latest/ug/connectors-snowflake.html"
+                >Athena Snowflake Connector</a
+            >:
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>What's Needed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Connector Lambda</td>
+                    <td>Deploy the Athena Snowflake Connector as a Lambda function</td>
+                </tr>
+                <tr>
+                    <td>Glue Registration</td>
+                    <td>Register connector in the Glue catalog</td>
+                </tr>
+                <tr>
+                    <td>Secrets Manager</td>
+                    <td>Store Snowflake credentials (prefix: <code>liveops/external/</code>)</td>
+                </tr>
+                <tr>
+                    <td>IAM</td>
+                    <td>Grant connector Lambda access to the secret</td>
+                </tr>
+                <tr>
+                    <td>Networking</td>
+                    <td>NAT Gateway for outbound access to Snowflake API (~$32/mo)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Example configuration:</strong></p>
+        <pre><code>{
+  "tableName": "sf_player_revenue",
+  "description": "Revenue data from customer Snowflake warehouse",
+  "format": "federated",
+  "location": {
+    "type": "federated",
+    "connectorName": "snowflake-connector",
+    "connectionProperties": {
+      "secretName": "&lt;your-secret-name&gt;",
+      "database": "GAME_ANALYTICS",
+      "schema": "PUBLIC",
+      "table": "PLAYER_REVENUE"
+    }
+  },
+  "columns": [
+    {"name": "player_id", "type": "string"},
+    {"name": "revenue_usd", "type": "decimal(10,2)"},
+    {"name": "transaction_date", "type": "date"}
+  ]
+}</code></pre>
+
+        <div class="callout callout-info">
+            <strong>Why Athena Federation over direct SDK?</strong>
+            The agent uses the same <code>query_data</code> tool, the same Athena SQL, and the same
+            schema discovery. No new tool code, no new agent config pattern, no orchestrator
+            changes. The tradeoff is a small latency overhead from the federation hop, but for
+            analytics queries this is acceptable.
+        </div>
+
+        <h3>6. Networking (networking.ts)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Source Location</th>
+                    <th>Requirement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>External S3 (same region)</td>
+                    <td>No change — S3 Gateway Endpoint handles it</td>
+                </tr>
+                <tr>
+                    <td>Cross-region S3</td>
+                    <td>Not supported (Athena is region-scoped)</td>
+                </tr>
+                <tr>
+                    <td>Snowflake / Databricks</td>
+                    <td>NAT Gateway for connector Lambda outbound access (~$32/mo)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- ─── QUERY FLOW ─────────────────────────────────────────────────── -->
+        <h2>How a Query Flows (End-to-End)</h2>
+
+        <div class="diagram">
+            <div class="diagram-title">Snowflake Query Sequence</div>
+            <svg
+                width="100%"
+                height="120"
+                viewBox="0 0 980 120"
+                preserveAspectRatio="xMidYMid meet"
+            >
+                <defs>
+                    <marker
+                        id="arrow4"
+                        viewBox="0 0 10 10"
+                        refX="8"
+                        refY="5"
+                        markerWidth="6"
+                        markerHeight="6"
+                        orient="auto-start-auto"
+                    >
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#545B64" />
+                    </marker>
+                </defs>
+                <!-- Boxes -->
+                <rect x="0" y="35" width="100" height="44" rx="6" fill="#232F3E" />
+                <text
+                    x="50"
+                    y="62"
+                    text-anchor="middle"
+                    fill="#fff"
+                    font-size="12"
+                    font-weight="600"
+                >
+                    User
+                </text>
+                <rect x="135" y="35" width="110" height="44" rx="6" fill="#147EBA" />
+                <text
+                    x="190"
+                    y="62"
+                    text-anchor="middle"
+                    fill="#fff"
+                    font-size="12"
+                    font-weight="600"
+                >
+                    Orchestrator
+                </text>
+                <rect x="280" y="35" width="105" height="44" rx="6" fill="#147EBA" />
+                <text
+                    x="332"
+                    y="62"
+                    text-anchor="middle"
+                    fill="#fff"
+                    font-size="12"
+                    font-weight="600"
+                >
+                    Sub-Agent
+                </text>
+                <rect x="420" y="35" width="105" height="44" rx="6" fill="#FF9900" />
+                <text
+                    x="472"
+                    y="62"
+                    text-anchor="middle"
+                    fill="#fff"
+                    font-size="12"
+                    font-weight="600"
+                >
+                    Schema KB
+                </text>
+                <rect x="560" y="35" width="105" height="44" rx="6" fill="#FF9900" />
+                <text
+                    x="612"
+                    y="62"
+                    text-anchor="middle"
+                    fill="#fff"
+                    font-size="12"
+                    font-weight="600"
+                >
+                    Athena
+                </text>
+                <rect x="700" y="35" width="110" height="44" rx="6" fill="#1B660F" />
+                <text
+                    x="755"
+                    y="62"
+                    text-anchor="middle"
+                    fill="#fff"
+                    font-size="12"
+                    font-weight="600"
+                >
+                    Connector λ
+                </text>
+                <rect x="845" y="35" width="110" height="44" rx="6" fill="#1B660F" />
+                <text
+                    x="900"
+                    y="62"
+                    text-anchor="middle"
+                    fill="#fff"
+                    font-size="12"
+                    font-weight="600"
+                >
+                    Snowflake
+                </text>
+                <!-- Arrows -->
+                <line
+                    x1="100"
+                    y1="57"
+                    x2="133"
+                    y2="57"
+                    stroke="#545B64"
+                    stroke-width="1.5"
+                    marker-end="url(#arrow4)"
+                />
+                <line
+                    x1="245"
+                    y1="57"
+                    x2="278"
+                    y2="57"
+                    stroke="#545B64"
+                    stroke-width="1.5"
+                    marker-end="url(#arrow4)"
+                />
+                <line
+                    x1="385"
+                    y1="57"
+                    x2="418"
+                    y2="57"
+                    stroke="#545B64"
+                    stroke-width="1.5"
+                    marker-end="url(#arrow4)"
+                />
+                <line
+                    x1="525"
+                    y1="57"
+                    x2="558"
+                    y2="57"
+                    stroke="#545B64"
+                    stroke-width="1.5"
+                    marker-end="url(#arrow4)"
+                />
+                <line
+                    x1="665"
+                    y1="57"
+                    x2="698"
+                    y2="57"
+                    stroke="#545B64"
+                    stroke-width="1.5"
+                    marker-end="url(#arrow4)"
+                />
+                <line
+                    x1="810"
+                    y1="57"
+                    x2="843"
+                    y2="57"
+                    stroke="#545B64"
+                    stroke-width="1.5"
+                    marker-end="url(#arrow4)"
+                />
+                <!-- Labels -->
+                <text x="50" y="24" text-anchor="middle" fill="#545B64" font-size="11">①</text>
+                <text x="190" y="24" text-anchor="middle" fill="#545B64" font-size="11">
+                    ② Route
+                </text>
+                <text x="332" y="24" text-anchor="middle" fill="#545B64" font-size="11">
+                    ③ Discover
+                </text>
+                <text x="472" y="24" text-anchor="middle" fill="#545B64" font-size="11">
+                    ④ Tables
+                </text>
+                <text x="612" y="24" text-anchor="middle" fill="#545B64" font-size="11">⑤ SQL</text>
+                <text x="755" y="24" text-anchor="middle" fill="#545B64" font-size="11">
+                    ⑥ Federate
+                </text>
+                <text x="900" y="24" text-anchor="middle" fill="#545B64" font-size="11">
+                    ⑦ Query
+                </text>
+                <!-- Return -->
+                <text
+                    x="490"
+                    y="108"
+                    text-anchor="middle"
+                    fill="#545B64"
+                    font-size="11"
+                    font-style="italic"
+                >
+                    ← Results stream back through the same path — user sees a normal response
+                </text>
+            </svg>
+        </div>
+
+        <p>
+            The user and the agent don't know or care that the data came from Snowflake. It looks
+            like any other table.
+        </p>
+
+        <!-- ─── IMPLEMENTATION PLAN ────────────────────────────────────────── -->
+        <h2>Implementation Plan</h2>
+
+        <div class="timeline">
+            <div class="phase">
+                <div class="phase-dot">1</div>
+                <div class="phase-card">
+                    <h4>Fix Existing Bugs</h4>
+                    <div class="effort">⏱ 1–2 days &nbsp;·&nbsp; Small</div>
+                    <ul>
+                        <li>Widen S3 read permissions to cover all configured bucket locations</li>
+                        <li>
+                            Fix schema lookup to search across all registered tables, not just the
+                            liveops store
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="phase">
+                <div class="phase-dot">2</div>
+                <div class="phase-card">
+                    <h4>Parquet and Iceberg Support</h4>
+                    <div class="effort">⏱ 3–5 days &nbsp;·&nbsp; Medium</div>
+                    <ul>
+                        <li>Extend <code>cdk.json</code> table schema with new fields</li>
+                        <li>Update <code>analytics.ts</code> for correct Glue SerDe per format</li>
+                        <li>Update IAM to grant access to external S3 buckets</li>
+                        <li>Update schema discovery pipeline for external tables</li>
+                        <li>Test with Parquet tables in an external bucket</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="phase">
+                <div class="phase-dot">3</div>
+                <div class="phase-card">
+                    <h4>Snowflake Federated Query</h4>
+                    <div class="effort">⏱ 3–5 days &nbsp;·&nbsp; Medium</div>
+                    <ul>
+                        <li>Deploy Athena Snowflake Connector infrastructure (CDK)</li>
+                        <li>Add <code>federated</code> location type to table schema</li>
+                        <li>Configure NAT Gateway for connector outbound access</li>
+                        <li>Test end-to-end with the customer's Snowflake instance</li>
+                        <li>Validate cross-database joins (Athena table + Snowflake table)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="phase">
+                <div class="phase-dot">4</div>
+                <div class="phase-card">
+                    <h4>Document and Validate</h4>
+                    <div class="effort">⏱ 2–3 days &nbsp;·&nbsp; Small</div>
+                    <ul>
+                        <li>
+                            Customer-facing integration guide (data shape, registration,
+                            cross-account/KMS)
+                        </li>
+                        <li>
+                            End-to-end: register Parquet + Iceberg from external bucket, join
+                            against existing, confirm schema lookup, confirm existing tables
+                            untouched
+                        </li>
+                        <li>Update adding-agents.md and architecture.md</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── RISKS ──────────────────────────────────────────────────────── -->
+        <h2>Risks and Mitigations</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 28%">Risk</th>
+                    <th style="width: 22%">Impact</th>
+                    <th>Mitigation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cross-account S3 access is complex for customers (bucket policy + KMS)</td>
+                    <td>Customer setup friction</td>
+                    <td>Step-by-step docs with copy-paste IAM/bucket policies</td>
+                </tr>
+                <tr>
+                    <td>Athena Federation to Snowflake adds 3–10s latency</td>
+                    <td>Slower responses</td>
+                    <td>Acceptable for analytics; document expected latency</td>
+                </tr>
+                <tr>
+                    <td>Schema inference for Parquet may produce unexpected types</td>
+                    <td>Incorrect query generation</td>
+                    <td>
+                        Default <code>schemaInference</code> to false; recommend explicit columns
+                        for production
+                    </td>
+                </tr>
+                <tr>
+                    <td>Snowflake connector Lambda cold starts</td>
+                    <td>First query slow</td>
+                    <td>Keep-alive schedule or accept one-time cold start per session</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- ─── WHAT DOESN'T CHANGE ────────────────────────────────────────── -->
+        <h2>What This Doesn't Change</h2>
+        <div class="callout callout-info">
+            <strong>Zero impact on existing deployments:</strong>
+            Existing CSV/JSON tables work exactly as before. The agent runtime (Python) is
+            unchanged. The orchestrator is unchanged. The UI is unchanged. Agents that don't
+            reference external tables are unaffected.
+        </div>
+
+        <!-- ─── OPEN QUESTIONS ─────────────────────────────────────────────── -->
+        <h2>Open Questions for Review</h2>
+
+        <div class="question">
+            <span class="q-num">1</span><strong>Databricks connector priority</strong>
+            <p>
+                Should we add the Athena Databricks Connector in this phase, or defer? The pattern
+                is identical to Snowflake (different connector Lambda, same config shape).
+            </p>
+        </div>
+
+        <div class="question">
+            <span class="q-num">2</span><strong>Table registration UX</strong>
+            <p>
+                Should external tables be defined in <code>cdk.json</code> (requires redeploy) or
+                should we extend the Config API to accept table definitions at runtime (more
+                flexible, more work)?
+            </p>
+        </div>
+
+        <div class="question">
+            <span class="q-num">3</span><strong>Cost guardrails</strong>
+            <p>
+                Should we add Athena query cost limits for external tables? Federated queries can
+                scan large datasets. A per-query byte limit or timeout might be prudent.
+            </p>
+        </div>
+
+        <!-- ─── FOOTER ─────────────────────────────────────────────────────── -->
+        <div class="doc-footer">
+            This document follows the one-page design process: what we're building, why we need it,
+            and how we'll implement it.
+        </div>
+    </body>
+</html>
