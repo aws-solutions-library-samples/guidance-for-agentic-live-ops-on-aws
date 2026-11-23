@@ -37,6 +37,8 @@ export interface AgentsProps {
     schemaKnowledgeBaseId: string;
     agentConfigTable: TableV2;
     neptuneClusterArn: string;
+    /** Optional: Secrets Manager secret name for external SQL data sources */
+    externalSqlSecret?: string;
 }
 
 export class Agents extends Construct {
@@ -161,6 +163,13 @@ export class Agents extends Construct {
 
                 // S3 bucket for agent configs (source of truth — scanned on cache refresh)
                 AGENT_CONFIG_BUCKET: agentConfigBucket.bucketName,
+
+                // External SQL data source integration
+                // Set to a Secrets Manager secret name containing connection credentials.
+                // See docs/external-data-integration.md for setup instructions.
+                ...(props.externalSqlSecret && {
+                    EXTERNAL_SQL_SECRET: props.externalSqlSecret,
+                }),
             },
             protocolConfiguration: ProtocolType.HTTP,
         });
@@ -299,6 +308,20 @@ export class Agents extends Construct {
                 actions: ["ssm:GetParameter"],
                 resources: [
                     `arn:aws:ssm:${Stack.of(this).region}:${Stack.of(this).account}:parameter/liveops/*`,
+                ],
+            })
+        );
+
+        // Secrets Manager read permission for external SQL data source credentials
+        // Scoped to secrets with the liveops/external/ prefix by default.
+        // Individual agents can reference specific secrets via config_overrides.
+        runtime.addToRolePolicy(
+            new PolicyStatement({
+                sid: "ExternalSqlSecretsAccess",
+                effect: Effect.ALLOW,
+                actions: ["secretsmanager:GetSecretValue"],
+                resources: [
+                    `arn:aws:secretsmanager:${Stack.of(this).region}:${Stack.of(this).account}:secret:liveops/external/*`,
                 ],
             })
         );

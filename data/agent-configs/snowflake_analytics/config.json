@@ -1,0 +1,12 @@
+{
+    "agent_id": "snowflake_analytics",
+    "display_name": "Snowflake Analytics Agent",
+    "description": "Queries a Snowflake data warehouse for analytics data stored in the customer's Snowflake account.",
+    "agent_type": "analytics",
+    "model_key": "",
+    "tool_sets": ["external_sql"],
+    "config_overrides": {
+        "external_sql_connection_id": "liveops/external/snowflake"
+    },
+    "enabled": false
+}

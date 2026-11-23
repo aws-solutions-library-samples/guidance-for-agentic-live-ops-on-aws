@@ -26,6 +26,7 @@ from tools.realtime_monitor import create_realtime_tools
 from tools.schema_search import create_schema_tools
 from tools.schema_graph import create_graph_tools
 from tools.entity_resolution import create_entity_resolution_tools
+from tools.external_sql import create_external_sql_tools
 
 logger = Logger(service="agent-factory", level=os.getenv("LOG_LEVEL", "DEBUG"))
 
@@ -36,6 +37,7 @@ TOOL_SET_REGISTRY = {
     "schema": create_schema_tools,
     "graph": create_graph_tools,
     "entity_resolution": create_entity_resolution_tools,
+    "external_sql": create_external_sql_tools,
 }
 
 # Domain label for {{domain}} placeholder substitution
@@ -93,16 +95,33 @@ def get_bedrock_model(agent_name: str = None):
     )
 
 
-def resolve_tools(tool_sets: list) -> list:
+def resolve_tools(tool_sets: list, config_overrides: dict = None) -> list:
     """Resolve tool_sets entries to actual tool functions via TOOL_SET_REGISTRY.
 
     Skips unrecognized tool_set names with a warning.
+
+    Args:
+        tool_sets: List of tool set names (e.g., ["athena", "external_sql"]).
+        config_overrides: Optional per-agent overrides. Supported keys:
+            - external_sql_connection_id: Secret name for external_sql tool set.
     """
     tools = []
+    overrides = config_overrides or {}
     for tool_set_name in tool_sets:
         creator = TOOL_SET_REGISTRY.get(tool_set_name)
         if creator:
-            tools.extend(creator())
+            # Pass per-agent config to tool sets that support it
+            if (
+                tool_set_name == "external_sql"
+                and "external_sql_connection_id" in overrides
+            ):
+                tools.extend(
+                    creator(
+                        secret_name_override=overrides["external_sql_connection_id"]
+                    )
+                )
+            else:
+                tools.extend(creator())
         else:
             logger.warning(
                 f"Unrecognized tool_set '{tool_set_name}', skipping",
@@ -328,6 +347,7 @@ class AgentFactory:
                     "prompt_template": cfg.get("prompt_template", ""),
                     "model_key": cfg.get("model_key", ""),
                     "tool_sets": cfg.get("tool_sets", []),
+                    "config_overrides": cfg.get("config_overrides", {}),
                     "enabled": cfg.get("enabled", True),
                     "created_at": now,
                     "updated_at": now,
@@ -356,6 +376,7 @@ class AgentFactory:
         model_key = config.get("model_key", "")
         tool_sets = config.get("tool_sets", [])
         agent_type = config.get("agent_type", "dynamic")
+        config_overrides = config.get("config_overrides", {})
 
         # Build the docstring from display_name and description
         docstring = f"{display_name} - {description}"
@@ -414,7 +435,9 @@ class AgentFactory:
                     )
 
                 # Resolve tools from tool_sets
-                agent_tools = resolve_tools(tool_sets)
+                agent_tools = resolve_tools(
+                    tool_sets, config_overrides=config_overrides
+                )
 
                 # Create Strands Agent
                 agent = Agent(

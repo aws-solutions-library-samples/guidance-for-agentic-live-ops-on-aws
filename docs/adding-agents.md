@@ -21,13 +21,14 @@ Each agent is defined by these fields:
 
 Valid values for the `tool_sets` array:
 
-| Tool set            | What the agent can do                                             |
-| ------------------- | ----------------------------------------------------------------- |
-| `athena`            | Run SQL against Athena tables (the `query_data` tool).            |
-| `realtime`          | Read live DynamoDB sliding-window metrics and incident reports.   |
-| `schema`            | Semantic search over the Schema Knowledge Base (`search_schema`). |
-| `graph`             | Traverse the schema graph for table relationships and join paths. |
-| `entity_resolution` | Resolve text mentions to matched tables and columns.              |
+| Tool set            | What the agent can do                                                                                                                                              |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `athena`            | Run SQL against Athena tables (the `query_data` tool).                                                                                                             |
+| `realtime`          | Read live DynamoDB sliding-window metrics and incident reports.                                                                                                    |
+| `schema`            | Semantic search over the Schema Knowledge Base (`search_schema`).                                                                                                  |
+| `graph`             | Traverse the schema graph for table relationships and join paths.                                                                                                  |
+| `entity_resolution` | Resolve text mentions to matched tables and columns.                                                                                                               |
+| `external_sql`      | Query external SQL sources — Databricks, Snowflake, PostgreSQL, MySQL, Redshift (`query_external`). See [External Data Integration](external-data-integration.md). |
 
 Unrecognized tool set names are skipped with a warning.
 
